@@ -1,0 +1,298 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Ecosystem Area Index},
+            pdfauthor={Jessica A. Rowland},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\providecommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Ecosystem Area Index}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Jessica A. Rowland}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+    \date{}
+    \predate{}\postdate{}
+  
+
+\begin{document}
+\maketitle
+
+\subsection{Index overview}\label{index-overview}
+
+The Ecosystem Area Index (EAI) measures trends measures trends in
+changes in ecosystem area towards ecosystem collapse. The EAI is the
+geometric mean of the proportion of ecosystem area remaining over a
+given timeframe relative to the initial area and an ecosystem-specific
+collapse threshold. It uses data on ecosystem area and aea-based
+collapse threshold as defined based on IUCN Red List of Ecosystems risk
+assessments.
+
+This information sheet provides the code used to calculate the the index
+and an example of each step.
+
+\subsection{Set up functions}\label{set-up-functions}
+
+\subsubsection{Calculate the index}\label{calculate-the-index}
+
+The function \emph{calcEAI} selects the column in a dataframe listing
+the proportion of the ecosystem area lost over a given timeframe towards
+or away from the point where the ecosystem collapses, and percentiles
+capturing the middle 95\% of the data.
+
+Parameters are:\\
+- eco\_data = dataframe\\
+- RLE\_criteria = name of the column with the Red List of Ecosystems
+criterion of interest\\
+- pct\_change = proportion of the ecosystem area lost over a given
+timeframe towards ecosytsem collapse - group1 = the factor (optional)
+you want to group the index by. Where not specified, an EAI will be
+calculated based on all ecosystems (output = single score)\\
+- group2 = the second factor (optional) you want to group the index by
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{calcEAI <-}\StringTok{ }\ControlFlowTok{function}\NormalTok{(eco_data, RLE_criteria, pct_change, group1, group2)\{}
+  
+\NormalTok{  filter_data <-}\StringTok{ }\KeywordTok{filter}\NormalTok{(eco_data, RLE_criteria }\OperatorTok{!=}\StringTok{ "NE"} \OperatorTok{&}\StringTok{ }\NormalTok{RLE_criteria }\OperatorTok{!=}\StringTok{ "DD"}\NormalTok{)}
+  
+  \CommentTok{# Calculate percentage remaining}
+\NormalTok{  area_Pct <-}\StringTok{ }\KeywordTok{mutate}\NormalTok{(filter_data, }\DataTypeTok{est_remain =}\NormalTok{ (}\DecValTok{1} \OperatorTok{-}\StringTok{ }\NormalTok{filter_data[[pct_change]]))}
+  
+  \CommentTok{# Calculate overall index score if missing group, or scores based on a classification if specified}
+  \ControlFlowTok{if}\NormalTok{ (}\KeywordTok{missing}\NormalTok{(group1)) \{}
+\NormalTok{    values <-}\StringTok{ }\KeywordTok{group_by}\NormalTok{(area_Pct)}
+    
+\NormalTok{  \} }\ControlFlowTok{else}\NormalTok{ \{}
+    \ControlFlowTok{if}\NormalTok{ (}\KeywordTok{missing}\NormalTok{(group2)) \{}
+\NormalTok{      values <-}\StringTok{ }\KeywordTok{group_by}\NormalTok{(area_Pct, }\DataTypeTok{group1 =}\NormalTok{ area_Pct[[group1]])}
+\NormalTok{    \} }\ControlFlowTok{else}\NormalTok{ \{}
+\NormalTok{      values <-}\StringTok{ }\KeywordTok{group_by}\NormalTok{(area_Pct, }\DataTypeTok{group1 =}\NormalTok{ area_Pct[[group1]],}
+                                  \DataTypeTok{group2 =}\NormalTok{ area_Pct[[group2]])}
+\NormalTok{    \}}
+\NormalTok{  \}}
+
+  \CommentTok{# Calculate EAI scores (accounting for zeros) & quantiles}
+\NormalTok{  index_scores <-}\StringTok{  }\KeywordTok{summarise}\NormalTok{(values, }\DataTypeTok{total_count =} \KeywordTok{n}\NormalTok{(),}
+                             \DataTypeTok{count_non_zeros =} \KeywordTok{length}\NormalTok{(est_remain }\OperatorTok{>}\StringTok{ }\DecValTok{0}\NormalTok{), }\CommentTok{# sample size excluding zeros}
+                             \DataTypeTok{EAI =}\NormalTok{ ((}\KeywordTok{exp}\NormalTok{(}\KeywordTok{mean}\NormalTok{(}\KeywordTok{log}\NormalTok{(est_remain[est_remain }\OperatorTok{>}\StringTok{ }\DecValTok{0}\NormalTok{])))) }\OperatorTok{*}\StringTok{ }\NormalTok{(count_non_zeros}\OperatorTok{/}\NormalTok{total_count)), }\CommentTok{# natural log, accounting for zeros}
+                             \DataTypeTok{lower =} \KeywordTok{quantile}\NormalTok{(est_remain, }\DataTypeTok{probs =} \FloatTok{0.025}\NormalTok{), }
+                             \DataTypeTok{upper =} \KeywordTok{quantile}\NormalTok{(est_remain, }\DataTypeTok{probs =} \FloatTok{0.975}\NormalTok{))}
+
+  \KeywordTok{return}\NormalTok{(index_scores)}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\paragraph{Example}\label{example}
+
+This test data set are available from github.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# Load packages}
+\KeywordTok{library}\NormalTok{(dplyr)}
+
+\CommentTok{# Load data}
+\NormalTok{data <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"~/Documents/*Career/*PhD/*Projects/2 - RLE indicators/Github script/Github_example_data_EAI.csv"}\NormalTok{)}
+
+\CommentTok{# View data}
+\KeywordTok{head}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   ecosystem realm region criterion_A1 area_lost
+## 1         1     A      1           A1      0.40
+## 2         2     A      1           A1      0.10
+## 3         3     B      1           A1      0.05
+## 4         4     B      2           A1      0.10
+## 5         5     B      2           A1      0.60
+## 6         6     A      2           A1      0.12
+\end{verbatim}
+
+Calculate the index using no groupings:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# Calculate the index values}
+\NormalTok{output <-}\StringTok{ }\KeywordTok{calcEAI}\NormalTok{(data,}
+                  \DataTypeTok{pct_change =} \StringTok{"area_lost"}\NormalTok{,}
+                  \DataTypeTok{RLE_criteria =} \StringTok{"criterion"}\NormalTok{)}
+
+\CommentTok{# View output}
+\KeywordTok{head}\NormalTok{(output)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 1 x 5
+##   total_count count_non_zeros   EAI lower upper
+##         <int>           <int> <dbl> <dbl> <dbl>
+## 1          13              13 0.857  0.46     1
+\end{verbatim}
+
+Calculate the index using one grouping:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# Calculate the index values}
+\NormalTok{output_one_grouping <-}\StringTok{ }\KeywordTok{calcEAI}\NormalTok{(data,}
+                               \DataTypeTok{pct_change =} \StringTok{"area_lost"}\NormalTok{,}
+                               \DataTypeTok{RLE_criteria =} \StringTok{"criterion"}\NormalTok{,}
+                               \DataTypeTok{group1 =} \StringTok{"realm"}\NormalTok{)}
+
+\CommentTok{# View output}
+\KeywordTok{head}\NormalTok{(output_one_grouping)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 2 x 6
+##   group1 total_count count_non_zeros   EAI lower upper
+##   <fct>        <int>           <int> <dbl> <dbl> <dbl>
+## 1 A                7               7 0.879 0.638 1    
+## 2 B                6               6 0.832 0.462 0.999
+\end{verbatim}
+
+Calculate the index using two groupings where ecosystems are grouped by
+realm and continent:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# Calculate the index values}
+\NormalTok{output_two_groupings <-}\StringTok{ }\KeywordTok{calcEAI}\NormalTok{(data,}
+                                \DataTypeTok{pct_change =} \StringTok{"area_lost"}\NormalTok{,}
+                                \DataTypeTok{RLE_criteria =} \StringTok{"criterion"}\NormalTok{,}
+                                \DataTypeTok{group1 =} \StringTok{"realm"}\NormalTok{,}
+                                \DataTypeTok{group2 =} \StringTok{"region"}\NormalTok{)}
+
+\CommentTok{# View output}
+\KeywordTok{head}\NormalTok{(output_two_groupings)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 7
+## # Groups:   group1 [2]
+##   group1 group2 total_count count_non_zeros   EAI lower upper
+##   <fct>   <int>       <int>           <int> <dbl> <dbl> <dbl>
+## 1 A           1           2               2 0.735 0.608 0.892
+## 2 A           2           2               2 0.865 0.851 0.879
+## 3 A           3           3               3 1     1     1    
+## 4 B           1           1               1 0.95  0.95  0.95 
+## 5 B           2           2               2 0.6   0.412 0.888
+## 6 B           3           3               3 0.990 0.980 1.000
+\end{verbatim}
+
+
+\end{document}

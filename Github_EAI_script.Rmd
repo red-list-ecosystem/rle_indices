@@ -1,0 +1,120 @@
+---
+title: "Ecosystem Area Index"
+author: "Jessica A. Rowland"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+## Index overview
+
+The Ecosystem Area Index (EAI) measures trends measures trends in changes in ecosystem area towards ecosystem collapse. The EAI is the geometric mean of the proportion of ecosystem area remaining over a given timeframe relative to the initial area and an ecosystem-specific collapse threshold. It uses data on ecosystem area and area-based collapse threshold as defined based on IUCN Red List of Ecosystems risk assessments.  
+
+This information sheet provides the code used to calculate the the index and an example of each step. 
+
+**Reference:**  
+Rowland, J. A., Bland, L. M., Keith, D. A., Bignoli, D. J., Burgman, M., Etter, A., Ferrer-Paris, J. R., Miller, R. M. and Nicholson, E. (2019) Ecosystem indices to support global biodiversity conservation. Conservation Letters. e12680  
+
+## Set up functions
+
+### Calculate the index
+
+The function *calcEAI* selects the column in a dataframe listing the proportion of the ecosystem area lost over a given timeframe towards or away from the point where the ecosystem collapses, and percentiles capturing the middle 95% of the data. 
+
+Parameters are:  
+- eco_data = dataframe  
+- RLE_criteria = name of the column with the Red List of Ecosystems criterion of interest  
+- pct_change = proportion of the ecosystem area lost over a given timeframe towards ecosytsem collapse
+- group1 = the factor (optional) you want to group the index by. Where not specified, an EAI will be calculated based on all ecosystems (output = single score)  
+- group2 = the second factor (optional) you want to group the index by  
+
+```{r calcEAI}
+calcEAI <- function(eco_data, RLE_criteria, pct_change, group1, group2){
+  
+  filter_data <- filter(eco_data, RLE_criteria != "NE" & RLE_criteria != "DD")
+  
+  # Calculate percentage remaining
+  area_Pct <- mutate(filter_data, est_remain = (1 - filter_data[[pct_change]]))
+  
+  # Calculate overall index score if missing group, or scores based on a classification if specified
+  if (missing(group1)) {
+    values <- group_by(area_Pct)
+    
+  } else {
+    if (missing(group2)) {
+      values <- group_by(area_Pct, group1 = area_Pct[[group1]])
+    } else {
+      values <- group_by(area_Pct, group1 = area_Pct[[group1]],
+                                  group2 = area_Pct[[group2]])
+    }
+  }
+
+  # Calculate EAI scores (accounting for zeros) & quantiles
+  index_scores <-  summarise(values, total_count = n(),
+                             count_non_zeros = length(est_remain > 0), # sample size excluding zeros
+                             EAI = ((exp(mean(log(est_remain[est_remain > 0])))) * (count_non_zeros/total_count)), # natural log, accounting for zeros
+                             lower = quantile(est_remain, probs = 0.025), 
+                             upper = quantile(est_remain, probs = 0.975))
+
+  return(index_scores)
+}
+```
+
+#### Example
+
+This test data set are available from github.
+
+```{r example, message = FALSE}
+# Load packages
+library(dplyr)
+
+# Load data
+data <- read.csv("~/Documents/*Career/*PhD/*Projects/2 - RLE indicators/Github script/Github_example_data_EAI.csv")
+
+# View data
+head(data)
+```
+
+Calculate the index using no groupings:
+
+```{r RLIE overall}
+# Calculate the index values
+output <- calcEAI(data,
+                  pct_change = "area_lost",
+                  RLE_criteria = "criterion")
+
+# View output
+head(output)
+```
+
+Calculate the index using one grouping:
+
+```{r RLIE one group}
+# Calculate the index values
+output_one_grouping <- calcEAI(data,
+                               pct_change = "area_lost",
+                               RLE_criteria = "criterion",
+                               group1 = "realm")
+
+# View output
+head(output_one_grouping)
+```
+
+Calculate the index using two groupings where ecosystems are grouped by realm and continent:
+
+```{r RLIE two groups}
+# Calculate the index values
+output_two_groupings <- calcEAI(data,
+                                pct_change = "area_lost",
+                                RLE_criteria = "criterion",
+                                group1 = "realm",
+                                group2 = "region")
+
+# View output
+head(output_two_groupings)
+```
+
+## Author information
+
+jessica.rowland674@gmail.com  
+http://jessrowlandresearch.wordpress.com
