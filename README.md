@@ -13,3 +13,5 @@ The Red List Index of ecosystems (RLIE) measures trends in ecosystem collapse ri
 The Ecosystem Area Index (EAI) measures trends measures trends in changes in ecosystem area towards ecosystem collapse. The EAI is the geometric mean of the proportion of ecosystem area remaining over a given timeframe relative to the initial area and an ecosystem-specific collapse threshold. It uses data on ecosystem area and aea-based collapse threshold as defined based on IUCN Red List of Ecosystems risk assessments.
 
 ## Ecosystem Health Index
+#### Index overview
+The Ecosystem Health Index (EHI) measures temporal changes in environmental conditions and biotic processes/interactions (hereafter collectively, ecological processes). The EHI uses relative severity of change in ecosystem-specific ecological variables and extent of the ecosystem affected to quantify transitions towards or away from ecosystem collapse. The index represents the geometric mean of the relative value of decline. It uses data defined in IUCN Red List of Ecosystems risk assessments.
