@@ -197,49 +197,79 @@ $(document).ready(function () {
 
 <div id="index-overview" class="section level2">
 <h2>Index overview</h2>
-<p>The Ecosystem Health Index (EHI) measures temporal changes in environmental conditions and biotic processes/interactions (hereafter collectively, ecological processes). The EHI uses relative severity of change in ecosystem-specific ecological variables and extent of the ecosystem affected to quantify transitions towards or away from ecosystem collapse. The index represents the geometric mean of the relative value of decline. It uses data defined in IUCN Red List of Ecosystems risk assessments.</p>
+<p>The Ecosystem Health Index (EHI) measures temporal changes in environmental conditions and biotic processes/interactions (hereafter collectively, ecological processes). The EHI uses relative severity of change in ecosystem-specific ecological variables and extent of the ecosystem affected to quantify transitions towards or away from ecosystem collapse. The index represents the geometric mean of the relative severity of decline. It uses data defined in IUCN Red List of Ecosystems risk assessments.</p>
 <p>This information sheet provides the code used to calculate the the index and an example of each step.</p>
 <p><strong>Reference:</strong><br />
-Rowland, J. A., Bland, L. M., Keith, D. A., Bignoli, D. J., Burgman, M., Etter, A., Ferrer-Paris, J. R., Miller, R. M. and Nicholson, E. (2019) Ecosystem indices to support global biodiversity conservation. Conservation Letters. e12680</p>
+Rowland, J. A., Bland, L. M., Keith, D. A., Bignoli, D. J., Burgman, M., Etter, A., Ferrer-Paris, J. R., Miller, R. M. and Nicholson, E. (2020) Ecosystem indices to support global biodiversity conservation. Conservation Letters. e12680</p>
 </div>
 <div id="set-up-functions" class="section level2">
 <h2>Set up functions</h2>
 <div id="calculate-the-index" class="section level3">
 <h3>Calculate the index</h3>
-<p>The function <em>calcEHI</em> selects the column in a dataframe listing the relative severity of degradation and the proportion of the ecosystem area affected by degradation for criteria C (environmental degradation) and D (biotic disruption), combines these into a single value, selected the variable with the highest decline out of criteria C and D, and this value is used to calcalte the index, along with percentiles capturing the middle 95% of the data.</p>
+<p>The function <em>calcEHI</em> selects the column in a dataframe listing the relative severity of degradation and the proportion of the ecosystem area affected by degradation for criteria C (environmental degradation) and criterion D (biotic disruption). Next, it combines the relative severity and extent values into a single value, selects the ecological variable between criteria C and D with the highest decline. The value of decline for the selected ecological variable is used to calculate the index, along with percentiles capturing the middle 95% of the data.</p>
 <p>Parameters are:</p>
 <ul>
-<li>eco_data = dataframe<br />
+<li>eco_data = dataframe.<br />
 </li>
-<li>RLE_criteria = name of the column with the Red List of Ecosystems criterion of interest<br />
+<li>RLE_criteria = name of the column with the Red List of Ecosystems criterion of interest.<br />
 </li>
-<li>severity = severity of degradation of an ecological variable over a given timeframe towards ecosystem collapse</li>
-<li>extent = proportion of the ecosystem area affected by degradation</li>
-<li>group1 = the factor (optional) you want to group the index by. Where not specified, an EAI will be calculated based on all ecosystems (output = single score)<br />
+<li>severity = relative severity of degradation of an ecological variable towards collapse over a given timeframe towards.<br />
 </li>
-<li>group2 = the second factor (optional) you want to group the index by</li>
+<li>extent = proportion of the ecosystem area affected by degradation.<br />
+</li>
+<li>group_1 = the factor (optional) you want to group the index by. Where not specified, an EAI will be calculated based on all ecosystems (output = single score).<br />
+</li>
+<li>group_2 = the second factor (optional) you want to group the index by.</li>
 </ul>
-<pre class="r"><code>calcEHI &lt;- function(eco_data, severity_C, extent_C, severity_D, extent_D, group){
+<pre class="r"><code>calcEHI &lt;- function(eco_data, severity_C, extent_C, severity_D, extent_D, severity, extent, group_1, group_2, one_criteria){
   
-  # Calculate proportion remaining for criteria C and D
-  funcPct &lt;- mutate(eco_data, 
+  # Calculate the proportion remaining where only one criteria was assessed
+  if (one_criteria == TRUE) {
+    funcPct &lt;- mutate(eco_data, 
+                    est_intact = 1 - (eco_data[[severity]] * eco_data[[extent]])) 
+  
+    # Drop NA values
+    no_na_values &lt;- drop_na(funcPct, est_intact)
+  
+    # Calculate overall index score if missing group, or scores based on a classification if specified
+    if (missing(group_1)) {
+        values &lt;- group_by(no_na_values)
+    
+      } else if (missing(group_2)) {
+        values &lt;- group_by(no_na_values, group_1 = no_na_values[[group_1]])
+     
+        } else {
+          values &lt;- group_by(no_na_values, group_1 = no_na_values[[group_1]],
+                                           group_2 = no_na_values[[group_2]])
+      }
+    
+    # Calculate the proportion remaining where both criterion C and D were available
+    } else if(one_criteria == FALSE) {
+
+      # Calculate proportion remaining for criteria C and D
+      funcPct &lt;- mutate(eco_data, 
                     est_intact_C = 1 - (eco_data[[severity_C]] * eco_data[[extent_C]]),
                     est_intact_D = 1 - (eco_data[[severity_D]] * eco_data[[extent_D]])) 
   
-  # Select lowest value for C or D
-  final &lt;- mutate(funcPct, est_intact = ifelse(is.na(est_intact_C), est_intact_D, 
+      # Select lowest value for criteria C or D
+      final &lt;- mutate(funcPct, est_intact = ifelse(is.na(est_intact_C), est_intact_D, 
                                         ifelse(is.na(est_intact_D), est_intact_C,
                                         ifelse(est_intact_C &lt;= est_intact_D, est_intact_C, est_intact_D))))
-  # Drop NA values
-  no_na_values &lt;- drop_na(final, est_intact)
+      # Drop NA values
+      no_na_values &lt;- drop_na(final, est_intact)
   
-  # Calculate overall index score if missing group, or scores based on a classification if specified
-  if (missing(group)) {
-    values &lt;- group_by(no_na_values)
+      # Calculate overall index score if missing group, or scores based on a classification if specified
+      if (missing(group_1)) {
+        values &lt;- group_by(no_na_values)
     
-    } else {
-      values &lt;- group_by(no_na_values, group = no_na_values[[group]])
-  }
+      } else if (missing(group_2)) {
+        values &lt;- group_by(no_na_values, group_1 = no_na_values[[group_1]])
+     
+        } else {
+          values &lt;- group_by(no_na_values, group_1 = no_na_values[[group_1]],
+                                           group_2 = no_na_values[[group_2]])
+    }
+    }
   
   # Calculate index scores (accounting for zeros) and quantiles
   index_scores &lt;- summarise(values, total_count = n(),
@@ -248,56 +278,126 @@ Rowland, J. A., Bland, L. M., Keith, D. A., Bignoli, D. J., Burgman, M., Etter, 
                             lower = quantile(est_intact, probs = 0.025),
                             upper = quantile(est_intact, probs = 0.975))
 }</code></pre>
-<div id="example" class="section level4">
-<h4>Example</h4>
-<p>This test data set are available from github.</p>
+<div id="forests-of-the-americas-example" class="section level4">
+<h4>Forests of the Americas example</h4>
+<p>An example dataset of the Red list of Ecosystem assessments of the forests across the Americas is available from github.The assessments are from the continental-scale RLE assessments of 136 temperate and tropical forests across 51 countries/territories in the Caribbean and Americas (Ferrer-Paris et al., 2018).</p>
+<p><strong>Reference:</strong><br />
+Ferrer-Paris, J. R., Zager, I., Keith, D. A., Oliveira-Miranda, M. A., Rodríguez, J. P., Josse, C., … Barrow, E. (2018). An ecosystem risk assessment of temperate and tropical forests of the Americas with an outlook on future conservation strategies. Conservation Letters, 12. <a href="https://doi.org/10.1111/conl.12623" class="uri">https://doi.org/10.1111/conl.12623</a></p>
+<p>The columns in the dataframe are:<br />
+- ecosystem = type of ecosystem.<br />
+- country = country containing part of the ecosystem distribution.<br />
+- mean_severity_C2a = average relative severity of abiotic change across the ecosystem (as a proportion) predicted over the next 50 years.<br />
+- extent_C2a = extent of abiotic change across the ecosystem (as a proportion) predicted over the next 50 years. Because the relative severity is calculated as the mean, the extent is 1 (100% of the ecosystem area).<br />
+- mean_severity_D1 = average relative severity of biotic change across the ecosystem (as a proportion) over the past 50 years.<br />
+- extent_D1 = extent of biotic change across the ecosystem (as a proportion) over the past 50 years. Because the relative severity is calculated as the mean, the extent is 1 (100% of the ecosystem area).<br />
+- mean_severity_D2b = average relative severity of biotic change across the ecosystem (as a proportion) predicted over a 50-year period containing the past, present and future.<br />
+- extent_D2b = extent of biotic change across the ecosystem (as a proportion) predicted over a 50-year period containing the past, present and future. Because the relative severity is calculated as the mean, the extent is 1 (100% of the ecosystem area).<br />
+- mean_severity_D3 = average relative severity of biotic change across the ecosystem (as a proportion) since ~ 1750.<br />
+- extent_D3 = extent of biotic change across the ecosystem (as a proportion) since ~ 1750. Because the relative severity is calculated as the mean, the extent is 1 (100% of the ecosystem area).</p>
 <pre class="r"><code># Load packages
 library(dplyr)
 library(tidyr)
 
 # Load data
-data &lt;- read.csv(&quot;~/Documents/*Career/*PhD/*Projects/2 - RLE indicators/Github script/Github_example_data_EHI.csv&quot;)
+data &lt;- read.csv(&quot;~/Desktop/Github_example_AmericanForests_EHI.csv&quot;) #fill in path to file
 
 # View data
 head(data)</code></pre>
-<pre><code>##   ecosystem realm region C1_severity C1_extent D1_severity D1_extent
-## 1         1     A      1         0.0         1        0.40       1.0
-## 2         2     A      1         0.0         1        0.10       1.0
-## 3         3     B      1         0.0         1        0.05       1.0
-## 4         4     B      2         0.0         1        0.10       1.0
-## 5         5     B      2         0.0         1        0.60       0.5
-## 6         6     A      2         0.1         1        0.12       1.0</code></pre>
-<p>Calculate the index using no groupings:</p>
+<pre><code>##   ecosystem     country mean_severity_C2a extent_C2a mean_severity_C2b
+## 1  Mangrove      Panama                NA         NA                NA
+## 2  Mangrove     Ecuador                NA         NA             0.168
+## 3  Mangrove El Salvador                NA         NA             0.331
+## 4  Mangrove    Colombia                NA         NA             0.370
+## 5  Mangrove  Costa Rica                NA         NA             0.296
+## 6  Mangrove      Mexico                NA         NA             0.213
+##   extent_C2b mean_severity_D1 extent_D1 mean_severity_D2b extent_D2b
+## 1         NA            0.257         1             0.366          1
+## 2          1            0.301         1             0.384          1
+## 3          1            0.000         1             0.616          1
+## 4          1            0.210         1             0.029          1
+## 5          1            0.458         1             0.578          1
+## 6          1            0.237         1             0.527          1
+##   mean_severity_D3 extent_D3
+## 1            0.271         1
+## 2            0.442         1
+## 3            0.048         1
+## 4            0.276         1
+## 5            0.542         1
+## 6            0.262         1</code></pre>
+<p>To calculate the index using no groupings where only one criteria (either criteria C or D) is available, include the parameter:<br />
+- one_criteria = TRUE</p>
+<p>The output above shows:<br />
+- total_count = the total number of ecosystems included in the index.<br />
+- count_non_zeros = the total number of ecosystems where the relative severity is greater than zero.<br />
+- EHI = the Ecosystem Health Index.<br />
+- lower and upper = the intervals are based on the quantiles aiming to capture the middle 95% of the data calcualted using the 2.5th and 97.5th percentiles.</p>
 <pre class="r"><code># Calculate the index values
-output &lt;- calcEHI(data,
-                  severity_C = &quot;C1_severity&quot;,
-                  extent_C = &quot;C1_extent&quot;,
-                  severity_D = &quot;D1_severity&quot;,
-                  extent_D = &quot;D1_extent&quot;)
+output_one &lt;- calcEHI(data,
+                  one_criteria = TRUE,
+                  extent = &quot;extent_C2a&quot;,
+                  severity = &quot;mean_severity_C2a&quot;)
 
 # View output
-head(output)</code></pre>
+head(output_one)</code></pre>
+<pre><code>## # A tibble: 1 x 5
+##   total_count count_non_zeros   EHI  lower upper
+##         &lt;int&gt;           &lt;int&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;
+## 1         222             222 0.605 0.0084     1</code></pre>
+<p>To calculate the index using no groupings where both criteria C and D are available, use the following code:</p>
+<pre class="r"><code># Calculate the index values
+output_two &lt;- calcEHI(data,
+                  one_criteria = FALSE,
+                  severity_C = &quot;mean_severity_C2b&quot;,
+                  extent_C = &quot;extent_C2b&quot;,
+                  severity_D = &quot;mean_severity_D2b&quot;,
+                  extent_D = &quot;extent_D2b&quot;)
+
+# View output
+head(output_two)</code></pre>
 <pre><code>## # A tibble: 1 x 5
 ##   total_count count_non_zeros   EHI lower upper
 ##         &lt;int&gt;           &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1          13              13 0.640  0.03 0.987</code></pre>
+## 1         425             425 0.628 0.202     1</code></pre>
 <p>Calculate the index using one grouping:</p>
 <pre class="r"><code># Calculate the index values
 output_one_grouping &lt;- calcEHI(data,
-                               severity_C = &quot;C1_severity&quot;,
-                               extent_C = &quot;C1_extent&quot;,
-                               severity_D = &quot;D1_severity&quot;,
-                               extent_D = &quot;D1_extent&quot;,
-                               group = &quot;region&quot;)
+                               one_criteria = TRUE,
+                               severity = &quot;mean_severity_D1&quot;,
+                               extent = &quot;extent_D1&quot;,
+                               group_1 = &quot;ecosystem&quot;)
 
 # View output
 head(output_one_grouping)</code></pre>
-<pre><code>## # A tibble: 3 x 6
-##   group total_count count_non_zeros   EHI  lower upper
-##   &lt;int&gt;       &lt;int&gt;           &lt;int&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;
-## 1     1           3               3 0.801 0.615  0.947
-## 2     2           4               4 0.822 0.0525 0.899
-## 3     3           6               6 0.505 0.137  0.989</code></pre>
+<pre><code>## # A tibble: 6 x 6
+##   group_1                     total_count count_non_zeros   EHI lower upper
+##   &lt;fct&gt;                             &lt;int&gt;           &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 Cool Temperate Forest                38              38 0.908 0.784 0.981
+## 2 Mangrove                             36              36 0.808 0.578 1    
+## 3 Temperate Flooded &amp; Swamp …          28              28 0.866 0.591 0.999
+## 4 Tropical Dry Forest &amp; Wood…          81              81 0.830 0.663 1    
+## 5 Tropical Flooded &amp; Swamp F…         141             141 0.820 0.604 1    
+## 6 Tropical Lowland Humid For…          91              91 0.837 0.687 1</code></pre>
+<p>Calculate the index using one grouping:</p>
+<pre class="r"><code># Calculate the index values
+output_two_groupings &lt;- calcEHI(data,
+                               one_criteria = TRUE,
+                               severity = &quot;mean_severity_D1&quot;,
+                               extent = &quot;extent_D1&quot;,
+                               group_1 = &quot;ecosystem&quot;, 
+                               group_2 = &quot;country&quot;)
+
+# View output
+head(output_two_groupings)</code></pre>
+<pre><code>## # A tibble: 6 x 7
+## # Groups:   group_1 [2]
+##   group_1        group_2      total_count count_non_zeros   EHI lower upper
+##   &lt;fct&gt;          &lt;fct&gt;              &lt;int&gt;           &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 Cool Temperat… Argentina              5               5 0.859 0.788 0.967
+## 2 Cool Temperat… Canada                10              10 0.905 0.794 0.990
+## 3 Cool Temperat… Chile                  5               5 0.939 0.914 0.964
+## 4 Cool Temperat… Mexico                 2               2 0.889 0.873 0.905
+## 5 Cool Temperat… United Stat…          16              16 0.918 0.845 0.974
+## 6 Mangrove       Antigua and…           1               1 0.75  0.75  0.75</code></pre>
 </div>
 </div>
 </div>

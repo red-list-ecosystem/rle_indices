@@ -198,9 +198,9 @@ $(document).ready(function () {
 <div id="index-overview" class="section level2">
 <h2>Index overview</h2>
 <p>The Red List Index of ecosystems (RLIE) measures trends in ecosystem collapse risk. It uses the risk categories defined based on IUCN Red List of Ecosystems risk assessments. The index complements the Red List Index of species survival, providing comparable information about ecosystems risk. It is calculated for the overall risk category assigned to each ecosystem and separately for each criterion.</p>
-<p>This information sheet provides the code used to calculate the the index and an example of each step.</p>
+<p>This information sheet provides the code used to calculate the index and an example of each step.</p>
 <p><strong>Reference:</strong><br />
-Rowland, J. A., Bland, L. M., Keith, D. A., Bignoli, D. J., Burgman, M., Etter, A., Ferrer-Paris, J. R., Miller, R. M. and Nicholson, E. (2019) Ecosystem indices to support global biodiversity conservation. Conservation Letters. e12680</p>
+Rowland, J. A., Bland, L. M., Keith, D. A., Bignoli, D. J., Burgman, M., Etter, A., Ferrer-Paris, J. R., Miller, R. M. and Nicholson, E. (2020) Ecosystem indices to support global biodiversity conservation. Conservation Letters. e12680</p>
 </div>
 <div id="set-up-functions" class="section level2">
 <h2>Set up functions</h2>
@@ -236,7 +236,7 @@ Rowland, J. A., Bland, L. M., Keith, D. A., Bignoli, D. J., Burgman, M., Etter, 
 </div>
 <div id="define-highest-risk-category" class="section level3">
 <h3>2) Define highest risk category</h3>
-<p>The function <em>maxcategory</em> uses the category ranks defined by the function <em>danger</em>. If the risk categories for each sub-criteria are listed in separate column, the function <em>maxcategory</em> selects the highest risk category across the columns (i.e. subcritera) for each criteria.</p>
+<p>The function <em>maxcategory</em> uses the category ranks defined by the function <em>danger</em>. If the risk categories for each sub-criteria are listed in separate columns, the function <em>maxcategory</em> selects the highest risk category across the columns (i.e. subcritera) for each criteria.</p>
 <pre class="r"><code>maxcategory &lt;- function (x) {
   
   # Set up
@@ -257,35 +257,44 @@ Rowland, J. A., Bland, L. M., Keith, D. A., Bignoli, D. J., Burgman, M., Etter, 
   category_list &lt;- c(highestvalue, position)
   return(category_list)
 }</code></pre>
-<div id="example" class="section level4">
-<h4>Example</h4>
-<p>This test data set are available from github.</p>
+<div id="forests-of-the-americas-example" class="section level4">
+<h4>Forests of the Americas example</h4>
+<p>An example dataset of the Red list of Ecosystem assessments of the forests across the Americas is available from github.The assessments are from the continental-scale RLE assessments of 136 temperate and tropical forests across 51 countries/territories in the Caribbean and Americas (Ferrer-Paris et al., 2018).</p>
+<p><strong>Reference:</strong><br />
+Ferrer-Paris, J. R., Zager, I., Keith, D. A., Oliveira-Miranda, M. A., Rodríguez, J. P., Josse, C., … Barrow, E. (2018). An ecosystem risk assessment of temperate and tropical forests of the Americas with an outlook on future conservation strategies. Conservation Letters, 12. <a href="https://doi.org/10.1111/conl.12623" class="uri">https://doi.org/10.1111/conl.12623</a></p>
+<p>The columns in the dataframe are:<br />
+- ecosystem = type of ecosystem.<br />
+- country = country containing part of the ecosystem distribution.<br />
+- criterion_A = risk category assigned based on Criterion A - the change in ecosystem area.<br />
+- criterion_B = risk category assigned based on Criterion B - the whether the ecosystem is spatially restricted.<br />
+- criterion_C = risk category assigned based on Criterion C - the change in abiotic conditions.<br />
+- criterion_D = risk category assigned based on Criterion D - the change in biotic processes and interactions.</p>
 <pre class="r"><code># Load data
-data &lt;- read.csv(&quot;~/Documents/*Career/*PhD/*Projects/2 - RLE indicators/Github script/Github_example_data.csv&quot;)
+data &lt;- read.csv(&quot;~/Desktop/Github_example_AmericanForests_RLIE.csv&quot;) #fill in path to file
 
 # View data
 head(data)</code></pre>
-<pre><code>##   ecosystem realm region criterion_A1 criterion_A2 criterion_A3
-## 1         1     A      1           LC           LC           LC
-## 2         2     A      1           LC           LC           LC
-## 3         3     B      1           LC           LC           LC
-## 4         4     B      2           LC           LC           VU
-## 5         5     B      2           LC           LC           LC
-## 6         6     A      2           LC           LC           LC
-##   criterion_B1 criterion_B2 criterion_B3 criterion_C1 criterion_C2
-## 1           LC           LC           LC           VU           VU
-## 2           LC           LC           LC           VU           LC
-## 3           LC           LC           LC           EN           EN
-## 4           LC           LC           LC           VU           LC
-## 5           LC           LC           LC           EN           EN
-## 6           LC           LC           LC           EN           EN
-##   criterion_C3 criterion_D1 criterion_D2 criterion_D3 criterion_E
-## 1           LC           LC           LC           LC          NE
-## 2           LC           LC           VU           LC          NE
-## 3           LC           LC           EN           VU          NE
-## 4           VU           LC           NE           EN          NE
-## 5           LC           LC           NE           LC          NE
-## 6           LC           LC           NE           LC          NE</code></pre>
+<pre><code>##   ecosystem   country criterion_A1 criterion_A2b criterion_A3 criterion_B1
+## 1  Mangrove      Peru           DD            NT           DD           LC
+## 2  Mangrove   Ecuador           VU            EN           NT           LC
+## 3  Mangrove  Colombia           VU            LC           VU           LC
+## 4  Mangrove    Panama           VU            VU           EN           LC
+## 5  Mangrove Nicaragua           DD            NT           DD           LC
+## 6  Mangrove    Mexico           EN            NT           EN           LC
+##   criterion_B2 criterion_B3 criterion_C2a criterion_C2b criterion_D1
+## 1           NT           LC            DD            NT           DD
+## 2           LC           LC            DD            LC           VU
+## 3           LC           LC            DD            VU           LC
+## 4           LC           LC            DD            DD           VU
+## 5           LC           LC            DD            LC           LC
+## 6           LC           LC            DD            LC           VU
+##   criterion_D2b criterion_D3
+## 1            VU           DD
+## 2            NT           LC
+## 3            LC           LC
+## 4            NT           LC
+## 5            NT           LC
+## 6            VU           LC</code></pre>
 <pre class="r"><code># Set up - these will form the new columns with the highest risk category for each criteria and overall
 n &lt;- nrow(data)
 overall &lt;- as.character(n)
@@ -296,28 +305,28 @@ criterion_D &lt;- as.character(n)
 
 # Calculate overall risk category for criterion A
 for(i in 1:n){
-  A &lt;- data[i, 4:6] # alter the numbers for the relevant columns in a dataset
+  A &lt;- data[i, 3:5] # alter the numbers for the relevant columns in a dataset
   results &lt;- maxcategory(A)
   criterion_A[i] &lt;- results[1]
 }
 
 # Calculate overall risk category for criterion B
 for(i in 1:n){
-  B &lt;- data[i, 7:9]  # alter the numbers for the relevant columns in a dataset
+  B &lt;- data[i, 6:8]  # alter the numbers for the relevant columns in a dataset
   results &lt;- maxcategory(B)
   criterion_B[i] &lt;- results[1]
 }
 
 # Calculate overall risk category for criterion C
 for(i in 1:n){
-  C &lt;- data[i, 10:12]  # alter the numbers for the relevant columns in a dataset
+  C &lt;- data[i, 9:10]  # alter the numbers for the relevant columns in a dataset
   results &lt;- maxcategory(C)
   criterion_C[i] &lt;- results[1]
 }
 
 # Calculate overall risk category for criterion D
 for(i in 1:n){
-  D &lt;- data[i, 13:15]  # alter the numbers for the relevant columns in a dataset
+  D &lt;- data[i, 11:13]  # alter the numbers for the relevant columns in a dataset
   results &lt;- maxcategory(D)
   criterion_D[i] &lt;- results[1]
 }
@@ -328,9 +337,9 @@ data$criterion_B &lt;- unlist(criterion_B)
 data$criterion_C &lt;- unlist(criterion_C)
 data$criterion_D &lt;- unlist(criterion_D)
 
-# Calculate overall risk category using piscs
+# Calculate overall risk category across columns
 for(i in 1:n){
-overall_risk &lt;- data[i, 16:20]  # alter the numbers for the relevant columns in a dataset
+overall_risk &lt;- data[i, 14:17]  # alter the numbers for the relevant columns in a dataset
 results &lt;- maxcategory(overall_risk)
 overall[i] &lt;- results[1]
 }
@@ -340,40 +349,40 @@ data$overall &lt;- unlist(overall)
 
 # View output
 head(data)</code></pre>
-<pre><code>##   ecosystem realm region criterion_A1 criterion_A2 criterion_A3
-## 1         1     A      1           LC           LC           LC
-## 2         2     A      1           LC           LC           LC
-## 3         3     B      1           LC           LC           LC
-## 4         4     B      2           LC           LC           VU
-## 5         5     B      2           LC           LC           LC
-## 6         6     A      2           LC           LC           LC
-##   criterion_B1 criterion_B2 criterion_B3 criterion_C1 criterion_C2
-## 1           LC           LC           LC           VU           VU
-## 2           LC           LC           LC           VU           LC
-## 3           LC           LC           LC           EN           EN
-## 4           LC           LC           LC           VU           LC
-## 5           LC           LC           LC           EN           EN
-## 6           LC           LC           LC           EN           EN
-##   criterion_C3 criterion_D1 criterion_D2 criterion_D3 criterion_E
-## 1           LC           LC           LC           LC          NE
-## 2           LC           LC           VU           LC          NE
-## 3           LC           LC           EN           VU          NE
-## 4           VU           LC           NE           EN          NE
-## 5           LC           LC           NE           LC          NE
-## 6           LC           LC           NE           LC          NE
-##   criterion_A criterion_B criterion_C criterion_D overall
-## 1          LC          LC          VU          LC      VU
-## 2          LC          LC          VU          VU      VU
-## 3          LC          LC          EN          EN      EN
-## 4          VU          LC          VU          EN      EN
-## 5          LC          LC          EN          LC      EN
-## 6          LC          LC          EN          LC      EN</code></pre>
+<pre><code>##   ecosystem   country criterion_A1 criterion_A2b criterion_A3 criterion_B1
+## 1  Mangrove      Peru           DD            NT           DD           LC
+## 2  Mangrove   Ecuador           VU            EN           NT           LC
+## 3  Mangrove  Colombia           VU            LC           VU           LC
+## 4  Mangrove    Panama           VU            VU           EN           LC
+## 5  Mangrove Nicaragua           DD            NT           DD           LC
+## 6  Mangrove    Mexico           EN            NT           EN           LC
+##   criterion_B2 criterion_B3 criterion_C2a criterion_C2b criterion_D1
+## 1           NT           LC            DD            NT           DD
+## 2           LC           LC            DD            LC           VU
+## 3           LC           LC            DD            VU           LC
+## 4           LC           LC            DD            DD           VU
+## 5           LC           LC            DD            LC           LC
+## 6           LC           LC            DD            LC           VU
+##   criterion_D2b criterion_D3 criterion_A criterion_B criterion_C
+## 1            VU           DD          NT          NT          NT
+## 2            NT           LC          EN          LC          LC
+## 3            LC           LC          VU          LC          VU
+## 4            NT           LC          EN          LC          DD
+## 5            NT           LC          NT          LC          LC
+## 6            VU           LC          EN          LC          LC
+##   criterion_D overall
+## 1          VU      VU
+## 2          VU      EN
+## 3          LC      VU
+## 4          VU      EN
+## 5          NT      NT
+## 6          VU      EN</code></pre>
 </div>
 </div>
 </div>
 <div id="assign-ordinal-values-to-risk-categories" class="section level2">
 <h2>3) Assign ordinal values to risk categories</h2>
-<p>The function <em>calcWeights</em> allocates each risk category an ordinal rank from 0 (Least Concern) to 5 (Collapsed). This step ins included for informational purposes only and can be skipped because the the <em>calcRLIE</em> function described below includes this step.</p>
+<p>The function <em>calcWeights</em> allocates each risk category an ordinal rank from 0 (Least Concern) to 5 (Collapsed). This step is included for informational purposes only and can be skipped because the the <em>calcRLIE</em> function described below includes this step.</p>
 <p>The ordinal ranks are: - Not Evaluated = Excluded - Data Deficient = Excluded - Least Concern = 0<br />
 - Near Threatened = 1<br />
 - Vulnerable = 2<br />
@@ -397,8 +406,9 @@ head(data)</code></pre>
                                                             .data[[RLE_criteria]] == &quot;NT&quot; ~ 1,
                                                             .data[[RLE_criteria]] == &quot;LC&quot; ~ 0))
 }</code></pre>
-<div id="example-1" class="section level4">
+<div id="example" class="section level4">
 <h4>Example</h4>
+<p>Calculate the weights for the risk categories for one criteria, such as Criterion A:</p>
 <pre class="r"><code># Install packages
 library(dplyr)
 library(tidyr)
@@ -408,45 +418,45 @@ output_weights &lt;- calcWeights(data, RLE_criteria = &quot;criterion_A&quot;)
 
 # View output
 head(output_weights)</code></pre>
-<pre><code>##   ecosystem realm region criterion_A1 criterion_A2 criterion_A3
-## 1         1     A      1           LC           LC           LC
-## 2         2     A      1           LC           LC           LC
-## 3         3     B      1           LC           LC           LC
-## 4         4     B      2           LC           LC           VU
-## 5         5     B      2           LC           LC           LC
-## 6         6     A      2           LC           LC           LC
-##   criterion_B1 criterion_B2 criterion_B3 criterion_C1 criterion_C2
-## 1           LC           LC           LC           VU           VU
-## 2           LC           LC           LC           VU           LC
-## 3           LC           LC           LC           EN           EN
-## 4           LC           LC           LC           VU           LC
-## 5           LC           LC           LC           EN           EN
-## 6           LC           LC           LC           EN           EN
-##   criterion_C3 criterion_D1 criterion_D2 criterion_D3 criterion_E
-## 1           LC           LC           LC           LC          NE
-## 2           LC           LC           VU           LC          NE
-## 3           LC           LC           EN           VU          NE
-## 4           VU           LC           NE           EN          NE
-## 5           LC           LC           NE           LC          NE
-## 6           LC           LC           NE           LC          NE
-##   criterion_A criterion_B criterion_C criterion_D overall category_weights
-## 1          LC          LC          VU          LC      VU                0
-## 2          LC          LC          VU          VU      VU                0
-## 3          LC          LC          EN          EN      EN                0
-## 4          VU          LC          VU          EN      EN                2
-## 5          LC          LC          EN          LC      EN                0
-## 6          LC          LC          EN          LC      EN                0</code></pre>
+<pre><code>##   ecosystem   country criterion_A1 criterion_A2b criterion_A3 criterion_B1
+## 1  Mangrove      Peru           DD            NT           DD           LC
+## 2  Mangrove   Ecuador           VU            EN           NT           LC
+## 3  Mangrove  Colombia           VU            LC           VU           LC
+## 4  Mangrove    Panama           VU            VU           EN           LC
+## 5  Mangrove Nicaragua           DD            NT           DD           LC
+## 6  Mangrove    Mexico           EN            NT           EN           LC
+##   criterion_B2 criterion_B3 criterion_C2a criterion_C2b criterion_D1
+## 1           NT           LC            DD            NT           DD
+## 2           LC           LC            DD            LC           VU
+## 3           LC           LC            DD            VU           LC
+## 4           LC           LC            DD            DD           VU
+## 5           LC           LC            DD            LC           LC
+## 6           LC           LC            DD            LC           VU
+##   criterion_D2b criterion_D3 criterion_A criterion_B criterion_C
+## 1            VU           DD          NT          NT          NT
+## 2            NT           LC          EN          LC          LC
+## 3            LC           LC          VU          LC          VU
+## 4            NT           LC          EN          LC          DD
+## 5            NT           LC          NT          LC          LC
+## 6            VU           LC          EN          LC          LC
+##   criterion_D overall category_weights
+## 1          VU      VU                1
+## 2          VU      EN                3
+## 3          LC      VU                2
+## 4          VU      EN                3
+## 5          NT      NT                1
+## 6          VU      EN                3</code></pre>
 </div>
 </div>
 <div id="calculate-the-index" class="section level2">
 <h2>4) Calculate the index</h2>
-<p>The function <em>calcRLIe</em> selects the column in a dataframe listing the risk categories and allocates the ordinal ranks allocated by the function <em>calcWeights</em> (see above). These ordinal ranks are used to calculate the Red List Index for Ecosystems (RLIE) and percentiles capturing the middle 95% of the data. The RLIE ranges from zero (all ecosystems Collapsed) to one (all Least Concern).</p>
+<p>The function <em>calcRLIe</em> selects the column in a dataframe listing the risk categories, and allocates the ordinal ranks specified by the function <em>calcWeights</em> (see above). These ordinal ranks are used to calculate the Red List Index for Ecosystems (RLIE) and percentiles capturing the middle 95% of the data. The RLIE ranges from zero (all ecosystems Collapsed) to one (all Least Concern).</p>
 <p>Parameters are: - eco_data = dataframe<br />
 - RLE_criteria = column name of criterion of interest<br />
-- group1 = the factor (optional) you want to group the index by. Where not specified, an RLIe will be calculated based on all ecosystems (output = single score)<br />
+- group1 = the factor (optional) you want to group the index by. Where not specified, an RLIE will be calculated based on all ecosystems (output = single score)<br />
 - group2 = the second factor (optional) you want to group the index by</p>
 <p>Parameters ‘group1’ and ‘group2’ are optional.</p>
-<pre class="r"><code>calcRLIe &lt;- function(eco_data, RLE_criteria, group1, group2){
+<pre class="r"><code>calcRLIE &lt;- function(eco_data, RLE_criteria, group1, group2){
   
   # Filter out rows with NE and DD from selected column
   filter_data &lt;- dplyr::filter(eco_data, .data[[RLE_criteria]] != &quot;NE&quot; &amp; .data[[RLE_criteria]] != &quot;DD&quot;)
@@ -455,7 +465,7 @@ head(output_weights)</code></pre>
   weight_data &lt;- calcWeights(filter_data, RLE_criteria)
   weight_data &lt;- drop_na(weight_data, .data[[RLE_criteria]])
   
-  # Calculate index score for the (i) whole dataset, (ii) for one one defined grouping, and (iii) for two nested groupings:
+  # Calculate index score for the (i) whole dataset, (ii) for one defined grouping, and (iii) for two nested groupings:
   
   ## (i) Calculate overall index score using all rows
   if (missing(group1)) {
@@ -486,57 +496,72 @@ head(output_weights)</code></pre>
   
   # Calculate index scores
   index_scores &lt;- mutate(summed_weights, 
-                         RLIe = 1 - (total_weight/(total_count * 5)),
-                         Criteria = RLE_criteria)
+                         RLIE = 1 - (total_weight/(total_count * 5)),
+                         criteria = RLE_criteria)
   
   # Return dataframe with index scores
   return(index_scores)
 }</code></pre>
-<div id="example-2" class="section level4">
+<div id="example-1" class="section level4">
 <h4>Example</h4>
-<p>Calculate the index using no groupings:</p>
+<p>Calculate the index using no groupings. The output includes:</p>
+<ul>
+<li>total_weight = sum of all weights included in the index.<br />
+</li>
+<li>total_count = the total number of ecosystems included in the index.<br />
+</li>
+<li>lower and upper = the intervals are based on the quantiles aiming to capture the middle 95% of the data calcualted using the 2.5th and 97.5th percentiles.<br />
+</li>
+<li>RLIE = the Ecosystem Area Index.<br />
+</li>
+<li>criteria = the criteria used to calculate the index.</li>
+</ul>
 <pre class="r"><code># Calculate the index values
-output &lt;- calcRLIe(data,
+output &lt;- calcRLIE(data,
                    RLE_criteria = &quot;criterion_A&quot;)
 
 # View output
 head(output)</code></pre>
 <pre><code>## # A tibble: 1 x 6
-##   total_weight total_count upper lower  RLIe Criteria   
+##   total_weight total_count upper lower  RLIE criteria   
 ##          &lt;dbl&gt;       &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;      
-## 1            5          13     1  0.46 0.923 criterion_A</code></pre>
-<p>Calculate the index using one grouping:</p>
+## 1          955         507     1 0.200 0.623 criterion_A</code></pre>
+<p>Calculate the index using one grouping, such as the ecosystem type:</p>
 <pre class="r"><code># Calculate the index values
-output_one_grouping &lt;- calcRLIe(data,
+output_one_grouping &lt;- calcRLIE(data,
                                 RLE_criteria = &quot;criterion_A&quot;,
-                                group1 = &quot;realm&quot;)
+                                group1 = &quot;ecosystem&quot;)
 
 # View output
 head(output_one_grouping)</code></pre>
-<pre><code>## # A tibble: 2 x 7
-##   group1 total_weight total_count upper lower  RLIe Criteria   
-##   &lt;fct&gt;         &lt;dbl&gt;       &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;      
-## 1 A                 0           7     1 1     1     criterion_A
-## 2 B                 5           6     1 0.425 0.833 criterion_A</code></pre>
-<p>Calculate the index using two groupings where ecosystems are grouped by realm and continent:</p>
+<pre><code>## # A tibble: 6 x 7
+##   group1               total_weight total_count upper lower  RLIE criteria 
+##   &lt;fct&gt;                       &lt;dbl&gt;       &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    
+## 1 Cool Temperate Fore…           62          30     1 0.200 0.587 criterio…
+## 2 Mangrove                       94          47     1 0.200 0.6   criterio…
+## 3 Temperate Flooded &amp;…           55          25     1 0.200 0.56  criterio…
+## 4 Tropical Dry Forest…          198          90     1 0.200 0.56  criterio…
+## 5 Tropical Flooded &amp; …          221         133     1 0.200 0.668 criterio…
+## 6 Tropical Lowland Hu…          174         106     1 0.200 0.672 criterio…</code></pre>
+<p>Calculate the index using two groupings where ecosystems are grouped by ecosystem type and country:</p>
 <pre class="r"><code># Calculate the index values
-output_two_groupings &lt;- calcRLIe(data,
+output_two_groupings &lt;- calcRLIE(data,
                                  RLE_criteria = &quot;criterion_A&quot;,
-                                 group1 = &quot;realm&quot;,
-                                 group2 = &quot;region&quot;)
+                                 group1 = &quot;ecosystem&quot;,
+                                 group2 = &quot;country&quot;)
 
 # View output
 head(output_two_groupings)</code></pre>
 <pre><code>## # A tibble: 6 x 8
 ## # Groups:   group1 [2]
-##   group1 group2 total_weight total_count upper lower  RLIe Criteria   
-##   &lt;fct&gt;   &lt;int&gt;        &lt;dbl&gt;       &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;      
-## 1 A           1            0           2  1    1       1   criterion_A
-## 2 A           2            0           2  1    1       1   criterion_A
-## 3 A           3            0           3  1    1       1   criterion_A
-## 4 B           1            0           1  1    1       1   criterion_A
-## 5 B           2            2           2  0.99 0.61    0.8 criterion_A
-## 6 B           3            3           3  1    0.430   0.8 criterion_A</code></pre>
+##   group1     group2     total_weight total_count upper lower  RLIE criteria
+##   &lt;fct&gt;      &lt;fct&gt;             &lt;dbl&gt;       &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;   
+## 1 Cool Temp… Argentina             1           2 0.995 0.805 0.9   criteri…
+## 2 Cool Temp… Canada               25          10 0.910 0.200 0.5   criteri…
+## 3 Cool Temp… Chile                 0           2 1     1     1     criteri…
+## 4 Cool Temp… Mexico                2           1 0.6   0.6   0.6   criteri…
+## 5 Cool Temp… United St…           34          15 1     0.200 0.547 criteri…
+## 6 Mangrove   Antigua a…            2           1 0.6   0.6   0.6   criteri…</code></pre>
 </div>
 </div>
 <div id="author-information" class="section level2">

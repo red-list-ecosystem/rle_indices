@@ -197,8 +197,10 @@ $(document).ready(function () {
 
 <div id="index-overview" class="section level2">
 <h2>Index overview</h2>
-<p>The Ecosystem Area Index (EAI) measures trends measures trends in changes in ecosystem area towards ecosystem collapse. The EAI is the geometric mean of the proportion of ecosystem area remaining over a given timeframe relative to the initial area and an ecosystem-specific collapse threshold. It uses data on ecosystem area and aea-based collapse threshold as defined based on IUCN Red List of Ecosystems risk assessments.</p>
-<p>This information sheet provides the code used to calculate the the index and an example of each step.</p>
+<p>The Ecosystem Area Index (EAI) measures trends in changes in ecosystem area towards ecosystem collapse. The EAI is the geometric mean of the proportion of ecosystem area remaining over a given timeframe relative to the initial area and an ecosystem-specific collapse threshold. It uses data on ecosystem area and an area-based collapse threshold as defined based on IUCN Red List of Ecosystems risk assessments.</p>
+<p>This information sheet provides the code used to calculate the index and an example of each step.</p>
+<p><strong>Reference:</strong><br />
+Rowland, J. A., Bland, L. M., Keith, D. A., Bignoli, D. J., Burgman, M., Etter, A., Ferrer-Paris, J. R., Miller, R. M. and Nicholson, E. (2020) Ecosystem indices to support global biodiversity conservation. Conservation Letters. 116, e12680</p>
 </div>
 <div id="set-up-functions" class="section level2">
 <h2>Set up functions</h2>
@@ -207,9 +209,10 @@ $(document).ready(function () {
 <p>The function <em>calcEAI</em> selects the column in a dataframe listing the proportion of the ecosystem area lost over a given timeframe towards or away from the point where the ecosystem collapses, and percentiles capturing the middle 95% of the data.</p>
 <p>Parameters are:<br />
 - eco_data = dataframe<br />
-- RLE_criteria = name of the column with the Red List of Ecosystems criterion of interest<br />
-- pct_change = proportion of the ecosystem area lost over a given timeframe towards ecosytsem collapse - group1 = the factor (optional) you want to group the index by. Where not specified, an EAI will be calculated based on all ecosystems (output = single score)<br />
-- group2 = the second factor (optional) you want to group the index by</p>
+- RLE_criteria = name of the column with the Red List of Ecosystems criterion of interest.<br />
+- pct_change = proportion of the ecosystem area lost over a given timeframe towards ecosystem collapse.<br />
+- group1 = the factor (optional) you want to group the index by. Where not specified, an EAI will be calculated based on all ecosystems (output = single score).<br />
+- group2 = the second factor (optional) you want to group the index by.</p>
 <pre class="r"><code>calcEAI &lt;- function(eco_data, RLE_criteria, pct_change, group1, group2){
   
   filter_data &lt;- filter(eco_data, RLE_criteria != &quot;NE&quot; &amp; RLE_criteria != &quot;DD&quot;)
@@ -226,7 +229,7 @@ $(document).ready(function () {
       values &lt;- group_by(area_Pct, group1 = area_Pct[[group1]])
     } else {
       values &lt;- group_by(area_Pct, group1 = area_Pct[[group1]],
-                                  group2 = area_Pct[[group2]])
+                                   group2 = area_Pct[[group2]])
     }
   }
 
@@ -239,72 +242,103 @@ $(document).ready(function () {
 
   return(index_scores)
 }</code></pre>
-<div id="example" class="section level4">
-<h4>Example</h4>
-<p>This test data set are available from github.</p>
+<div id="forests-of-the-americas-example" class="section level4">
+<h4>Forests of the Americas example</h4>
+<p>An example dataset of the Red list of Ecosystem assessments of the forests across the Americas is available from github.The assessments are from the continental-scale RLE assessments of 136 temperate and tropical forests across 51 countries/territories in the Caribbean and Americas (Ferrer-Paris et al., 2018).</p>
+<p><strong>Reference:</strong><br />
+Ferrer-Paris, J. R., Zager, I., Keith, D. A., Oliveira-Miranda, M. A., Rodríguez, J. P., Josse, C., … Barrow, E. (2018). An ecosystem risk assessment of temperate and tropical forests of the Americas with an outlook on future conservation strategies. Conservation Letters, 12. <a href="https://doi.org/10.1111/conl.12623" class="uri">https://doi.org/10.1111/conl.12623</a></p>
+<p>The columns in the dataframe are:<br />
+- ecosystem = type of ecosystem.<br />
+- country = country containing part of the ecosystem distribution.<br />
+- recent_area_lost = proportion of the ecosystem area lost over the past 50 years.<br />
+- future_area_lost = proportion of the ecosystem area lost over the next 50 years (or any 50-year timeframe across the past, present and future).<br />
+- historical_area_lost = proportion of the ecosystem area lost since ~1750.<br />
+- criterion_A1 = risk category assigned based on the recent_area_lost.<br />
+- criterion_A2b = risk category assigned based on the future_area_lost.<br />
+- criterion_A3 = risk category assigned based on the historical_area_lost.</p>
 <pre class="r"><code># Load packages
 library(dplyr)
 
 # Load data
-data &lt;- read.csv(&quot;~/Documents/*Career/*PhD/*Projects/2 - RLE indicators/Github script/Github_example_data_EAI.csv&quot;)
+data &lt;- read.csv(&quot;~/Desktop/Github_example_AmericanForests_EAI.csv&quot;) #fill in path to file
 
 # View data
 head(data)</code></pre>
-<pre><code>##   ecosystem realm region criterion_A1 area_lost
-## 1         1     A      1           A1      0.40
-## 2         2     A      1           A1      0.10
-## 3         3     B      1           A1      0.05
-## 4         4     B      2           A1      0.10
-## 5         5     B      2           A1      0.60
-## 6         6     A      2           A1      0.12</code></pre>
-<p>Calculate the index using no groupings:</p>
+<pre><code>##   ecosystem   country recent_area_lost criterion_A1 future_area_lost
+## 1  Mangrove  Honduras            0.477           VU            0.954
+## 2  Mangrove      Peru            0.000           DD            0.882
+## 3  Mangrove    Panama            0.452           VU            0.426
+## 4  Mangrove Guatemala            0.707           DD            0.493
+## 5  Mangrove    Mexico            0.597           EN            0.328
+## 6  Mangrove Nicaragua            0.646           DD            0.876
+##   criterion_A2b historical_area_lost criterion_A3
+## 1            CR                0.784           EN
+## 2            NT                0.000           DD
+## 3            VU                0.705           EN
+## 4            NT                0.914           CR
+## 5            NT                0.883           EN
+## 6            NT                0.879           DD</code></pre>
+<p>Calculate the index for sub-criteria A1 (recent change over the past 50 years) using no groupings. The output above shows:<br />
+- total_count = the total number of ecosystems included in the index.<br />
+- count_non_zeros = the total number of ecosystems where the area remaining is greater than 0 km2.<br />
+- EAI = the Ecosystem Area Index.<br />
+- lower and upper = the intervals are based on the quantiles aiming to capture the middle 95% of the data calcualted using the 2.5th and 97.5th percentiles.</p>
 <pre class="r"><code># Calculate the index values
 output &lt;- calcEAI(data,
-                  pct_change = &quot;area_lost&quot;,
-                  RLE_criteria = &quot;criterion&quot;)
+                  pct_change = &quot;recent_area_lost&quot;,
+                  RLE_criteria = &quot;criterion_A1&quot;)
 
 # View output
 head(output)</code></pre>
 <pre><code>## # A tibble: 1 x 5
 ##   total_count count_non_zeros   EAI lower upper
 ##         &lt;int&gt;           &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1          13              13 0.857  0.46     1</code></pre>
-<p>Calculate the index using one grouping:</p>
+## 1         583             583 0.664 0.127     1</code></pre>
+<p>Calculate the index using one grouping, in this case, by ecosystem type:</p>
 <pre class="r"><code># Calculate the index values
 output_one_grouping &lt;- calcEAI(data,
-                               pct_change = &quot;area_lost&quot;,
-                               RLE_criteria = &quot;criterion&quot;,
-                               group1 = &quot;realm&quot;)
+                               pct_change = &quot;recent_area_lost&quot;,
+                               RLE_criteria = &quot;criterion_A1&quot;,
+                               group1 = &quot;ecosystem&quot;)
 
 # View output
 head(output_one_grouping)</code></pre>
-<pre><code>## # A tibble: 2 x 6
-##   group1 total_count count_non_zeros   EAI lower upper
-##   &lt;fct&gt;        &lt;int&gt;           &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1 A                7               7 0.879 0.638 1    
-## 2 B                6               6 0.832 0.462 0.999</code></pre>
-<p>Calculate the index using two groupings where ecosystems are grouped by realm and continent:</p>
+<pre><code>## # A tibble: 6 x 6
+##   group1                     total_count count_non_zeros   EAI  lower upper
+##   &lt;fct&gt;                            &lt;int&gt;           &lt;int&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;
+## 1 Cool Temperate Forest               38              38 0.716 0.202  0.995
+## 2 Mangrove                            51              51 0.709 0.0733 1    
+## 3 Temperate Flooded &amp; Swamp…          30              30 0.593 0.307  0.966
+## 4 Tropical Dry Forest &amp; Woo…         104             104 0.586 0.123  1    
+## 5 Tropical Flooded &amp; Swamp …         164             164 0.665 0.167  1    
+## 6 Tropical Lowland Humid Fo…         107             107 0.735 0.142  1</code></pre>
+<p>Calculate the index using two groupings where ecosystems are grouped by ecosystem type and country.</p>
 <pre class="r"><code># Calculate the index values
 output_two_groupings &lt;- calcEAI(data,
-                                pct_change = &quot;area_lost&quot;,
-                                RLE_criteria = &quot;criterion&quot;,
-                                group1 = &quot;realm&quot;,
-                                group2 = &quot;region&quot;)
+                                pct_change = &quot;recent_area_lost&quot;,
+                                RLE_criteria = &quot;criterion_A1&quot;,
+                                group1 = &quot;ecosystem&quot;,
+                                group2 = &quot;country&quot;)
 
 # View output
 head(output_two_groupings)</code></pre>
 <pre><code>## # A tibble: 6 x 7
 ## # Groups:   group1 [2]
-##   group1 group2 total_count count_non_zeros   EAI lower upper
-##   &lt;fct&gt;   &lt;int&gt;       &lt;int&gt;           &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1 A           1           2               2 0.735 0.608 0.892
-## 2 A           2           2               2 0.865 0.851 0.879
-## 3 A           3           3               3 1     1     1    
-## 4 B           1           1               1 0.95  0.95  0.95 
-## 5 B           2           2               2 0.6   0.412 0.888
-## 6 B           3           3               3 0.990 0.980 1.000</code></pre>
+##   group1         group2       total_count count_non_zeros   EAI lower upper
+##   &lt;fct&gt;          &lt;fct&gt;              &lt;int&gt;           &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 Cool Temperat… Argentina              5               5 0.603 0.392 0.793
+## 2 Cool Temperat… Canada                10              10 0.739 0.251 0.999
+## 3 Cool Temperat… Chile                  5               5 0.849 0.751 0.906
+## 4 Cool Temperat… Mexico                 2               2 0.743 0.691 0.800
+## 5 Cool Temperat… United Stat…          16              16 0.700 0.162 0.991
+## 6 Mangrove       Antigua and…           1               1 0.825 0.825 0.825</code></pre>
 </div>
 </div>
+</div>
+<div id="author-information" class="section level2">
+<h2>Author information</h2>
+<p><a href="mailto:jessica.rowland674@gmail.com">jessica.rowland674@gmail.com</a><br />
+<a href="http://jessrowlandresearch.wordpress.com" class="uri">http://jessrowlandresearch.wordpress.com</a></p>
 </div>
 
 

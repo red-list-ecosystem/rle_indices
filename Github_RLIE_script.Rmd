@@ -10,10 +10,10 @@ output:
 
 The Red List Index of ecosystems (RLIE) measures trends in ecosystem collapse risk. It uses the risk categories defined based on IUCN Red List of Ecosystems risk assessments. The index complements the Red List Index of species survival, providing comparable information about ecosystems risk. It is calculated for the overall risk category assigned to each ecosystem and separately for each criterion.
 
-This information sheet provides the code used to calculate the the index and an example of each step. 
+This information sheet provides the code used to calculate the index and an example of each step. 
 
 **Reference:**  
-Rowland, J. A., Bland, L. M., Keith, D. A., Bignoli, D. J., Burgman, M., Etter, A., Ferrer-Paris, J. R., Miller, R. M. and Nicholson, E. (2019) Ecosystem indices to support global biodiversity conservation. Conservation Letters. e12680  
+Rowland, J. A., Bland, L. M., Keith, D. A., Bignoli, D. J., Burgman, M., Etter, A., Ferrer-Paris, J. R., Miller, R. M. and Nicholson, E. (2020) Ecosystem indices to support global biodiversity conservation. Conservation Letters. e12680  
 
 ## Set up functions
 
@@ -51,7 +51,7 @@ danger <- function(x){
 
 ### 2) Define highest risk category
 
-The function *maxcategory* uses the category ranks defined by the function *danger*. If the risk categories for each sub-criteria are listed in separate column, the function *maxcategory* selects the highest risk category across the columns (i.e. subcritera) for each criteria.
+The function *maxcategory* uses the category ranks defined by the function *danger*. If the risk categories for each sub-criteria are listed in separate columns, the function *maxcategory* selects the highest risk category across the columns (i.e. subcritera) for each criteria.
 
 ```{r Calculate highest risk category}
 maxcategory <- function (x) {
@@ -76,13 +76,24 @@ maxcategory <- function (x) {
 }
 ```
 
-#### Example
+#### Forests of the Americas example 
 
-This test data set are available from github.
+An example dataset of the Red list of Ecosystem assessments of the forests across the Americas is available from github.The assessments are from the continental-scale RLE assessments of 136 temperate and tropical forests across 51 countries/territories in the Caribbean and Americas (Ferrer-Paris et al., 2018). 
+
+**Reference:**  
+Ferrer-Paris, J. R., Zager, I., Keith, D. A., Oliveira-Miranda, M. A., Rodríguez, J. P., Josse, C., … Barrow, E. (2018). An ecosystem risk assessment of temperate and tropical forests of the Americas with an outlook on future conservation strategies. Conservation Letters, 12. https://doi.org/10.1111/conl.12623
+
+The columns in the dataframe are:  
+- ecosystem = type of ecosystem.  
+- country = country containing part of the ecosystem distribution.   
+- criterion_A = risk category assigned based on Criterion A - the change in ecosystem area.  
+- criterion_B = risk category assigned based on Criterion B - the whether the ecosystem is spatially restricted.  
+- criterion_C = risk category assigned based on Criterion C - the change in abiotic conditions.  
+- criterion_D = risk category assigned based on Criterion D - the change in biotic processes and interactions.  
 
 ```{r example}
 # Load data
-data <- read.csv("~/Documents/*Career/*PhD/*Projects/2 - RLE indicators/Github script/Github_example_data.csv")
+data <- read.csv("~/Desktop/Github_example_AmericanForests_RLIE.csv") #fill in path to file
 
 # View data
 head(data)
@@ -97,28 +108,28 @@ criterion_D <- as.character(n)
 
 # Calculate overall risk category for criterion A
 for(i in 1:n){
-  A <- data[i, 4:6] # alter the numbers for the relevant columns in a dataset
+  A <- data[i, 3:5] # alter the numbers for the relevant columns in a dataset
   results <- maxcategory(A)
   criterion_A[i] <- results[1]
 }
 
 # Calculate overall risk category for criterion B
 for(i in 1:n){
-  B <- data[i, 7:9]  # alter the numbers for the relevant columns in a dataset
+  B <- data[i, 6:8]  # alter the numbers for the relevant columns in a dataset
   results <- maxcategory(B)
   criterion_B[i] <- results[1]
 }
 
 # Calculate overall risk category for criterion C
 for(i in 1:n){
-  C <- data[i, 10:12]  # alter the numbers for the relevant columns in a dataset
+  C <- data[i, 9:10]  # alter the numbers for the relevant columns in a dataset
   results <- maxcategory(C)
   criterion_C[i] <- results[1]
 }
 
 # Calculate overall risk category for criterion D
 for(i in 1:n){
-  D <- data[i, 13:15]  # alter the numbers for the relevant columns in a dataset
+  D <- data[i, 11:13]  # alter the numbers for the relevant columns in a dataset
   results <- maxcategory(D)
   criterion_D[i] <- results[1]
 }
@@ -129,9 +140,9 @@ data$criterion_B <- unlist(criterion_B)
 data$criterion_C <- unlist(criterion_C)
 data$criterion_D <- unlist(criterion_D)
 
-# Calculate overall risk category using piscs
+# Calculate overall risk category across columns
 for(i in 1:n){
-overall_risk <- data[i, 16:20]  # alter the numbers for the relevant columns in a dataset
+overall_risk <- data[i, 14:17]  # alter the numbers for the relevant columns in a dataset
 results <- maxcategory(overall_risk)
 overall[i] <- results[1]
 }
@@ -145,7 +156,7 @@ head(data)
 
 ## 3) Assign ordinal values to risk categories 
 
-The function *calcWeights* allocates each risk category an ordinal rank from 0 (Least Concern) to 5 (Collapsed). This step ins included for informational purposes only and can be skipped because the the *calcRLIE* function described below includes this step.
+The function *calcWeights* allocates each risk category an ordinal rank from 0 (Least Concern) to 5 (Collapsed). This step is included for informational purposes only and can be skipped because the the *calcRLIE* function described below includes this step.
 
 The ordinal ranks are:
 - Not Evaluated = Excluded
@@ -180,6 +191,8 @@ calcWeights <- function(eco_data, RLE_criteria) {
 
 #### Example
 
+Calculate the weights for the risk categories for one criteria, such as Criterion A:
+
 ```{r, message = FALSE}
 # Install packages
 library(dplyr)
@@ -194,17 +207,17 @@ head(output_weights)
 
 ## 4) Calculate the index
 
-The function *calcRLIe* selects the column in a dataframe listing the risk categories and allocates the ordinal ranks allocated by the function *calcWeights* (see above). These ordinal ranks are used to calculate the Red List Index for Ecosystems (RLIE) and percentiles capturing the middle 95% of the data. The RLIE ranges from zero (all ecosystems Collapsed) to one (all Least Concern).  
+The function *calcRLIe* selects the column in a dataframe listing the risk categories, and allocates the ordinal ranks specified by the function *calcWeights* (see above). These ordinal ranks are used to calculate the Red List Index for Ecosystems (RLIE) and percentiles capturing the middle 95% of the data. The RLIE ranges from zero (all ecosystems Collapsed) to one (all Least Concern).  
 
 Parameters are:
 - eco_data = dataframe  
 - RLE_criteria = column name of criterion of interest  
-- group1 = the factor (optional) you want to group the index by. Where not specified, an RLIe will be calculated based on all ecosystems (output = single score)  
+- group1 = the factor (optional) you want to group the index by. Where not specified, an RLIE will be calculated based on all ecosystems (output = single score)  
 - group2 = the second factor (optional) you want to group the index by  
 
 Parameters 'group1' and 'group2' are optional.
-```{r calcRLIe}
-calcRLIe <- function(eco_data, RLE_criteria, group1, group2){
+```{r calcRLIE}
+calcRLIE <- function(eco_data, RLE_criteria, group1, group2){
   
   # Filter out rows with NE and DD from selected column
   filter_data <- dplyr::filter(eco_data, .data[[RLE_criteria]] != "NE" & .data[[RLE_criteria]] != "DD")
@@ -213,7 +226,7 @@ calcRLIe <- function(eco_data, RLE_criteria, group1, group2){
   weight_data <- calcWeights(filter_data, RLE_criteria)
   weight_data <- drop_na(weight_data, .data[[RLE_criteria]])
   
-  # Calculate index score for the (i) whole dataset, (ii) for one one defined grouping, and (iii) for two nested groupings:
+  # Calculate index score for the (i) whole dataset, (ii) for one defined grouping, and (iii) for two nested groupings:
   
   ## (i) Calculate overall index score using all rows
   if (missing(group1)) {
@@ -244,8 +257,8 @@ calcRLIe <- function(eco_data, RLE_criteria, group1, group2){
   
   # Calculate index scores
   index_scores <- mutate(summed_weights, 
-                         RLIe = 1 - (total_weight/(total_count * 5)),
-                         Criteria = RLE_criteria)
+                         RLIE = 1 - (total_weight/(total_count * 5)),
+                         criteria = RLE_criteria)
   
   # Return dataframe with index scores
   return(index_scores)
@@ -254,37 +267,43 @@ calcRLIe <- function(eco_data, RLE_criteria, group1, group2){
 
 #### Example
 
-Calculate the index using no groupings:
+Calculate the index using no groupings. The output includes:  
+
+- total_weight = sum of all weights included in the index.  
+- total_count = the total number of ecosystems included in the index.   
+- lower and upper = the intervals are based on the quantiles aiming to capture the middle 95% of the data calcualted using the 2.5th and 97.5th percentiles.  
+- RLIE = the Ecosystem Area Index.  
+- criteria = the criteria used to calculate the index.  
 
 ```{r RLIE overall}
 # Calculate the index values
-output <- calcRLIe(data,
+output <- calcRLIE(data,
                    RLE_criteria = "criterion_A")
 
 # View output
 head(output)
 ```
 
-Calculate the index using one grouping:
+Calculate the index using one grouping, such as the ecosystem type:
 
 ```{r RLIE one group}
 # Calculate the index values
-output_one_grouping <- calcRLIe(data,
+output_one_grouping <- calcRLIE(data,
                                 RLE_criteria = "criterion_A",
-                                group1 = "realm")
+                                group1 = "ecosystem")
 
 # View output
 head(output_one_grouping)
 ```
 
-Calculate the index using two groupings where ecosystems are grouped by realm and continent:
+Calculate the index using two groupings where ecosystems are grouped by ecosystem type and country:
 
 ```{r RLIE two groups}
 # Calculate the index values
-output_two_groupings <- calcRLIe(data,
+output_two_groupings <- calcRLIE(data,
                                  RLE_criteria = "criterion_A",
-                                 group1 = "realm",
-                                 group2 = "region")
+                                 group1 = "ecosystem",
+                                 group2 = "country")
 
 # View output
 head(output_two_groupings)

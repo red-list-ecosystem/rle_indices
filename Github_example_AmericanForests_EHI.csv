@@ -1,0 +1,707 @@
+ecosystem,country,mean_severity_C2a,extent_C2a,mean_severity_C2b,extent_C2b,mean_severity_D1,extent_D1,mean_severity_D2b,extent_D2b,mean_severity_D3,extent_D3
+Mangrove,Panama,NA,NA,NA,NA,0.257,1,0.366,1,0.271,1
+Mangrove,Ecuador,NA,NA,0.168,1,0.301,1,0.384,1,0.442,1
+Mangrove,El Salvador,NA,NA,0.331,1,0,1,0.616,1,0.048,1
+Mangrove,Colombia,NA,NA,0.37,1,0.21,1,0.029,1,0.276,1
+Mangrove,Costa Rica,NA,NA,0.296,1,0.458,1,0.578,1,0.542,1
+Mangrove,Mexico,NA,NA,0.213,1,0.237,1,0.527,1,0.262,1
+Mangrove,Nicaragua,NA,NA,0.24,1,0.15,1,0.304,1,0.15,1
+Mangrove,Guatemala,NA,NA,0.443,1,NA,NA,0.586,1,NA,NA
+Mangrove,Honduras,NA,NA,0.229,1,0.163,1,0.243,1,0.5,1
+Mangrove,Peru,NA,NA,0.318,1,NA,NA,0.651,1,NA,NA
+Mangrove,Cuba,0.238,1,0.195,1,0.158,1,NA,NA,0.244,1
+Mangrove,Saint Kitts and Nevis,0.022,1,0.089,1,NA,NA,NA,NA,NA,NA
+Mangrove,Guyana,0.191,1,0.282,1,0.146,1,0.589,1,0.429,1
+Mangrove,Costa Rica,0.348,1,NA,NA,NA,NA,0,1,NA,NA
+Mangrove,Honduras,0.191,1,0.416,1,0.255,1,0.378,1,0.558,1
+Mangrove,Jamaica,0.026,1,0.274,1,0,1,NA,NA,0.209,1
+Mangrove,Curaçao,NA,NA,0.331,1,0.17,1,NA,NA,0.126,1
+Mangrove,Dominica,0.005,1,0.063,1,NA,NA,NA,NA,NA,NA
+Mangrove,Dominican Republic,0.112,1,0.211,1,0.223,1,NA,NA,0.342,1
+Mangrove,Ecuador,0.011,1,NA,NA,NA,NA,NA,NA,NA,NA
+Mangrove,El Salvador,0,1,NA,NA,NA,NA,NA,NA,NA,NA
+Mangrove,French Guiana,0.415,1,0.1,1,0.308,1,0.496,1,0.498,1
+Mangrove,Grenada,0.038,1,0.217,1,0,1,NA,NA,0,1
+Mangrove,Guadeloupe,0.014,1,0.404,1,0,1,NA,NA,0,1
+Mangrove,Guatemala,0.132,1,0.245,1,0.287,1,0.22,1,0.082,1
+Mangrove,Saint Barthélemy,NA,NA,0.004,1,NA,NA,NA,NA,NA,NA
+Mangrove,Haiti,0.105,1,0.178,1,0,1,NA,NA,0.305,1
+Mangrove,Anguilla,0.084,1,NA,NA,NA,NA,NA,NA,NA,NA
+Mangrove,Antigua and Barbuda,0.021,1,0.113,1,0.25,1,NA,NA,0.5,1
+Mangrove,Argentina,0.094,1,NA,NA,NA,NA,NA,NA,NA,NA
+Mangrove,Montserrat,0.017,1,0.341,1,NA,NA,NA,NA,NA,NA
+Mangrove,Netherlands Antilles,0.172,1,NA,NA,NA,NA,NA,NA,NA,NA
+Mangrove,Nicaragua,0.1,1,0.507,1,0.377,1,0.049,1,0.432,1
+Mangrove,Panama,0.222,1,NA,NA,0.196,1,0.097,1,0.357,1
+Mangrove,Paraguay,0.303,1,NA,NA,NA,NA,NA,NA,NA,NA
+Mangrove,Peru,0.123,1,NA,NA,NA,NA,NA,NA,NA,NA
+Mangrove,Puerto Rico,0.078,1,0.288,1,0.212,1,NA,NA,0.25,1
+Mangrove,Saint Barthelemy,0.069,1,NA,NA,NA,NA,NA,NA,NA,NA
+Mangrove,Virgin Islands,NA,NA,0.299,1,NA,NA,NA,NA,0,1
+Mangrove,Cayman Islands,0.264,1,0.483,1,NA,NA,NA,NA,NA,NA
+Mangrove,Colombia,0.345,1,0.528,1,0.207,1,0.519,1,0.258,1
+Mangrove,Saint Lucia,0,1,0.036,1,0,1,NA,NA,0,1
+Mangrove,Saint Martin,0.091,1,0.116,1,NA,NA,NA,NA,NA,NA
+Mangrove,Martinique,0.007,1,0.081,1,0,1,NA,NA,0,1
+Mangrove,Mexico,0.179,1,0.352,1,0.261,1,0.388,1,0.301,1
+Mangrove,Suriname,0.263,1,0.596,1,0.053,1,0.186,1,0.11,1
+Mangrove,Trinidad and Tobago,0.012,1,0.468,1,0.065,1,NA,NA,0.741,1
+Mangrove,Turks and Caicas Islands,NA,NA,0.128,1,0.417,1,NA,NA,0.417,1
+Mangrove,Turks and Caicos Islands,0.191,1,NA,NA,NA,NA,NA,NA,NA,NA
+Mangrove,United States,0.43,1,0.529,1,0.18,1,NA,NA,0.288,1
+Mangrove,United States Virgin Islands,0.038,1,NA,NA,NA,NA,NA,NA,NA,NA
+Mangrove,Venezuela,0.215,1,0.527,1,0.312,1,0.187,1,0.376,1
+Mangrove,British Virgin Islands,0.03,1,0.19,1,NA,NA,NA,NA,NA,NA
+Mangrove,Sint Maarten,NA,NA,0.203,1,NA,NA,NA,NA,NA,NA
+Mangrove,Belize,0.037,1,0.448,1,0.192,1,0.496,1,0.354,1
+Mangrove,Aruba,0.176,1,0.488,1,NA,NA,NA,NA,NA,NA
+Mangrove,Saint Vincent and the Grenadines,0.008,1,0.348,1,NA,NA,NA,NA,0,1
+Mangrove,Barbados,0.001,1,NA,NA,NA,NA,NA,NA,NA,NA
+Mangrove,Bolivia,0.164,1,NA,NA,NA,NA,NA,NA,NA,NA
+Mangrove,Bahamas,0.164,1,0.157,1,0.147,1,NA,NA,0.228,1
+Mangrove,Brazil,0.24,1,0.332,1,0.266,1,0.359,1,0.547,1
+Mangrove,"Bonaire, Saint Eustatius and Saba",NA,NA,0.123,1,0.113,1,NA,NA,0.25,1
+Warm Temperate Forest,United States,0.573,1,NA,NA,0.134,1,NA,NA,0.532,1
+Warm Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Warm Temperate Forest,Bahamas,0.359,1,NA,NA,NA,NA,NA,NA,NA,NA
+Warm Temperate Forest,Mexico,1,1,NA,NA,NA,NA,NA,NA,NA,NA
+Warm Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Warm Temperate Forest,United States,NA,NA,NA,NA,0.055,1,NA,NA,0.528,1
+Warm Temperate Forest,Canada,NA,NA,NA,NA,0.206,1,NA,NA,0.314,1
+Warm Temperate Forest,Mexico,NA,NA,NA,NA,0.496,1,NA,NA,0.269,1
+Warm Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Warm Temperate Forest,United States,NA,NA,NA,NA,0.202,1,NA,NA,0.37,1
+Warm Temperate Forest,Mexico,NA,NA,NA,NA,0.118,1,NA,NA,0.129,1
+Warm Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Warm Temperate Forest,United States,NA,NA,NA,NA,0.075,1,NA,NA,0.08,1
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,Canada,NA,NA,NA,NA,0,1,NA,NA,0,1
+Cool Temperate Forest,United States,NA,NA,NA,NA,0.06,1,NA,NA,0.591,1
+Cool Temperate Forest,Mexico,NA,NA,NA,NA,0.094,1,NA,NA,0.176,1
+Cool Temperate Forest,United States,NA,NA,NA,NA,0.099,1,NA,NA,0.103,1
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,Canada,0.213,1,NA,NA,0.046,1,NA,NA,0.36,1
+Cool Temperate Forest,United States,0.593,1,NA,NA,0.021,1,NA,NA,0.384,1
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Warm Temperate Forest,Mexico,0.834,1,NA,NA,NA,NA,NA,NA,NA,NA
+Warm Temperate Forest,United States,0.839,1,NA,NA,NA,NA,NA,NA,0.25,1
+Warm Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,Mexico,0.984,1,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,United States,0.282,1,NA,NA,0.056,1,NA,NA,0.526,1
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,United States,0.679,1,NA,NA,0.033,1,NA,NA,0.066,1
+Cool Temperate Forest,Canada,0.497,1,NA,NA,0.064,1,NA,NA,0.063,1
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,Mexico,NA,NA,NA,NA,0.128,1,NA,NA,0.107,1
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,United States,NA,NA,NA,NA,0.097,1,NA,NA,0.149,1
+Cool Temperate Forest,United States,NA,NA,NA,NA,0.157,1,NA,NA,0.237,1
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,United States,0.313,1,NA,NA,0.142,1,NA,NA,0.303,1
+Cool Temperate Forest,Canada,0.225,1,NA,NA,0.152,1,NA,NA,0.182,1
+Cool Temperate Forest,United States,NA,NA,NA,NA,0.089,1,NA,NA,0.118,1
+Cool Temperate Forest,Canada,NA,NA,NA,NA,0.089,1,NA,NA,0.092,1
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,United States,NA,NA,NA,NA,0.075,1,NA,NA,0.153,1
+Cool Temperate Forest,United States,NA,NA,NA,NA,0.151,1,NA,NA,0.255,1
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,Canada,NA,NA,NA,NA,0.253,1,NA,NA,0.278,1
+Temperate Flooded & Swamp Forest,United States,NA,NA,0.494,1,0.095,1,NA,NA,0.195,1
+Temperate Flooded & Swamp Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,United States,NA,NA,0.298,1,0.054,1,NA,NA,0.549,1
+Temperate Flooded & Swamp Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,Canada,NA,NA,NA,NA,0.041,1,NA,NA,0.405,1
+Temperate Flooded & Swamp Forest,United States,0.139,1,0.285,1,0.084,1,NA,NA,0.503,1
+Temperate Flooded & Swamp Forest,Canada,0.102,1,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,Mexico,0.771,1,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,Cuba,0.048,1,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,Bahamas,0.178,1,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,United States,NA,NA,0.371,1,0.132,1,NA,NA,0.549,1
+Temperate Flooded & Swamp Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,United States,NA,NA,0.193,1,0.061,1,NA,NA,0.506,1
+Temperate Flooded & Swamp Forest,Canada,NA,NA,NA,NA,0.12,1,NA,NA,0.144,1
+Temperate Flooded & Swamp Forest,United States,NA,NA,0.39,1,0.076,1,NA,NA,0.152,1
+Temperate Flooded & Swamp Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,United States,NA,NA,NA,NA,0.157,1,NA,NA,0.402,1
+Temperate Flooded & Swamp Forest,Canada,NA,NA,NA,NA,0.178,1,NA,NA,0.238,1
+Temperate Flooded & Swamp Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,Mexico,NA,NA,0.161,1,0.127,1,NA,NA,0.111,1
+Temperate Flooded & Swamp Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,United States,NA,NA,0.272,1,0.19,1,NA,NA,0.303,1
+Tropical Dry Forest & Woodland,Anguilla,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Antigua and Barbuda,NA,NA,NA,NA,0.25,1,NA,NA,0.5,1
+Tropical Dry Forest & Woodland,Bahamas,NA,NA,NA,NA,0.192,1,NA,NA,0.362,1
+Tropical Dry Forest & Woodland,Barbados,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,"Bonaire, Saint Eustatius and Saba",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,British Virgin Islands,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Cayman Islands,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Cuba,NA,NA,NA,NA,0.205,1,NA,NA,0.341,1
+Tropical Dry Forest & Woodland,Dominica,NA,NA,NA,NA,0,1,NA,NA,0.118,1
+Tropical Dry Forest & Woodland,Dominican Republic,NA,NA,NA,NA,0.226,1,NA,NA,0.279,1
+Tropical Dry Forest & Woodland,Grenada,NA,NA,NA,NA,0,1,NA,NA,0,1
+Tropical Dry Forest & Woodland,Guadeloupe,NA,NA,NA,NA,0,1,NA,NA,0,1
+Tropical Dry Forest & Woodland,Haiti,NA,NA,NA,NA,0,1,NA,NA,0.27,1
+Tropical Dry Forest & Woodland,Jamaica,NA,NA,NA,NA,0.004,1,NA,NA,0.196,1
+Tropical Dry Forest & Woodland,Martinique,NA,NA,NA,NA,0,1,NA,NA,0,1
+Tropical Dry Forest & Woodland,Montserrat,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Puerto Rico,NA,NA,NA,NA,0.182,1,NA,NA,0.266,1
+Tropical Dry Forest & Woodland,Saint Barthélemy,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Saint Kitts and Nevis,NA,NA,NA,NA,0,1,NA,NA,0,1
+Tropical Dry Forest & Woodland,Saint Lucia,NA,NA,NA,NA,0,1,NA,NA,0,1
+Tropical Dry Forest & Woodland,Saint Martin,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Saint Vincent and the Grenadines,NA,NA,NA,NA,NA,NA,NA,NA,0,1
+Tropical Dry Forest & Woodland,Sint Maarten,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Trinidad and Tobago,NA,NA,NA,NA,0.12,1,NA,NA,0.748,1
+Tropical Dry Forest & Woodland,Turks and Caicas Islands,NA,NA,NA,NA,0.406,1,NA,NA,0.406,1
+Tropical Dry Forest & Woodland,United States,NA,NA,NA,NA,0.231,1,NA,NA,0.386,1
+Tropical Dry Forest & Woodland,Virgin Islands,NA,NA,NA,NA,NA,NA,NA,NA,0,1
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,Canada,NA,NA,NA,NA,0.103,1,NA,NA,0.121,1
+Cool Temperate Forest,United States,NA,NA,NA,NA,0.101,1,NA,NA,0.302,1
+Temperate Flooded & Swamp Forest,United States,NA,NA,0.344,1,NA,NA,NA,NA,0.25,1
+Temperate Flooded & Swamp Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,Canada,NA,NA,NA,NA,0.045,1,NA,NA,0.324,1
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,United States,NA,NA,NA,NA,0.043,1,NA,NA,0.538,1
+Temperate Flooded & Swamp Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,United States,NA,NA,0.391,1,0.233,1,NA,NA,0.441,1
+Tropical Lowland Humid Forest,Saint Vincent and the Grenadines,NA,NA,NA,NA,NA,NA,NA,NA,0,1
+Tropical Lowland Humid Forest,Saint Martin,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Martinique,NA,NA,NA,NA,0,1,NA,NA,0,1
+Tropical Lowland Humid Forest,Barbados,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,"Bonaire, Saint Eustatius and Saba",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,British Virgin Islands,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Saint Lucia,NA,NA,NA,NA,0,1,NA,NA,0,1
+Tropical Lowland Humid Forest,Sint Maarten,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Haiti,NA,NA,NA,NA,0,1,NA,NA,0.291,1
+Tropical Lowland Humid Forest,Saint Barthélemy,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Montserrat,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Jamaica,NA,NA,NA,NA,0.062,1,NA,NA,0.224,1
+Tropical Lowland Humid Forest,Bahamas,NA,NA,NA,NA,0.187,1,NA,NA,0.263,1
+Tropical Lowland Humid Forest,Trinidad and Tobago,NA,NA,NA,NA,0.087,1,NA,NA,0.71,1
+Tropical Lowland Humid Forest,Turks and Caicas Islands,NA,NA,NA,NA,0.263,1,NA,NA,0.263,1
+Tropical Lowland Humid Forest,Saint Kitts and Nevis,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Cayman Islands,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Guadeloupe,NA,NA,NA,NA,0,1,NA,NA,0,1
+Tropical Lowland Humid Forest,Grenada,NA,NA,NA,NA,NA,NA,NA,NA,0,1
+Tropical Lowland Humid Forest,United States,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Virgin Islands,NA,NA,NA,NA,NA,NA,NA,NA,0,1
+Tropical Lowland Humid Forest,Antigua and Barbuda,NA,NA,NA,NA,0.25,1,NA,NA,0.5,1
+Tropical Lowland Humid Forest,Cuba,NA,NA,NA,NA,0.2,1,NA,NA,0.313,1
+Tropical Lowland Humid Forest,Puerto Rico,NA,NA,NA,NA,0.069,1,NA,NA,0.315,1
+Tropical Lowland Humid Forest,Dominican Republic,NA,NA,NA,NA,0.194,1,NA,NA,0.312,1
+Tropical Lowland Humid Forest,Dominica,NA,NA,NA,NA,0,1,NA,NA,0.191,1
+Tropical Dry Forest & Woodland,Guadeloupe,NA,NA,NA,NA,0,1,NA,NA,0,1
+Tropical Dry Forest & Woodland,Haiti,NA,NA,NA,NA,0,1,NA,NA,0.3,1
+Tropical Dry Forest & Woodland,Jamaica,NA,NA,NA,NA,0.021,1,NA,NA,0.243,1
+Tropical Dry Forest & Woodland,Martinique,NA,NA,NA,NA,0,1,NA,NA,0,1
+Tropical Dry Forest & Woodland,Puerto Rico,NA,NA,NA,NA,0.054,1,NA,NA,0.379,1
+Tropical Dry Forest & Woodland,Saint Lucia,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Saint Vincent and the Grenadines,NA,NA,NA,NA,NA,NA,NA,NA,0,1
+Tropical Dry Forest & Woodland,Trinidad and Tobago,NA,NA,NA,NA,0.17,1,NA,NA,0.75,1
+Tropical Dry Forest & Woodland,Dominican Republic,NA,NA,NA,NA,0.249,1,NA,NA,0.384,1
+Tropical Dry Forest & Woodland,Dominica,NA,NA,NA,NA,0,1,NA,NA,0.055,1
+Tropical Dry Forest & Woodland,Antigua and Barbuda,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Bahamas,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Cuba,NA,NA,NA,NA,0.161,1,NA,NA,0.217,1
+Tropical Dry Forest & Woodland,Bahamas,NA,NA,NA,NA,0.141,1,NA,NA,0.232,1
+Tropical Dry Forest & Woodland,Guatemala,NA,NA,NA,NA,0.337,1,0.351,1,0.367,1
+Tropical Dry Forest & Woodland,Haiti,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Mexico,NA,NA,NA,NA,0.214,1,0.349,1,0.225,1
+Tropical Dry Forest & Woodland,Nicaragua,NA,NA,NA,NA,0.276,1,0.558,1,0.407,1
+Tropical Dry Forest & Woodland,Honduras,NA,NA,NA,NA,0.171,1,0.501,1,0.255,1
+Tropical Dry Forest & Woodland,Jamaica,NA,NA,NA,NA,0,1,NA,NA,0.25,1
+Tropical Dry Forest & Woodland,Costa Rica,NA,NA,NA,NA,0.292,1,0.575,1,0.504,1
+Tropical Dry Forest & Woodland,Cuba,NA,NA,NA,NA,0.144,1,NA,NA,0.247,1
+Tropical Dry Forest & Woodland,Panama,NA,NA,NA,NA,0.218,1,0.195,1,0.348,1
+Tropical Dry Forest & Woodland,Belize,NA,NA,NA,NA,0.26,1,0.177,1,0.303,1
+Tropical Dry Forest & Woodland,Puerto Rico,NA,NA,NA,NA,0.25,1,NA,NA,0.5,1
+Tropical Dry Forest & Woodland,Turks and Caicas Islands,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Dominican Republic,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,El Salvador,NA,NA,NA,NA,0.134,1,0.784,1,0.092,1
+Tropical Dry Forest & Woodland,United States,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,Canada,NA,NA,NA,NA,0.089,1,NA,NA,0.09,1
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,United States,NA,NA,NA,NA,0.063,1,NA,NA,0.126,1
+Cool Temperate Forest,United States,NA,NA,NA,NA,0.048,1,NA,NA,0.109,1
+Cool Temperate Forest,Canada,NA,NA,NA,NA,0.121,1,NA,NA,0.128,1
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,Canada,0.011,1,NA,NA,0.222,1,NA,NA,0.485,1
+Cool Temperate Forest,United States,0.634,1,NA,NA,0.055,1,NA,NA,0.532,1
+Temperate Flooded & Swamp Forest,Canada,NA,NA,NA,NA,0.009,1,NA,NA,0.159,1
+Temperate Flooded & Swamp Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,United States,NA,NA,0.24,1,0.015,1,NA,NA,0.527,1
+Temperate Flooded & Swamp Forest,Canada,NA,NA,NA,NA,0.047,1,NA,NA,0.369,1
+Temperate Flooded & Swamp Forest,United States,NA,NA,0.205,1,0.035,1,NA,NA,0.399,1
+Temperate Flooded & Swamp Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Nicaragua,NA,NA,NA,NA,0.5,1,0.797,1,0.5,1
+Tropical Dry Forest & Woodland,Honduras,NA,NA,NA,NA,0.228,1,0.771,1,0.328,1
+Tropical Dry Forest & Woodland,Guatemala,NA,NA,NA,NA,NA,NA,0.814,1,NA,NA
+Tropical Dry Forest & Woodland,Mexico,NA,NA,NA,NA,0.137,1,0.465,1,0.138,1
+Tropical Dry Forest & Woodland,Cayman Islands,0,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Belize,0.588,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,United States,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,El Salvador,0.045,1,NA,NA,0.167,1,0.8,1,0.195,1
+Tropical Dry Forest & Woodland,Panama,0.363,1,NA,NA,0.266,1,0.448,1,0.315,1
+Tropical Dry Forest & Woodland,Cuba,0.962,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Mexico,0.102,1,NA,NA,0.132,1,0.483,1,0.119,1
+Tropical Dry Forest & Woodland,Colombia,0.41,1,NA,NA,0.193,1,0.047,1,0.28,1
+Tropical Dry Forest & Woodland,Costa Rica,0.277,1,NA,NA,0.25,1,0.707,1,0.257,1
+Tropical Dry Forest & Woodland,Honduras,0.363,1,NA,NA,0.19,1,0.77,1,0.272,1
+Tropical Dry Forest & Woodland,Jamaica,0.379,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Guatemala,0.216,1,NA,NA,0.241,1,0.748,1,0.374,1
+Tropical Dry Forest & Woodland,Nicaragua,0.229,1,NA,NA,0.104,1,0.748,1,0.115,1
+Tropical Dry Forest & Woodland,Trinidad and Tobago,0.136,1,NA,NA,0.096,1,NA,NA,0.728,1
+Tropical Dry Forest & Woodland,Brazil,0.076,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Grenada,0.134,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Guyana,0.049,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Netherlands Antilles,0.446,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Colombia,0.447,1,NA,NA,0.215,1,0.697,1,0.22,1
+Tropical Dry Forest & Woodland,Venezuela,0.268,1,NA,NA,0.206,1,0.5,1,0.143,1
+Tropical Dry Forest & Woodland,Colombia,NA,NA,NA,NA,0.218,1,0.28,1,0.173,1
+Tropical Dry Forest & Woodland,Venezuela,NA,NA,NA,NA,0.166,1,0.447,1,0.154,1
+Tropical Dry Forest & Woodland,Ecuador,NA,NA,NA,NA,0.219,1,0.542,1,0.279,1
+Tropical Dry Forest & Woodland,Peru,NA,NA,NA,NA,0.186,1,0.508,1,0.185,1
+Tropical Dry Forest & Woodland,Colombia,NA,NA,NA,NA,0.25,1,0.602,1,0.5,1
+Tropical Dry Forest & Woodland,Brazil,NA,NA,NA,NA,0.064,1,0.027,1,0.059,1
+Tropical Dry Forest & Woodland,French Guiana,NA,NA,NA,NA,0.025,1,0.085,1,0.025,1
+Tropical Dry Forest & Woodland,Venezuela,NA,NA,NA,NA,0.022,1,0.002,1,0.024,1
+Tropical Dry Forest & Woodland,Guyana,NA,NA,NA,NA,0.004,1,0.099,1,0.041,1
+Tropical Dry Forest & Woodland,Suriname,NA,NA,NA,NA,0.006,1,0.001,1,0.008,1
+Tropical Dry Forest & Woodland,Brazil,0.399,1,NA,NA,0.176,1,0.475,1,0.425,1
+Tropical Dry Forest & Woodland,Argentina,0.087,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Bolivia,0.51,1,NA,NA,0.018,1,0.193,1,0.017,1
+Tropical Dry Forest & Woodland,Paraguay,0.167,1,NA,NA,0.312,1,0.573,1,0.169,1
+Tropical Dry Forest & Woodland,Brazil,0.247,1,NA,NA,0.186,1,0.301,1,0.28,1
+Tropical Dry Forest & Woodland,Paraguay,NA,NA,NA,NA,0.332,1,0.386,1,0.361,1
+Tropical Dry Forest & Woodland,Bolivia,NA,NA,NA,NA,NA,NA,0.086,1,NA,NA
+Tropical Dry Forest & Woodland,Brazil,NA,NA,NA,NA,0.302,1,0.555,1,0.499,1
+Tropical Dry Forest & Woodland,Argentina,NA,NA,NA,NA,0.288,1,0.403,1,0.317,1
+Tropical Dry Forest & Woodland,Brazil,0.128,1,NA,NA,0.206,1,0.456,1,0.497,1
+Tropical Dry Forest & Woodland,Colombia,NA,NA,NA,NA,0.207,1,0.533,1,0.159,1
+Tropical Dry Forest & Woodland,Ecuador,NA,NA,NA,NA,0.254,1,0.462,1,0.321,1
+Tropical Dry Forest & Woodland,Venezuela,NA,NA,NA,NA,0.187,1,0.383,1,0.175,1
+Tropical Dry Forest & Woodland,Peru,NA,NA,NA,NA,0.194,1,0.293,1,0.232,1
+Tropical Dry Forest & Woodland,Ecuador,NA,NA,NA,NA,0.25,1,0.278,1,0,1
+Tropical Dry Forest & Woodland,Argentina,NA,NA,NA,NA,NA,NA,0.058,1,NA,NA
+Tropical Dry Forest & Woodland,Peru,NA,NA,NA,NA,0.303,1,0.351,1,0.322,1
+Tropical Dry Forest & Woodland,Bolivia,NA,NA,NA,NA,0.075,1,0.214,1,0.044,1
+Tropical Dry Forest & Woodland,Bolivia,NA,NA,NA,NA,0.063,1,0.331,1,0.107,1
+Tropical Dry Forest & Woodland,Argentina,NA,NA,NA,NA,0.202,1,0.277,1,0.271,1
+Tropical Lowland Humid Forest,Costa Rica,NA,NA,NA,NA,0.248,1,0.442,1,0.528,1
+Tropical Lowland Humid Forest,Panama,NA,NA,NA,NA,0.188,1,0.358,1,0.258,1
+Tropical Lowland Humid Forest,Nicaragua,NA,NA,NA,NA,0.292,1,0.364,1,0.406,1
+Tropical Lowland Humid Forest,Colombia,NA,NA,NA,NA,0.249,1,0.028,1,0.288,1
+Tropical Lowland Humid Forest,Guatemala,NA,NA,NA,NA,0.277,1,0.243,1,0.3,1
+Tropical Lowland Humid Forest,El Salvador,NA,NA,NA,NA,0.059,1,0.79,1,0.089,1
+Tropical Lowland Humid Forest,Belize,NA,NA,NA,NA,0.224,1,0.298,1,0.274,1
+Tropical Lowland Humid Forest,Honduras,NA,NA,NA,NA,0.153,1,0.278,1,0.25,1
+Tropical Lowland Humid Forest,Mexico,NA,NA,NA,NA,0.207,1,0.396,1,0.244,1
+Tropical Lowland Humid Forest,Colombia,NA,NA,NA,NA,0.211,1,0.563,1,0.172,1
+Tropical Lowland Humid Forest,Venezuela,NA,NA,NA,NA,0.19,1,0.345,1,0.103,1
+Tropical Lowland Humid Forest,Venezuela,NA,NA,NA,NA,0.2,1,0.398,1,0.184,1
+Tropical Lowland Humid Forest,Colombia,NA,NA,NA,NA,0.211,1,0.494,1,0.111,1
+Tropical Lowland Humid Forest,Nicaragua,1,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Ecuador,0.172,1,NA,NA,0.283,1,0.143,1,0.353,1
+Tropical Lowland Humid Forest,Venezuela,0.708,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Colombia,0.374,1,NA,NA,0.23,1,0.106,1,0.288,1
+Tropical Lowland Humid Forest,Costa Rica,0.349,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Panama,0.369,1,NA,NA,0.248,1,0.015,1,0.338,1
+Tropical Lowland Humid Forest,Peru,NA,NA,NA,NA,NA,NA,0.706,1,NA,NA
+Tropical Lowland Humid Forest,Colombia,NA,NA,NA,NA,NA,NA,0.19,1,NA,NA
+Tropical Lowland Humid Forest,Ecuador,NA,NA,NA,NA,0.238,1,0.293,1,0.242,1
+Tropical Lowland Humid Forest,Colombia,NA,NA,NA,NA,0.216,1,0.392,1,0.164,1
+Tropical Lowland Humid Forest,Venezuela,NA,NA,NA,NA,0.225,1,0.455,1,0.206,1
+Tropical Lowland Humid Forest,Colombia,NA,NA,NA,NA,0.112,1,0.008,1,0.112,1
+Tropical Lowland Humid Forest,Brazil,NA,NA,NA,NA,0.054,1,0.007,1,0.054,1
+Tropical Lowland Humid Forest,Venezuela,NA,NA,NA,NA,0.008,1,0.008,1,0.012,1
+Tropical Lowland Humid Forest,Guyana,NA,NA,NA,NA,0.025,1,0.188,1,0.043,1
+Tropical Lowland Humid Forest,Venezuela,NA,NA,NA,NA,0.051,1,0.03,1,0.056,1
+Tropical Lowland Humid Forest,Colombia,NA,NA,NA,NA,0,1,0,1,0,1
+Tropical Lowland Humid Forest,Brazil,NA,NA,NA,NA,0.026,1,0.046,1,0.023,1
+Tropical Lowland Humid Forest,Brazil,0.423,1,NA,NA,0.159,1,0.044,1,0.162,1
+Tropical Lowland Humid Forest,Suriname,0.719,1,NA,NA,0.035,1,0.017,1,0.041,1
+Tropical Lowland Humid Forest,Colombia,1,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,French Guiana,0.755,1,NA,NA,0.035,1,0.052,1,0.035,1
+Tropical Lowland Humid Forest,Venezuela,0.744,1,NA,NA,0.222,1,0.095,1,0.225,1
+Tropical Lowland Humid Forest,Guyana,0.714,1,NA,NA,0.004,1,0.069,1,0.019,1
+Tropical Lowland Humid Forest,Guyana,NA,NA,NA,NA,0.011,1,0.108,1,0.049,1
+Tropical Lowland Humid Forest,Colombia,NA,NA,NA,NA,NA,NA,0.328,1,NA,NA
+Tropical Lowland Humid Forest,French Guiana,NA,NA,NA,NA,0.077,1,0.074,1,0.08,1
+Tropical Lowland Humid Forest,Trinidad and Tobago,NA,NA,NA,NA,0.138,1,NA,NA,0.715,1
+Tropical Lowland Humid Forest,Suriname,NA,NA,NA,NA,0.063,1,0.051,1,0.087,1
+Tropical Lowland Humid Forest,Brazil,NA,NA,NA,NA,0.021,1,0.001,1,0.018,1
+Tropical Lowland Humid Forest,Venezuela,NA,NA,NA,NA,0.239,1,0.269,1,0.291,1
+Tropical Lowland Humid Forest,Peru,0.465,1,NA,NA,0.253,1,0.033,1,0.285,1
+Tropical Lowland Humid Forest,Venezuela,0.421,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Ecuador,0.658,1,NA,NA,0.175,1,0.063,1,0.163,1
+Tropical Lowland Humid Forest,Colombia,0.582,1,NA,NA,0.172,1,0.025,1,0.172,1
+Tropical Lowland Humid Forest,Brazil,0.279,1,NA,NA,0.145,1,0.079,1,0.156,1
+Tropical Lowland Humid Forest,Bolivia,0.302,1,NA,NA,0.095,1,0.487,1,0.119,1
+Tropical Lowland Humid Forest,Ecuador,NA,NA,NA,NA,0.229,1,0.319,1,0.261,1
+Tropical Lowland Humid Forest,Peru,NA,NA,NA,NA,0.286,1,0.06,1,0.309,1
+Tropical Lowland Humid Forest,Colombia,NA,NA,NA,NA,0.207,1,0.169,1,0.224,1
+Tropical Lowland Humid Forest,Peru,0.506,1,NA,NA,0.165,1,0.031,1,0.162,1
+Tropical Lowland Humid Forest,Brazil,0.502,1,NA,NA,0.162,1,0.049,1,0.18,1
+Tropical Lowland Humid Forest,Bolivia,0.51,1,NA,NA,0.029,1,0.194,1,0.019,1
+Tropical Lowland Humid Forest,Ecuador,0.37,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Colombia,0.564,1,NA,NA,0.316,1,0.014,1,0.322,1
+Tropical Lowland Humid Forest,Bolivia,0.588,1,NA,NA,0.051,1,0.137,1,0.034,1
+Tropical Lowland Humid Forest,Colombia,1,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Peru,0.596,1,NA,NA,0.205,1,0.096,1,0.2,1
+Tropical Lowland Humid Forest,Brazil,0.922,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Brazil,0.406,1,NA,NA,0.12,1,0.019,1,0.123,1
+Tropical Lowland Humid Forest,Suriname,0.161,1,NA,NA,0.09,1,0.052,1,0.199,1
+Tropical Lowland Humid Forest,Guyana,0.206,1,NA,NA,0,1,0.027,1,0.001,1
+Tropical Lowland Humid Forest,Peru,0,1,NA,NA,0.318,1,0,1,0.334,1
+Tropical Lowland Humid Forest,Venezuela,0.159,1,NA,NA,0.011,1,0,1,0.032,1
+Tropical Lowland Humid Forest,French Guiana,0.066,1,NA,NA,0.071,1,0.01,1,0.074,1
+Tropical Lowland Humid Forest,Colombia,0.186,1,NA,NA,0.151,1,0.024,1,0.146,1
+Tropical Lowland Humid Forest,Bolivia,0.002,1,NA,NA,0.056,1,0.146,1,0.008,1
+Tropical Lowland Humid Forest,Brazil,0.366,1,NA,NA,0.169,1,0.058,1,0.22,1
+Tropical Lowland Humid Forest,Peru,0.108,1,NA,NA,0.249,1,0.002,1,0.263,1
+Tropical Lowland Humid Forest,Ecuador,0.317,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Colombia,0.468,1,NA,NA,0.171,1,0.006,1,0.175,1
+Tropical Lowland Humid Forest,Guyana,0.094,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Suriname,0,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Venezuela,0.129,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Paraguay,0.081,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Brazil,0.247,1,NA,NA,0.201,1,0.541,1,0.414,1
+Tropical Lowland Humid Forest,Argentina,0.161,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Paraguay,NA,NA,NA,NA,0.304,1,0.328,1,0.303,1
+Tropical Lowland Humid Forest,Argentina,NA,NA,NA,NA,0.365,1,0.424,1,0.551,1
+Tropical Lowland Humid Forest,Brazil,NA,NA,NA,NA,0.258,1,0.582,1,0.471,1
+Tropical Lowland Humid Forest,Argentina,0.356,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Lowland Humid Forest,Paraguay,0.566,1,NA,NA,0.301,1,0.508,1,0.204,1
+Tropical Lowland Humid Forest,Brazil,0.385,1,NA,NA,0.212,1,0.212,1,0.291,1
+Tropical Lowland Humid Forest,Bolivia,0.399,1,NA,NA,0.02,1,0.095,1,0.008,1
+Tropical Montane Humid Forest,Montserrat,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Montane Humid Forest,Dominica,NA,NA,NA,NA,0,1,NA,NA,0.122,1
+Tropical Montane Humid Forest,Jamaica,NA,NA,NA,NA,0.003,1,NA,NA,0.249,1
+Tropical Montane Humid Forest,Martinique,NA,NA,NA,NA,0,1,NA,NA,0,1
+Tropical Montane Humid Forest,Puerto Rico,NA,NA,NA,NA,0.08,1,NA,NA,0.389,1
+Tropical Montane Humid Forest,Cuba,NA,NA,NA,NA,0.243,1,NA,NA,0.254,1
+Tropical Montane Humid Forest,Guadeloupe,NA,NA,NA,NA,0,1,NA,NA,0,1
+Tropical Montane Humid Forest,Trinidad and Tobago,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Montane Humid Forest,"Bonaire, Saint Eustatius and Saba",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Montane Humid Forest,Dominican Republic,NA,NA,NA,NA,0.142,1,NA,NA,0.266,1
+Tropical Montane Humid Forest,Grenada,NA,NA,NA,NA,NA,NA,NA,NA,0,1
+Tropical Montane Humid Forest,Haiti,NA,NA,NA,NA,0,1,NA,NA,0.25,1
+Tropical Montane Humid Forest,Saint Kitts and Nevis,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Montane Humid Forest,Saint Lucia,NA,NA,NA,NA,0,1,NA,NA,0,1
+Tropical Montane Humid Forest,Saint Vincent and the Grenadines,NA,NA,NA,NA,NA,NA,NA,NA,0,1
+Tropical Montane Humid Forest,Honduras,NA,NA,NA,NA,0.165,1,0.422,1,0.192,1
+Tropical Montane Humid Forest,El Salvador,NA,NA,NA,NA,0.142,1,0.669,1,0.179,1
+Tropical Montane Humid Forest,Mexico,NA,NA,NA,NA,0.17,1,0.396,1,0.226,1
+Tropical Montane Humid Forest,Guatemala,NA,NA,NA,NA,0.229,1,0.645,1,0.252,1
+Tropical Montane Humid Forest,Belize,NA,NA,NA,NA,0.341,1,0.003,1,0.371,1
+Tropical Montane Humid Forest,Nicaragua,NA,NA,NA,NA,0.265,1,0.344,1,0.336,1
+Tropical Montane Humid Forest,Honduras,NA,NA,NA,NA,0.177,1,0.581,1,0.25,1
+Tropical Montane Humid Forest,Belize,NA,NA,NA,NA,0.299,1,0.029,1,0.407,1
+Tropical Montane Humid Forest,El Salvador,NA,NA,NA,NA,0.099,1,0.801,1,0.215,1
+Tropical Montane Humid Forest,Mexico,NA,NA,NA,NA,0.154,1,0.463,1,0.209,1
+Tropical Montane Humid Forest,Guatemala,NA,NA,NA,NA,0.167,1,0.655,1,0.125,1
+Tropical Montane Humid Forest,Nicaragua,NA,NA,NA,NA,0.24,1,0.699,1,0.273,1
+Tropical Montane Humid Forest,Colombia,NA,NA,NA,NA,NA,NA,0,1,NA,NA
+Tropical Montane Humid Forest,Costa Rica,NA,NA,NA,NA,0.279,1,0.293,1,0.376,1
+Tropical Montane Humid Forest,Panama,NA,NA,NA,NA,0.21,1,0.124,1,0.294,1
+Tropical Montane Humid Forest,Nicaragua,NA,NA,NA,NA,0.09,1,0.707,1,0.258,1
+Tropical Montane Humid Forest,French Guiana,0.591,1,NA,NA,0.192,1,0,1,0.192,1
+Tropical Montane Humid Forest,Colombia,0.78,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Montane Humid Forest,Peru,0.784,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Montane Humid Forest,Trinidad and Tobago,0.941,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Montane Humid Forest,Guyana,0.726,1,NA,NA,0.009,1,0.08,1,0.052,1
+Tropical Montane Humid Forest,Brazil,0.698,1,NA,NA,0.03,1,0.035,1,0.025,1
+Tropical Montane Humid Forest,Suriname,0.611,1,NA,NA,0.018,1,0.01,1,0.039,1
+Tropical Montane Humid Forest,Venezuela,0.563,1,NA,NA,0.033,1,0.009,1,0.036,1
+Tropical Montane Humid Forest,French Guiana,NA,NA,NA,NA,0.042,1,0.095,1,0.043,1
+Tropical Montane Humid Forest,Suriname,NA,NA,NA,NA,0.012,1,0.016,1,0.011,1
+Tropical Montane Humid Forest,Venezuela,NA,NA,NA,NA,0.042,1,0.05,1,0.039,1
+Tropical Montane Humid Forest,Brazil,NA,NA,NA,NA,0.081,1,0.039,1,0.081,1
+Tropical Montane Humid Forest,Guyana,NA,NA,NA,NA,0.004,1,0.065,1,0.024,1
+Tropical Montane Humid Forest,Peru,0.432,1,NA,NA,0.186,1,0.205,1,0.265,1
+Tropical Montane Humid Forest,Panama,0.923,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Montane Humid Forest,Colombia,0.43,1,NA,NA,0.211,1,0.413,1,0.293,1
+Tropical Montane Humid Forest,Ecuador,0.352,1,NA,NA,0.213,1,0.311,1,0.266,1
+Tropical Montane Humid Forest,Venezuela,0.539,1,NA,NA,0.184,1,0.257,1,0.238,1
+Tropical Montane Humid Forest,Brazil,1,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Montane Humid Forest,Nicaragua,0.96,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Montane Humid Forest,Colombia,0.411,1,NA,NA,0.209,1,0.346,1,0.21,1
+Tropical Montane Humid Forest,Peru,0.462,1,NA,NA,0.232,1,0.093,1,0.293,1
+Tropical Montane Humid Forest,Venezuela,0.651,1,NA,NA,0.184,1,0.227,1,0.175,1
+Tropical Montane Humid Forest,Panama,0.606,1,NA,NA,0.25,1,0,1,0.302,1
+Tropical Montane Humid Forest,Brazil,0.6,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Montane Humid Forest,Honduras,1,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Montane Humid Forest,Costa Rica,0.269,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Montane Humid Forest,Ecuador,0.469,1,NA,NA,0.242,1,0.255,1,0.318,1
+Tropical Montane Humid Forest,Venezuela,NA,NA,NA,NA,0.192,1,0.229,1,0.093,1
+Tropical Montane Humid Forest,Peru,NA,NA,NA,NA,0.25,1,0.323,1,0.286,1
+Tropical Montane Humid Forest,Chile,NA,NA,NA,NA,NA,NA,0.435,1,NA,NA
+Tropical Montane Humid Forest,Ecuador,NA,NA,NA,NA,0.067,1,0,1,0,1
+Tropical Montane Humid Forest,Bolivia,NA,NA,NA,NA,0.065,1,0.226,1,0.011,1
+Tropical Montane Humid Forest,Argentina,NA,NA,NA,NA,0.225,1,0.128,1,0.425,1
+Tropical Montane Humid Forest,Bolivia,NA,NA,NA,NA,0.074,1,0.165,1,0.03,1
+Tropical Montane Humid Forest,Argentina,NA,NA,NA,NA,0.188,1,0,1,0.375,1
+Tropical Montane Humid Forest,Peru,NA,NA,NA,NA,0.19,1,0.147,1,0.18,1
+Tropical Montane Humid Forest,Peru,NA,NA,NA,NA,0.09,1,0.323,1,0.153,1
+Tropical Montane Humid Forest,Argentina,NA,NA,NA,NA,0.22,1,0.278,1,0.279,1
+Tropical Montane Humid Forest,Bolivia,NA,NA,NA,NA,0.1,1,0.289,1,0.118,1
+Tropical Montane Humid Forest,Bolivia,NA,NA,NA,NA,0.072,1,0.163,1,0.089,1
+Tropical Montane Humid Forest,Argentina,NA,NA,NA,NA,0.213,1,0.302,1,0.284,1
+Tropical Montane Humid Forest,Peru,NA,NA,NA,NA,0.077,1,0.218,1,0.114,1
+Tropical Montane Humid Forest,Argentina,NA,NA,NA,NA,0.234,1,0.24,1,0.364,1
+Tropical Montane Humid Forest,Chile,NA,NA,NA,NA,0.029,1,0.303,1,0.176,1
+Tropical Montane Humid Forest,Bolivia,NA,NA,NA,NA,0.05,1,0.406,1,0.017,1
+Tropical Montane Humid Forest,Peru,NA,NA,NA,NA,0.038,1,0.476,1,0.178,1
+Tropical Montane Humid Forest,Colombia,NA,NA,NA,NA,0.25,1,0.124,1,0.372,1
+Tropical Montane Humid Forest,Ecuador,NA,NA,NA,NA,0.331,1,0.204,1,0.444,1
+Tropical Montane Humid Forest,Peru,NA,NA,NA,NA,0.216,1,0.056,1,0.334,1
+Tropical Montane Humid Forest,Paraguay,0.635,1,NA,NA,0.282,1,0.451,1,0.331,1
+Tropical Montane Humid Forest,Brazil,0.515,1,NA,NA,0.297,1,0.524,1,0.461,1
+Tropical Montane Humid Forest,Argentina,0.372,1,NA,NA,0.408,1,0.397,1,0.525,1
+Tropical Flooded & Swamp Forest,Cuba,NA,NA,0.173,1,0.181,1,NA,NA,0.193,1
+Tropical Flooded & Swamp Forest,Martinique,NA,NA,0.012,1,0,1,NA,NA,0,1
+Tropical Flooded & Swamp Forest,Puerto Rico,NA,NA,0.283,1,0.115,1,NA,NA,0.327,1
+Tropical Flooded & Swamp Forest,Dominican Republic,NA,NA,0.059,1,0.155,1,NA,NA,0.303,1
+Tropical Flooded & Swamp Forest,Saint Martin,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Trinidad and Tobago,NA,NA,0.784,1,0.198,1,NA,NA,0.749,1
+Tropical Flooded & Swamp Forest,Turks and Caicas Islands,NA,NA,0.116,1,0.494,1,NA,NA,0.494,1
+Tropical Flooded & Swamp Forest,Saint Lucia,NA,NA,0.158,1,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Virgin Islands,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Barbados,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,British Virgin Islands,NA,NA,0.071,1,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Jamaica,NA,NA,0.552,1,0,1,NA,NA,0.24,1
+Tropical Flooded & Swamp Forest,United States,NA,NA,0.466,1,0.314,1,NA,NA,0.399,1
+Tropical Flooded & Swamp Forest,Guadeloupe,NA,NA,0.543,1,0,1,NA,NA,0,1
+Tropical Flooded & Swamp Forest,Haiti,NA,NA,0.037,1,0,1,NA,NA,0.261,1
+Tropical Flooded & Swamp Forest,Antigua and Barbuda,NA,NA,0,1,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Bahamas,NA,NA,0.032,1,0.157,1,NA,NA,0.216,1
+Tropical Flooded & Swamp Forest,Barbados,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Dominica,NA,NA,0,1,0,1,NA,NA,0.194,1
+Tropical Flooded & Swamp Forest,Grenada,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Guadeloupe,NA,NA,0.462,1,0,1,NA,NA,0,1
+Tropical Flooded & Swamp Forest,Guatemala,NA,NA,0.236,1,0.289,1,0.415,1,0.312,1
+Tropical Flooded & Swamp Forest,Dominican Republic,NA,NA,0.127,1,0.181,1,NA,NA,0.32,1
+Tropical Flooded & Swamp Forest,United States,NA,NA,0,1,0.25,1,NA,NA,0.5,1
+Tropical Flooded & Swamp Forest,Virgin Islands,NA,NA,0.533,1,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Bahamas,NA,NA,0.104,1,0.131,1,NA,NA,0.192,1
+Tropical Flooded & Swamp Forest,Antigua and Barbuda,NA,NA,0.259,1,0.25,1,NA,NA,0.5,1
+Tropical Flooded & Swamp Forest,Belize,NA,NA,0.419,1,0.227,1,0.282,1,0.289,1
+Tropical Flooded & Swamp Forest,Costa Rica,NA,NA,0.28,1,0.251,1,0.364,1,0.541,1
+Tropical Flooded & Swamp Forest,Cuba,NA,NA,0.177,1,0.181,1,NA,NA,0.262,1
+Tropical Flooded & Swamp Forest,Mexico,NA,NA,0.29,1,0.223,1,0.369,1,0.243,1
+Tropical Flooded & Swamp Forest,Nicaragua,NA,NA,0.321,1,0.298,1,0.372,1,0.422,1
+Tropical Flooded & Swamp Forest,Panama,NA,NA,NA,NA,0.242,1,0.205,1,0.298,1
+Tropical Flooded & Swamp Forest,Puerto Rico,NA,NA,0.27,1,0.09,1,NA,NA,0.393,1
+Tropical Flooded & Swamp Forest,Saint Lucia,NA,NA,0.064,1,NA,NA,NA,NA,0,1
+Tropical Flooded & Swamp Forest,Saint Vincent and the Grenadines,NA,NA,0,1,NA,NA,NA,NA,0,1
+Tropical Flooded & Swamp Forest,Turks and Caicas Islands,NA,NA,0.041,1,0.5,1,NA,NA,0.5,1
+Tropical Flooded & Swamp Forest,Haiti,NA,NA,0.122,1,0,1,NA,NA,0.369,1
+Tropical Flooded & Swamp Forest,Honduras,NA,NA,0.336,1,0.172,1,0.385,1,0.292,1
+Tropical Flooded & Swamp Forest,Jamaica,NA,NA,0.296,1,0.047,1,NA,NA,0.229,1
+Tropical Flooded & Swamp Forest,Trinidad and Tobago,NA,NA,0.475,1,0.117,1,NA,NA,0.734,1
+Tropical Flooded & Swamp Forest,Martinique,NA,NA,0.046,1,0,1,NA,NA,0,1
+Tropical Flooded & Swamp Forest,Jamaica,NA,NA,0.016,1,0,1,NA,NA,0.25,1
+Tropical Flooded & Swamp Forest,Honduras,NA,NA,0.599,1,0.206,1,0.2,1,0.398,1
+Tropical Flooded & Swamp Forest,Costa Rica,NA,NA,0.499,1,0.31,1,0.33,1,0.626,1
+Tropical Flooded & Swamp Forest,Colombia,NA,NA,0.286,1,0.203,1,0.089,1,0.177,1
+Tropical Flooded & Swamp Forest,Guatemala,NA,NA,0.38,1,0.237,1,0.58,1,0.183,1
+Tropical Flooded & Swamp Forest,Belize,NA,NA,0.429,1,0.211,1,0.303,1,0.297,1
+Tropical Flooded & Swamp Forest,Mexico,NA,NA,0.305,1,0.252,1,0.534,1,0.287,1
+Tropical Flooded & Swamp Forest,El Salvador,NA,NA,0.318,1,NA,NA,0.841,1,0.25,1
+Tropical Flooded & Swamp Forest,Ecuador,NA,NA,0,1,0.432,1,0.176,1,0.652,1
+Tropical Flooded & Swamp Forest,Nicaragua,NA,NA,0.418,1,0.328,1,0.232,1,0.427,1
+Tropical Flooded & Swamp Forest,Panama,NA,NA,NA,NA,0.271,1,0.358,1,0.442,1
+Tropical Flooded & Swamp Forest,United States,NA,NA,0.535,1,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Trinidad and Tobago,NA,NA,0,1,0.082,1,NA,NA,0.75,1
+Tropical Flooded & Swamp Forest,Guatemala,NA,NA,0.392,1,0.238,1,0.479,1,0.158,1
+Tropical Flooded & Swamp Forest,Costa Rica,NA,NA,0.506,1,0.242,1,0.435,1,0.637,1
+Tropical Flooded & Swamp Forest,Mexico,NA,NA,0.359,1,0.204,1,0.277,1,0.212,1
+Tropical Flooded & Swamp Forest,El Salvador,NA,NA,0.228,1,0.049,1,0.742,1,0.115,1
+Tropical Flooded & Swamp Forest,Panama,NA,NA,NA,NA,0.266,1,0.347,1,0.369,1
+Tropical Flooded & Swamp Forest,Nicaragua,NA,NA,0.522,1,0.333,1,0.255,1,0.436,1
+Tropical Flooded & Swamp Forest,Honduras,NA,NA,0.495,1,0.148,1,0.135,1,0.317,1
+Tropical Flooded & Swamp Forest,Colombia,NA,NA,0.215,1,0.215,1,0.633,1,0.151,1
+Tropical Flooded & Swamp Forest,Belize,NA,NA,0.483,1,0.223,1,0.258,1,0.334,1
+Tropical Flooded & Swamp Forest,Guyana,NA,NA,NA,NA,0.011,1,0,1,0.111,1
+Tropical Flooded & Swamp Forest,Venezuela,NA,NA,0.362,1,0.248,1,0.561,1,0.241,1
+Tropical Flooded & Swamp Forest,Colombia,NA,NA,0.274,1,0.185,1,0.744,1,0.129,1
+Tropical Flooded & Swamp Forest,Peru,NA,NA,NA,NA,NA,NA,0.99,1,NA,NA
+Tropical Flooded & Swamp Forest,Ecuador,NA,NA,0.052,1,0.29,1,0.143,1,0.441,1
+Tropical Flooded & Swamp Forest,Colombia,NA,NA,0.352,1,0.246,1,0.106,1,0.254,1
+Tropical Flooded & Swamp Forest,Panama,NA,NA,0.941,1,0.251,1,0.045,1,0.307,1
+Tropical Flooded & Swamp Forest,Colombia,NA,NA,0.428,1,0.138,1,0.212,1,0.159,1
+Tropical Flooded & Swamp Forest,Venezuela,NA,NA,0.478,1,0.22,1,0.363,1,0.251,1
+Tropical Flooded & Swamp Forest,Peru,NA,NA,0.53,1,NA,NA,0.561,1,NA,NA
+Tropical Flooded & Swamp Forest,Ecuador,NA,NA,0.337,1,0.207,1,0.613,1,0.048,1
+Tropical Flooded & Swamp Forest,Brazil,NA,NA,0.499,1,0.118,1,0.078,1,0.119,1
+Tropical Flooded & Swamp Forest,Venezuela,NA,NA,0.137,1,0.033,1,0.004,1,0.048,1
+Tropical Flooded & Swamp Forest,Suriname,NA,NA,0.281,1,0.069,1,0.016,1,0.105,1
+Tropical Flooded & Swamp Forest,Guyana,NA,NA,0.432,1,0.002,1,0.074,1,0.01,1
+Tropical Flooded & Swamp Forest,French Guiana,NA,NA,0.049,1,0.033,1,0.068,1,0.036,1
+Tropical Flooded & Swamp Forest,Colombia,NA,NA,0.263,1,0.018,1,0.039,1,0.019,1
+Tropical Flooded & Swamp Forest,Guyana,NA,NA,0.333,1,0.015,1,0.121,1,0.056,1
+Tropical Flooded & Swamp Forest,Colombia,NA,NA,0.216,1,0.064,1,0.002,1,0.058,1
+Tropical Flooded & Swamp Forest,French Guiana,NA,NA,0.064,1,0.067,1,0.028,1,0.069,1
+Tropical Flooded & Swamp Forest,Brazil,NA,NA,0.27,1,0.173,1,0.284,1,0.165,1
+Tropical Flooded & Swamp Forest,Suriname,NA,NA,0.188,1,0.07,1,0.198,1,0.179,1
+Tropical Flooded & Swamp Forest,Venezuela,NA,NA,0.13,1,0.061,1,0.033,1,0.085,1
+Tropical Flooded & Swamp Forest,French Guiana,0.463,1,0.15,1,0.163,1,0.205,1,0.198,1
+Tropical Flooded & Swamp Forest,Guyana,0.25,1,0.386,1,0.058,1,0.139,1,0.193,1
+Tropical Flooded & Swamp Forest,Saint Vincent and the Grenadines,0.122,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Grenada,0.286,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Trinidad and Tobago,0.06,1,0,1,0.146,1,NA,NA,0.75,1
+Tropical Flooded & Swamp Forest,Saint Lucia,0,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Barbados,0.029,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Brazil,0.823,1,0.109,1,0.277,1,0.015,1,0.215,1
+Tropical Flooded & Swamp Forest,Suriname,0.488,1,0.379,1,0.073,1,0.183,1,0.155,1
+Tropical Flooded & Swamp Forest,Venezuela,0.42,1,0.483,1,0.293,1,0.027,1,0.361,1
+Tropical Flooded & Swamp Forest,Venezuela,NA,NA,0.398,1,0.188,1,0.322,1,0.212,1
+Tropical Flooded & Swamp Forest,Colombia,NA,NA,0.274,1,0.23,1,0.541,1,0.304,1
+Tropical Flooded & Swamp Forest,Ecuador,NA,NA,0.231,1,0.277,1,0.356,1,0.373,1
+Tropical Flooded & Swamp Forest,Peru,NA,NA,0.253,1,0.191,1,0.17,1,0.24,1
+Tropical Flooded & Swamp Forest,Peru,NA,NA,0.244,1,0.362,1,0.35,1,0.396,1
+Tropical Flooded & Swamp Forest,Bolivia,NA,NA,0.391,1,0.029,1,0.597,1,0.02,1
+Tropical Flooded & Swamp Forest,Chile,NA,NA,0.759,1,NA,NA,0.497,1,NA,NA
+Tropical Flooded & Swamp Forest,Argentina,NA,NA,0.395,1,0.323,1,0.354,1,0.406,1
+Tropical Flooded & Swamp Forest,Argentina,NA,NA,0.413,1,0.229,1,0.471,1,0.357,1
+Tropical Flooded & Swamp Forest,Peru,NA,NA,0.282,1,0.053,1,0.154,1,0.098,1
+Tropical Flooded & Swamp Forest,Bolivia,NA,NA,0.319,1,0.066,1,0.282,1,0.072,1
+Tropical Flooded & Swamp Forest,Peru,NA,NA,0.322,1,0.316,1,0.29,1,0.32,1
+Tropical Flooded & Swamp Forest,Brazil,NA,NA,0.341,1,0.178,1,0.037,1,0.15,1
+Tropical Flooded & Swamp Forest,Bolivia,NA,NA,NA,NA,0.237,1,0.397,1,0.289,1
+Tropical Flooded & Swamp Forest,Colombia,NA,NA,0.252,1,0.172,1,0.022,1,0.173,1
+Tropical Flooded & Swamp Forest,Peru,NA,NA,0.342,1,0.238,1,0.012,1,0.283,1
+Tropical Flooded & Swamp Forest,Ecuador,NA,NA,0.297,1,0.13,1,0.045,1,0.145,1
+Tropical Flooded & Swamp Forest,Brazil,0.439,1,0.341,1,0.24,1,0.017,1,0.242,1
+Tropical Flooded & Swamp Forest,Venezuela,0.537,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Suriname,0.338,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Colombia,0.371,1,0.228,1,0.153,1,0.012,1,0.156,1
+Tropical Flooded & Swamp Forest,Bolivia,0.177,1,NA,NA,0.25,1,0.764,1,0.333,1
+Tropical Flooded & Swamp Forest,Peru,0.33,1,0.342,1,0.233,1,0.005,1,0.275,1
+Tropical Flooded & Swamp Forest,Guyana,0.481,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Panama,0.333,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Ecuador,0.238,1,0.319,1,0.121,1,0.024,1,0.142,1
+Tropical Flooded & Swamp Forest,Ecuador,0.155,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Brazil,0.553,1,0.282,1,0.197,1,0.03,1,0.183,1
+Tropical Flooded & Swamp Forest,Colombia,0.514,1,0.925,1,NA,NA,0,1,NA,NA
+Tropical Flooded & Swamp Forest,Bolivia,0.53,1,0.36,1,0.049,1,0.172,1,0.042,1
+Tropical Flooded & Swamp Forest,Peru,0.372,1,0.311,1,0.181,1,0.034,1,0.197,1
+Tropical Flooded & Swamp Forest,Venezuela,0.717,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Guyana,0.861,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Colombia,NA,NA,NA,NA,0.25,1,0,1,0.25,1
+Tropical Flooded & Swamp Forest,Brazil,NA,NA,0.2,1,0.201,1,0.049,1,0.224,1
+Tropical Flooded & Swamp Forest,Peru,NA,NA,0.287,1,0.201,1,0.026,1,0.225,1
+Tropical Flooded & Swamp Forest,Bolivia,NA,NA,0.431,1,0.047,1,0.188,1,0.039,1
+Tropical Flooded & Swamp Forest,Ecuador,0.052,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,French Guiana,0.325,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Peru,0.102,1,0.254,1,0.252,1,0.001,1,0.267,1
+Tropical Flooded & Swamp Forest,Colombia,0.289,1,0.276,1,0.119,1,0.003,1,0.121,1
+Tropical Flooded & Swamp Forest,Suriname,0.485,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Venezuela,0.589,1,0.137,1,0.011,1,0,1,0.026,1
+Tropical Flooded & Swamp Forest,Panama,0.342,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Guyana,0.752,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Brazil,0.504,1,0.276,1,0.131,1,0.019,1,0.142,1
+Tropical Flooded & Swamp Forest,Guyana,0.034,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Suriname,0.011,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,French Guiana,0.011,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Venezuela,0.174,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Bolivia,0.206,1,0.295,1,0.071,1,0.126,1,0.022,1
+Tropical Flooded & Swamp Forest,Brazil,0.334,1,0.236,1,0.242,1,0.078,1,0.308,1
+Tropical Flooded & Swamp Forest,Colombia,0.244,1,0.208,1,0.107,1,0,1,0.115,1
+Tropical Flooded & Swamp Forest,Ecuador,0.001,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Peru,0.02,1,0.168,1,0.249,1,0,1,0.272,1
+Tropical Flooded & Swamp Forest,Colombia,NA,NA,NA,NA,0.25,1,0,1,0.25,1
+Tropical Flooded & Swamp Forest,Brazil,NA,NA,0.235,1,0.159,1,0.032,1,0.16,1
+Tropical Flooded & Swamp Forest,Bolivia,NA,NA,0.348,1,0.059,1,0.09,1,0.031,1
+Tropical Flooded & Swamp Forest,French Guiana,NA,NA,NA,NA,0.369,1,0,1,0.321,1
+Tropical Flooded & Swamp Forest,Brazil,NA,NA,0.289,1,0.307,1,0.076,1,0.481,1
+Tropical Flooded & Swamp Forest,Brazil,0.031,1,0.203,1,0.225,1,0.566,1,0.427,1
+Tropical Flooded & Swamp Forest,Brazil,NA,NA,0.25,1,0.336,1,0.336,1,0.475,1
+Tropical Flooded & Swamp Forest,Paraguay,NA,NA,0.135,1,0.305,1,0.328,1,0.29,1
+Tropical Flooded & Swamp Forest,Argentina,NA,NA,0.634,1,0.351,1,0.228,1,0.342,1
+Tropical Flooded & Swamp Forest,Brazil,NA,NA,0.349,1,0.175,1,0.201,1,0.231,1
+Tropical Flooded & Swamp Forest,Paraguay,NA,NA,0.371,1,0.302,1,0.595,1,0.118,1
+Tropical Flooded & Swamp Forest,Bolivia,NA,NA,0.332,1,0.07,1,0.215,1,0.076,1
+Tropical Flooded & Swamp Forest,Brazil,NA,NA,0.311,1,0.117,1,0.019,1,0.112,1
+Tropical Flooded & Swamp Forest,Bolivia,NA,NA,0.45,1,0.059,1,0.185,1,0.07,1
+Tropical Flooded & Swamp Forest,Brazil,NA,NA,0.333,1,NA,NA,0,1,NA,NA
+Tropical Flooded & Swamp Forest,Bolivia,NA,NA,0.327,1,0.086,1,0.222,1,0.109,1
+Tropical Flooded & Swamp Forest,Paraguay,NA,NA,0.92,1,NA,NA,0.461,1,NA,NA
+Tropical Flooded & Swamp Forest,Bolivia,NA,NA,0.845,1,0.035,1,0.227,1,0.027,1
+Tropical Flooded & Swamp Forest,Brazil,NA,NA,0.757,1,0.168,1,0.274,1,0.174,1
+Tropical Flooded & Swamp Forest,Bolivia,0.051,1,0.21,1,0.098,1,0.188,1,0.096,1
+Tropical Flooded & Swamp Forest,Uruguay,0.013,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Chile,0.013,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Peru,0.011,1,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Flooded & Swamp Forest,Argentina,0.061,1,0.651,1,0.2,1,0.512,1,0.237,1
+Tropical Flooded & Swamp Forest,Brazil,0.018,1,0.613,1,0.21,1,0.494,1,0.21,1
+Tropical Flooded & Swamp Forest,Paraguay,0.266,1,0.448,1,0.002,1,0.302,1,0.002,1
+Tropical Flooded & Swamp Forest,Paraguay,0.318,1,0.508,1,0.082,1,0.317,1,0.082,1
+Tropical Flooded & Swamp Forest,Bolivia,0.212,1,0.292,1,0.013,1,0.216,1,0.01,1
+Tropical Flooded & Swamp Forest,Brazil,0,1,0.603,1,NA,NA,0.138,1,NA,NA
+Tropical Flooded & Swamp Forest,Argentina,0.244,1,0.397,1,0.164,1,0.582,1,0.247,1
+Tropical Flooded & Swamp Forest,Brazil,NA,NA,0.876,1,0.085,1,0.228,1,0.085,1
+Tropical Flooded & Swamp Forest,Paraguay,NA,NA,0.527,1,0,1,0.408,1,0,1
+Tropical Flooded & Swamp Forest,Bolivia,NA,NA,1,1,NA,NA,0.04,1,NA,NA
+Tropical Flooded & Swamp Forest,Argentina,NA,NA,0.652,1,0.422,1,0.468,1,0.391,1
+Tropical Flooded & Swamp Forest,Paraguay,NA,NA,NA,NA,NA,NA,0.567,1,NA,NA
+Tropical Flooded & Swamp Forest,Argentina,NA,NA,0.324,1,NA,NA,0.631,1,NA,NA
+Warm Temperate Forest,Chile,NA,NA,NA,NA,0.173,1,NA,NA,0.562,1
+Warm Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Warm Temperate Forest,Chile,NA,NA,NA,NA,0.107,1,NA,NA,0.139,1
+Warm Temperate Forest,Argentina,NA,NA,NA,NA,0.158,1,NA,NA,0.148,1
+Warm Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Warm Temperate Forest,Argentina,NA,NA,NA,NA,0.002,1,NA,NA,0.002,1
+Warm Temperate Forest,Brazil,NA,NA,NA,NA,0.25,1,NA,NA,0.511,1
+Warm Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Warm Temperate Forest,Uruguay,NA,NA,NA,NA,0,1,NA,NA,0,1
+Cool Temperate Forest,Chile,NA,NA,NA,NA,0.069,1,NA,NA,0.247,1
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,Argentina,NA,NA,NA,NA,0.187,1,NA,NA,0.191,1
+Cool Temperate Forest,Argentina,NA,NA,NA,NA,0.108,1,NA,NA,0.112,1
+Cool Temperate Forest,Chile,NA,NA,NA,NA,0.088,1,NA,NA,0.287,1
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,Argentina,NA,NA,NA,NA,0.157,1,NA,NA,0.157,1
+Cool Temperate Forest,Chile,NA,NA,NA,NA,0.043,1,NA,NA,0.139,1
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cool Temperate Forest,Argentina,NA,NA,NA,NA,0.215,1,NA,NA,0.22,1
+Cool Temperate Forest,Chile,NA,NA,NA,NA,0.069,1,NA,NA,0.201,1
+Cool Temperate Forest,Argentina,NA,NA,NA,NA,0.025,1,NA,NA,0.029,1
+Cool Temperate Forest,Chile,NA,NA,NA,NA,0.035,1,NA,NA,0.06,1
+Cool Temperate Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,Mexico,NA,NA,0.31,1,0.158,1,NA,NA,0.098,1
+Temperate Flooded & Swamp Forest,Argentina,NA,NA,0.498,1,0.365,1,NA,NA,0.371,1
+Temperate Flooded & Swamp Forest,Uruguay,NA,NA,0.26,1,0,1,NA,NA,0,1
+Temperate Flooded & Swamp Forest,Paraguay,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,Brazil,NA,NA,0.264,1,0.25,1,NA,NA,0.426,1
+Temperate Flooded & Swamp Forest,Argentina,NA,NA,0.27,1,0.038,1,NA,NA,0.038,1
+Temperate Flooded & Swamp Forest,Chile,NA,NA,0.047,1,0.134,1,NA,NA,0.445,1
+Temperate Flooded & Swamp Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,Chile,NA,NA,0.089,1,0.033,1,NA,NA,0.092,1
+Temperate Flooded & Swamp Forest,Argentina,NA,NA,0.389,1,0.127,1,NA,NA,0.134,1
+Temperate Flooded & Swamp Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Temperate Flooded & Swamp Forest,Chile,NA,NA,0.173,1,0.5,1,NA,NA,0.75,1
+Temperate Flooded & Swamp Forest,Argentina,NA,NA,0.431,1,0.001,1,NA,NA,0.001,1
+Temperate Flooded & Swamp Forest,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tropical Dry Forest & Woodland,Paraguay,NA,NA,NA,NA,0.312,1,0.594,1,0.204,1
+Tropical Dry Forest & Woodland,Brazil,NA,NA,NA,NA,0.212,1,0.274,1,0.327,1
+Tropical Dry Forest & Woodland,Bolivia,NA,NA,NA,NA,0.037,1,0.361,1,0.034,1
+Tropical Lowland Humid Forest,El Salvador,NA,NA,NA,NA,0.113,1,0.773,1,0.19,1
+Tropical Lowland Humid Forest,Honduras,NA,NA,NA,NA,0.184,1,0.51,1,0.253,1
+Tropical Lowland Humid Forest,Mexico,NA,NA,NA,NA,0.245,1,0.238,1,0.255,1
+Tropical Lowland Humid Forest,Nicaragua,NA,NA,NA,NA,0.272,1,0.534,1,0.401,1
+Tropical Lowland Humid Forest,Panama,NA,NA,NA,NA,0.224,1,0.321,1,0.28,1
+Tropical Lowland Humid Forest,Costa Rica,NA,NA,NA,NA,0.261,1,0.569,1,0.466,1
+Tropical Lowland Humid Forest,Guatemala,NA,NA,NA,NA,0.256,1,0.623,1,0.237,1
+Tropical Lowland Humid Forest,Belize,NA,NA,NA,NA,0.263,1,0.044,1,0.284,1
+Tropical Lowland Humid Forest,Colombia,NA,NA,NA,NA,0.225,1,0.028,1,0.319,1

@@ -1,0 +1,584 @@
+ecosystem,country,recent_area_lost,criterion_A1,future_area_lost,criterion_A2b,historical_area_lost,criterion_A3
+Mangrove,Honduras,0.477,VU,0.954,CR,0.784,EN
+Mangrove,Peru,0,DD,0.882,NT,0,DD
+Mangrove,Panama,0.452,VU,0.426,VU,0.705,EN
+Mangrove,Guatemala,0.707,DD,0.493,NT,0.914,CR
+Mangrove,Mexico,0.597,EN,0.328,NT,0.883,EN
+Mangrove,Nicaragua,0.646,DD,0.876,NT,0.879,DD
+Mangrove,El Salvador,0.546,EN,0.616,NT,0.813,EN
+Mangrove,Colombia,0.353,VU,0,LC,0.645,VU
+Mangrove,Costa Rica,0.601,DD,0.529,EN,0.842,EN
+Mangrove,Ecuador,0.443,VU,0.793,EN,0.533,NT
+Mangrove,Costa Rica,0.644,DD,0,LC,0.875,DD
+Mangrove,Dominican Republic,0.437,VU,0,LC,0.725,EN
+Mangrove,Colombia,0.612,EN,0.166,LC,0.898,EN
+Mangrove,Cayman Islands,0,DD,0.45,NT,0,DD
+Mangrove,Jamaica,0.594,EN,0.406,NT,0.948,CR
+Mangrove,Dominica,0.644,DD,0,LC,0.875,DD
+Mangrove,Nicaragua,0.536,EN,0,LC,0.784,EN
+Mangrove,Panama,0.326,NT,0.058,LC,0.542,NT
+Mangrove,Cuba,0.4,VU,0,LC,0.644,VU
+Mangrove,Curaçao,0.207,LC,0,LC,0.534,NT
+Mangrove,Saint Kitts and Nevis,1,CR,0,LC,1,CR
+Mangrove,Saint Lucia,0,LC,0.967,NT,0.094,LC
+Mangrove,Puerto Rico,0.671,DD,0,LC,0.968,CR
+Mangrove,Saint Barthélemy,0,DD,0,DD,0,DD
+Mangrove,Haiti,0.169,LC,0,LC,0.8,EN
+Mangrove,Honduras,0.087,LC,0.557,EN,0.171,LC
+Mangrove,Suriname,0.014,LC,0,LC,0.064,LC
+Mangrove,Martinique,0,LC,0.368,NT,0.509,NT
+Mangrove,Mexico,0.368,VU,0,LC,0.612,VU
+Mangrove,Montserrat,1,CR,0,DD,1,CR
+Mangrove,United States,0.356,VU,0.905,NT,0.592,VU
+Mangrove,Venezuela,0.057,LC,0,LC,0.115,LC
+Mangrove,French Guiana,0.057,LC,0,LC,0.143,LC
+Mangrove,Grenada,0,LC,0.99,CR,0.476,LC
+Mangrove,Guadeloupe,0,LC,0,LC,0.608,VU
+Mangrove,Guatemala,0.102,LC,0.848,CR,0.191,LC
+Mangrove,Guyana,0,LC,0.521,NT,0,LC
+Mangrove,Saint Vincent and the Grenadines,0,LC,0.969,NT,0.833,EN
+Mangrove,Sint Maarten,0,DD,0,DD,0,DD
+Mangrove,Bahamas,0.003,LC,0.642,EN,0.018,LC
+Mangrove,Barbados,0,DD,0,LC,0,DD
+Mangrove,Trinidad and Tobago,0.266,LC,0.837,CR,0.618,VU
+Mangrove,Turks and Caicas Islands,0.017,LC,0.411,NT,0.033,LC
+Mangrove,British Virgin Islands,0,DD,0.96,NT,0,DD
+Mangrove,Antigua and Barbuda,0.175,LC,0,LC,0.577,VU
+Mangrove,Aruba,0,DD,0,DD,0,DD
+Mangrove,Virgin Islands,0,LC,0,DD,0.5,LC
+Mangrove,Saint Martin,0,DD,0,DD,0,DD
+Mangrove,Brazil,0.225,LC,0.262,LC,0.414,LC
+Mangrove,"Bonaire, Saint Eustatius and Saba",0,LC,0,LC,0,LC
+Mangrove,Belize,0,LC,0.283,LC,0.036,LC
+Warm Temperate Forest,United States,0.206,LC,0.495,NT,0.531,NT
+Warm Temperate Forest,United States,0.145,LC,0.5,NT,0.551,VU
+Warm Temperate Forest,United States,0.341,VU,0.429,VU,0.658,VU
+Warm Temperate Forest,Mexico,0.332,VU,0,DD,0.549,NT
+Warm Temperate Forest,Canada,0.165,LC,0.686,EN,0.477,LC
+Warm Temperate Forest,United States,0.208,LC,0.961,CR,0.368,LC
+Warm Temperate Forest,Mexico,0.323,NT,0,LC,0.557,VU
+Cool Temperate Forest,Canada,0.76,EN,0,LC,0.977,CR
+Cool Temperate Forest,United States,0.865,CR,0,LC,0.995,CR
+Cool Temperate Forest,United States,0.136,LC,0.96,CR,0.249,LC
+Cool Temperate Forest,Mexico,0.197,LC,0.795,EN,0.368,LC
+Cool Temperate Forest,United States,0.016,LC,0.352,VU,0.319,LC
+Cool Temperate Forest,Canada,0.098,LC,0.371,VU,0.311,LC
+Warm Temperate Forest,United States,0.664,DD,0.871,NT,0.909,CR
+Cool Temperate Forest,United States,0.3,LC,0.592,EN,0.73,EN
+Cool Temperate Forest,Canada,0.005,LC,0.493,VU,0.011,LC
+Cool Temperate Forest,United States,0.115,LC,0,LC,0.267,LC
+Cool Temperate Forest,Mexico,0.312,NT,0.459,VU,0.537,NT
+Cool Temperate Forest,United States,0.187,LC,0,LC,0.401,LC
+Cool Temperate Forest,United States,0.042,LC,0.545,EN,0.086,LC
+Cool Temperate Forest,United States,0.042,LC,0.54,EN,0.161,LC
+Cool Temperate Forest,Canada,0.033,LC,0.465,VU,0.087,LC
+Cool Temperate Forest,United States,0.038,LC,0,LC,0.072,LC
+Cool Temperate Forest,Canada,0.063,LC,0.512,EN,0.119,LC
+Cool Temperate Forest,United States,0.327,NT,0,LC,0.641,VU
+Cool Temperate Forest,United States,0.369,VU,0.815,CR,0.63,VU
+Temperate Flooded & Swamp Forest,Canada,0.66,EN,0,LC,0.927,CR
+Temperate Flooded & Swamp Forest,United States,0.692,EN,0,LC,0.94,CR
+Temperate Flooded & Swamp Forest,United States,0.245,LC,0.357,VU,0.735,EN
+Temperate Flooded & Swamp Forest,Canada,0.214,LC,0,LC,0.559,VU
+Temperate Flooded & Swamp Forest,United States,0.318,NT,0.313,NT,0.664,VU
+Temperate Flooded & Swamp Forest,United States,0.114,LC,0.378,NT,0.378,LC
+Temperate Flooded & Swamp Forest,United States,0.283,LC,0.202,LC,0.615,VU
+Temperate Flooded & Swamp Forest,Canada,0.033,LC,0.332,VU,0.075,LC
+Temperate Flooded & Swamp Forest,United States,0.194,LC,0,LC,0.425,LC
+Temperate Flooded & Swamp Forest,United States,0.119,LC,0.449,VU,0.427,LC
+Temperate Flooded & Swamp Forest,Canada,0.135,LC,0.467,VU,0.368,LC
+Temperate Flooded & Swamp Forest,United States,0.424,VU,0.201,LC,0.778,EN
+Temperate Flooded & Swamp Forest,Mexico,0.487,VU,0,LC,0.751,EN
+Tropical Dry Forest & Woodland,Barbados,0,DD,0,LC,0,DD
+Tropical Dry Forest & Woodland,"Bonaire, Saint Eustatius and Saba",0,DD,0.234,LC,0,DD
+Tropical Dry Forest & Woodland,British Virgin Islands,0,DD,0,LC,0,DD
+Tropical Dry Forest & Woodland,Cayman Islands,0,DD,0.975,CR,0,DD
+Tropical Dry Forest & Woodland,Cuba,0.586,DD,0,LC,0.832,EN
+Tropical Dry Forest & Woodland,Dominica,0.229,LC,0.469,VU,0.485,LC
+Tropical Dry Forest & Woodland,Dominican Republic,0.605,DD,0,LC,0.861,EN
+Tropical Dry Forest & Woodland,Grenada,0,LC,0.901,NT,0.662,VU
+Tropical Dry Forest & Woodland,Guadeloupe,0,LC,0,LC,0.377,LC
+Tropical Dry Forest & Woodland,Haiti,0.628,EN,0.243,LC,0.924,CR
+Tropical Dry Forest & Woodland,Anguilla,0,DD,0,LC,0,DD
+Tropical Dry Forest & Woodland,Antigua and Barbuda,0.188,LC,0,LC,0.599,VU
+Tropical Dry Forest & Woodland,Bahamas,0.001,LC,0.361,NT,0.006,LC
+Tropical Dry Forest & Woodland,Puerto Rico,0.636,DD,0,LC,0.956,CR
+Tropical Dry Forest & Woodland,Saint Barthélemy,0,DD,0.996,NT,0,DD
+Tropical Dry Forest & Woodland,Saint Kitts and Nevis,0.979,DD,0,LC,1,DD
+Tropical Dry Forest & Woodland,Saint Lucia,0,LC,0,LC,0.867,EN
+Tropical Dry Forest & Woodland,Saint Martin,0,DD,0,LC,0,DD
+Tropical Dry Forest & Woodland,Saint Vincent and the Grenadines,0,LC,0.582,NT,0.58,VU
+Tropical Dry Forest & Woodland,Sint Maarten,0,DD,0,LC,0,DD
+Tropical Dry Forest & Woodland,Trinidad and Tobago,0.432,VU,0.117,LC,0.785,EN
+Tropical Dry Forest & Woodland,Turks and Caicas Islands,0.233,LC,0.738,EN,0.405,LC
+Tropical Dry Forest & Woodland,United States,0.663,EN,0.5,NT,0.922,CR
+Tropical Dry Forest & Woodland,Jamaica,0.524,EN,0.714,EN,0.894,EN
+Tropical Dry Forest & Woodland,Martinique,0,LC,0,LC,0.52,NT
+Tropical Dry Forest & Woodland,Montserrat,1,CR,0.838,NT,1,CR
+Tropical Dry Forest & Woodland,Virgin Islands,0,LC,0,LC,0.631,VU
+Cool Temperate Forest,United States,0.793,EN,0,LC,0.985,CR
+Cool Temperate Forest,Canada,0.709,EN,0,LC,0.953,CR
+Temperate Flooded & Swamp Forest,United States,0.661,DD,0.962,NT,0.905,CR
+Cool Temperate Forest,United States,0.142,LC,0.358,VU,0.468,LC
+Cool Temperate Forest,Canada,0.126,LC,0.366,VU,0.366,LC
+Temperate Flooded & Swamp Forest,United States,0.304,NT,0.321,NT,0.535,NT
+Tropical Lowland Humid Forest,United States,0,DD,0,DD,0,DD
+Tropical Lowland Humid Forest,Grenada,0,LC,1,CR,0.816,EN
+Tropical Lowland Humid Forest,Virgin Islands,0,LC,0.504,NT,0.932,CR
+Tropical Lowland Humid Forest,Turks and Caicas Islands,0.117,LC,0.474,NT,0.216,LC
+Tropical Lowland Humid Forest,Antigua and Barbuda,0.441,VU,0,LC,0.869,EN
+Tropical Lowland Humid Forest,"Bonaire, Saint Eustatius and Saba",0,DD,0,LC,0,DD
+Tropical Lowland Humid Forest,Jamaica,0.395,VU,0.689,EN,0.684,VU
+Tropical Lowland Humid Forest,Cayman Islands,0,DD,1,NT,0,DD
+Tropical Lowland Humid Forest,Barbados,0,DD,0,LC,0,DD
+Tropical Lowland Humid Forest,Trinidad and Tobago,0.199,LC,0.336,VU,0.422,LC
+Tropical Lowland Humid Forest,British Virgin Islands,0,DD,0,LC,0,DD
+Tropical Lowland Humid Forest,Sint Maarten,0,DD,0.83,NT,0,DD
+Tropical Lowland Humid Forest,Martinique,0,LC,0.368,NT,0.435,LC
+Tropical Lowland Humid Forest,Haiti,0.654,DD,0.812,CR,0.911,CR
+Tropical Lowland Humid Forest,Saint Vincent and the Grenadines,0,LC,0.432,VU,0.39,LC
+Tropical Lowland Humid Forest,Dominica,0.142,LC,0.405,VU,0.331,LC
+Tropical Lowland Humid Forest,Dominican Republic,0.614,DD,0.414,NT,0.863,EN
+Tropical Lowland Humid Forest,Saint Barthélemy,0,DD,0,LC,0,DD
+Tropical Lowland Humid Forest,Guadeloupe,0.132,LC,0,LC,0.452,LC
+Tropical Lowland Humid Forest,Puerto Rico,0.485,VU,0,LC,0.86,EN
+Tropical Lowland Humid Forest,Saint Martin,0,DD,0,LC,0,DD
+Tropical Lowland Humid Forest,Montserrat,1,CR,0.611,NT,1,CR
+Tropical Lowland Humid Forest,Bahamas,0.001,LC,0,LC,0.006,LC
+Tropical Lowland Humid Forest,Saint Lucia,0.299,LC,0.089,LC,0.69,VU
+Tropical Lowland Humid Forest,Saint Kitts and Nevis,1,CR,0.01,LC,1,CR
+Tropical Lowland Humid Forest,Cuba,0.578,EN,0,LC,0.827,EN
+Tropical Dry Forest & Woodland,Trinidad and Tobago,0,LC,0,LC,0,LC
+Tropical Dry Forest & Woodland,Cuba,0.458,VU,0.201,LC,0.705,EN
+Tropical Dry Forest & Woodland,Antigua and Barbuda,1,CR,0,LC,1,CR
+Tropical Dry Forest & Woodland,Bahamas,0,DD,0.94,CR,0,DD
+Tropical Dry Forest & Woodland,Haiti,0.653,DD,0.83,CR,0.903,CR
+Tropical Dry Forest & Woodland,Dominica,0.318,NT,0,LC,0.529,NT
+Tropical Dry Forest & Woodland,Dominican Republic,0.584,EN,0.746,EN,0.847,EN
+Tropical Dry Forest & Woodland,Guadeloupe,0,LC,0,LC,0.084,LC
+Tropical Dry Forest & Woodland,Saint Vincent and the Grenadines,0,LC,0,LC,0.273,LC
+Tropical Dry Forest & Woodland,Puerto Rico,0.392,VU,0,LC,0.795,EN
+Tropical Dry Forest & Woodland,Saint Lucia,0.592,DD,0,LC,0.908,DD
+Tropical Dry Forest & Woodland,Jamaica,0.296,LC,0.651,EN,0.625,VU
+Tropical Dry Forest & Woodland,Martinique,0.005,LC,0.277,LC,0.519,NT
+Tropical Dry Forest & Woodland,Bahamas,0,LC,0,LC,0,LC
+Tropical Dry Forest & Woodland,Honduras,0.238,LC,0.599,EN,0.422,LC
+Tropical Dry Forest & Woodland,Panama,0.261,LC,0.513,EN,0.45,LC
+Tropical Dry Forest & Woodland,Nicaragua,0.377,VU,0.848,CR,0.613,VU
+Tropical Dry Forest & Woodland,Cuba,0.507,EN,0,LC,0.758,EN
+Tropical Dry Forest & Woodland,Belize,0.02,LC,0.512,EN,0.039,LC
+Tropical Dry Forest & Woodland,Mexico,0.323,NT,0.134,LC,0.58,VU
+Tropical Dry Forest & Woodland,Costa Rica,0.483,VU,0.288,LC,0.731,EN
+Tropical Dry Forest & Woodland,United States,0.652,DD,0,LC,0.889,EN
+Tropical Dry Forest & Woodland,Puerto Rico,0.408,VU,0,LC,0.807,EN
+Tropical Dry Forest & Woodland,Turks and Caicas Islands,0,DD,0,LC,0,DD
+Tropical Dry Forest & Woodland,Haiti,0.644,DD,0,LC,0.919,CR
+Tropical Dry Forest & Woodland,Guatemala,0.315,NT,0.936,CR,0.533,NT
+Tropical Dry Forest & Woodland,Jamaica,0.355,VU,0.756,DD,0.586,VU
+Tropical Dry Forest & Woodland,El Salvador,0.632,DD,0,LC,0.89,EN
+Tropical Dry Forest & Woodland,Dominican Republic,0.651,DD,0,LC,0.894,EN
+Cool Temperate Forest,United States,0.015,LC,0.733,EN,0.034,LC
+Cool Temperate Forest,Canada,0.007,LC,0.525,EN,0.019,LC
+Cool Temperate Forest,United States,0.12,LC,0.491,VU,0.261,LC
+Cool Temperate Forest,Canada,0.015,LC,0.662,EN,0.036,LC
+Cool Temperate Forest,United States,0.005,LC,0.363,VU,0.527,NT
+Cool Temperate Forest,Canada,0,LC,0,LC,0.393,LC
+Temperate Flooded & Swamp Forest,Canada,0.652,EN,0.021,LC,0.945,CR
+Temperate Flooded & Swamp Forest,United States,0.473,VU,0,LC,0.901,CR
+Temperate Flooded & Swamp Forest,Canada,0.252,LC,0,LC,0.619,VU
+Temperate Flooded & Swamp Forest,United States,0.146,LC,0.233,LC,0.568,VU
+Tropical Dry Forest & Woodland,Honduras,0.435,VU,0.211,LC,0.725,EN
+Tropical Dry Forest & Woodland,Nicaragua,0.617,DD,0.814,NT,0.854,EN
+Tropical Dry Forest & Woodland,Guatemala,0.646,DD,0.699,NT,0.88,DD
+Tropical Dry Forest & Woodland,Mexico,0.271,LC,0,LC,0.515,NT
+Tropical Dry Forest & Woodland,United States,0,DD,0,DD,0,DD
+Tropical Dry Forest & Woodland,Guatemala,0.66,DD,0,LC,0.905,CR
+Tropical Dry Forest & Woodland,Costa Rica,0.639,DD,0.749,DD,0.875,DD
+Tropical Dry Forest & Woodland,El Salvador,0.646,DD,0,LC,0.9,CR
+Tropical Dry Forest & Woodland,Colombia,0.48,VU,0.312,NT,0.735,EN
+Tropical Dry Forest & Woodland,Nicaragua,0.603,EN,0,LC,0.867,EN
+Tropical Dry Forest & Woodland,Panama,0.329,NT,0.076,LC,0.557,VU
+Tropical Dry Forest & Woodland,Honduras,0.556,EN,0,LC,0.872,EN
+Tropical Dry Forest & Woodland,Mexico,0.501,EN,0,LC,0.771,EN
+Tropical Dry Forest & Woodland,Venezuela,0.418,VU,0,LC,0.665,VU
+Tropical Dry Forest & Woodland,Colombia,0.72,EN,0.034,LC,0.967,CR
+Tropical Dry Forest & Woodland,Trinidad and Tobago,0.298,LC,0.18,LC,0.51,NT
+Tropical Dry Forest & Woodland,Colombia,0.728,EN,0.533,EN,0.975,CR
+Tropical Dry Forest & Woodland,Venezuela,0.534,EN,0.376,NT,0.787,EN
+Tropical Dry Forest & Woodland,Colombia,0.745,EN,0.576,EN,0.976,CR
+Tropical Dry Forest & Woodland,Ecuador,0.664,DD,0.982,CR,0.853,EN
+Tropical Dry Forest & Woodland,Peru,0.536,EN,0.96,NT,0.778,EN
+Tropical Dry Forest & Woodland,Venezuela,0.051,LC,0.037,LC,0.097,LC
+Tropical Dry Forest & Woodland,Brazil,0.025,LC,0.022,LC,0.049,LC
+Tropical Dry Forest & Woodland,Guyana,0.025,LC,0.011,LC,0.048,LC
+Tropical Dry Forest & Woodland,Suriname,0,LC,0.078,LC,0,LC
+Tropical Dry Forest & Woodland,French Guiana,0,LC,0.034,LC,0,LC
+Tropical Dry Forest & Woodland,Brazil,0.583,DD,0,LC,0.827,EN
+Tropical Dry Forest & Woodland,Paraguay,0.576,EN,0.982,CR,0.82,EN
+Tropical Dry Forest & Woodland,Bolivia,0.339,VU,0.638,NT,0.663,VU
+Tropical Dry Forest & Woodland,Brazil,0.454,VU,0.662,EN,0.7,VU
+Tropical Dry Forest & Woodland,Paraguay,0.459,VU,0.984,CR,0.704,EN
+Tropical Dry Forest & Woodland,Brazil,0.627,DD,0.033,LC,0.863,DD
+Tropical Dry Forest & Woodland,Bolivia,0.801,CR,0.022,LC,0.985,CR
+Tropical Dry Forest & Woodland,Argentina,0.125,LC,0.425,NT,0.229,LC
+Tropical Dry Forest & Woodland,Brazil,0.327,NT,0.968,CR,0.541,NT
+Tropical Dry Forest & Woodland,Venezuela,0.418,VU,0.195,LC,0.664,VU
+Tropical Dry Forest & Woodland,Peru,0.407,VU,0.644,NT,0.645,VU
+Tropical Dry Forest & Woodland,Ecuador,0.454,VU,0.648,EN,0.688,VU
+Tropical Dry Forest & Woodland,Colombia,0.667,EN,0.12,LC,0.943,CR
+Tropical Dry Forest & Woodland,Argentina,0,DD,#VALUE!,NA,0,DD
+Tropical Dry Forest & Woodland,Ecuador,0.549,EN,0.699,DD,0.796,EN
+Tropical Dry Forest & Woodland,Peru,0.266,LC,0.549,EN,0.459,LC
+Tropical Dry Forest & Woodland,Bolivia,0.267,LC,0.348,VU,0.474,LC
+Tropical Dry Forest & Woodland,Bolivia,0.303,NT,0.46,VU,0.618,VU
+Tropical Dry Forest & Woodland,Argentina,0.042,LC,0.098,LC,0.086,LC
+Tropical Lowland Humid Forest,Panama,0.22,LC,0.417,VU,0.389,LC
+Tropical Lowland Humid Forest,Honduras,0.08,LC,0.693,EN,0.157,LC
+Tropical Lowland Humid Forest,Mexico,0.42,VU,0.544,EN,0.692,VU
+Tropical Lowland Humid Forest,Nicaragua,0.211,LC,0.868,CR,0.379,LC
+Tropical Lowland Humid Forest,Costa Rica,0.345,VU,0.075,LC,0.57,VU
+Tropical Lowland Humid Forest,El Salvador,0.615,DD,0,LC,0.877,EN
+Tropical Lowland Humid Forest,Guatemala,0.176,LC,0.858,CR,0.318,LC
+Tropical Lowland Humid Forest,Colombia,0.405,VU,0.16,LC,0.642,VU
+Tropical Lowland Humid Forest,Belize,0.008,LC,0.456,VU,0.016,LC
+Tropical Lowland Humid Forest,Colombia,0.599,EN,0,LC,0.911,CR
+Tropical Lowland Humid Forest,Venezuela,0.327,NT,0,LC,0.55,NT
+Tropical Lowland Humid Forest,Colombia,0.51,EN,0.482,VU,0.839,EN
+Tropical Lowland Humid Forest,Venezuela,0.465,VU,0.267,LC,0.706,EN
+Tropical Lowland Humid Forest,Panama,0.149,LC,0.065,LC,0.271,LC
+Tropical Lowland Humid Forest,Colombia,0.374,VU,0.233,LC,0.704,EN
+Tropical Lowland Humid Forest,Ecuador,0.415,VU,0.716,EN,0.574,VU
+Tropical Lowland Humid Forest,Peru,0,DD,0.381,NT,0,DD
+Tropical Lowland Humid Forest,Ecuador,0.609,EN,0.855,CR,0.826,EN
+Tropical Lowland Humid Forest,Colombia,0.672,DD,0.574,EN,0.918,CR
+Tropical Lowland Humid Forest,Colombia,0.788,EN,0.575,EN,0.987,CR
+Tropical Lowland Humid Forest,Venezuela,0.487,VU,0.882,CR,0.739,EN
+Tropical Lowland Humid Forest,Venezuela,0.009,LC,0.039,LC,0.019,LC
+Tropical Lowland Humid Forest,Brazil,0,LC,0.002,LC,0,LC
+Tropical Lowland Humid Forest,Colombia,0.041,LC,0.011,LC,0.111,LC
+Tropical Lowland Humid Forest,Venezuela,0.044,LC,0,LC,0.084,LC
+Tropical Lowland Humid Forest,Colombia,0,LC,0.097,LC,0,LC
+Tropical Lowland Humid Forest,Guyana,0.295,LC,0,LC,0.497,LC
+Tropical Lowland Humid Forest,Brazil,0.032,LC,0.043,LC,0.061,LC
+Tropical Lowland Humid Forest,Venezuela,0.06,LC,0.021,LC,0.119,LC
+Tropical Lowland Humid Forest,Brazil,0.016,LC,0.002,LC,0.031,LC
+Tropical Lowland Humid Forest,Guyana,0.026,LC,0,LC,0.047,LC
+Tropical Lowland Humid Forest,Suriname,0,LC,0.048,LC,0,LC
+Tropical Lowland Humid Forest,French Guiana,0,LC,0.048,LC,0.001,LC
+Tropical Lowland Humid Forest,Suriname,0,LC,0.045,LC,0,LC
+Tropical Lowland Humid Forest,Colombia,0.988,CR,0,LC,1,CR
+Tropical Lowland Humid Forest,French Guiana,0.001,LC,0.037,LC,0.002,LC
+Tropical Lowland Humid Forest,Guyana,0.067,LC,0,LC,0.127,LC
+Tropical Lowland Humid Forest,Trinidad and Tobago,0.208,LC,0.059,LC,0.464,LC
+Tropical Lowland Humid Forest,Brazil,0.006,LC,0,LC,0.011,LC
+Tropical Lowland Humid Forest,Venezuela,0.316,NT,0,LC,0.531,NT
+Tropical Lowland Humid Forest,Brazil,0.046,LC,0.207,LC,0.087,LC
+Tropical Lowland Humid Forest,Bolivia,0.25,LC,0.966,CR,0.431,LC
+Tropical Lowland Humid Forest,Colombia,0.068,LC,0.115,LC,0.14,LC
+Tropical Lowland Humid Forest,Peru,0.01,LC,0.135,LC,0.015,LC
+Tropical Lowland Humid Forest,Ecuador,0.027,LC,0.192,LC,0.054,LC
+Tropical Lowland Humid Forest,Ecuador,0.258,LC,0.305,NT,0.443,LC
+Tropical Lowland Humid Forest,Peru,0.054,LC,0.355,VU,0.102,LC
+Tropical Lowland Humid Forest,Colombia,0.308,NT,0.454,VU,0.547,NT
+Tropical Lowland Humid Forest,Brazil,0.039,LC,0.302,NT,0.074,LC
+Tropical Lowland Humid Forest,Bolivia,0.039,LC,0.277,LC,0.089,LC
+Tropical Lowland Humid Forest,Peru,0.006,LC,0.119,LC,0.007,LC
+Tropical Lowland Humid Forest,Colombia,0.08,LC,0.127,LC,0.215,LC
+Tropical Lowland Humid Forest,Peru,0.081,LC,0.353,VU,0.147,LC
+Tropical Lowland Humid Forest,Bolivia,0.168,LC,0.356,VU,0.326,LC
+Tropical Lowland Humid Forest,Peru,0,LC,0.03,LC,0,LC
+Tropical Lowland Humid Forest,Venezuela,0.031,LC,0,LC,0.059,LC
+Tropical Lowland Humid Forest,French Guiana,0,LC,0.053,LC,0,LC
+Tropical Lowland Humid Forest,Brazil,0.006,LC,0.032,LC,0.013,LC
+Tropical Lowland Humid Forest,Suriname,0,LC,0,LC,0,LC
+Tropical Lowland Humid Forest,Guyana,0.067,LC,0,LC,0.126,LC
+Tropical Lowland Humid Forest,Colombia,0.084,LC,0.193,LC,0.187,LC
+Tropical Lowland Humid Forest,Brazil,0.06,LC,0.459,VU,0.113,LC
+Tropical Lowland Humid Forest,Bolivia,0.097,LC,0.174,LC,0.267,LC
+Tropical Lowland Humid Forest,Colombia,0.022,LC,0.045,LC,0.047,LC
+Tropical Lowland Humid Forest,Peru,0,LC,0,LC,0,LC
+Tropical Lowland Humid Forest,Brazil,0.48,VU,0.219,LC,0.739,EN
+Tropical Lowland Humid Forest,Paraguay,0.477,VU,0.971,CR,0.725,EN
+Tropical Lowland Humid Forest,Brazil,0.559,EN,0.857,CR,0.85,EN
+Tropical Lowland Humid Forest,Argentina,0.12,LC,0.747,EN,0.224,LC
+Tropical Lowland Humid Forest,Brazil,0.385,VU,0.704,EN,0.618,VU
+Tropical Lowland Humid Forest,Bolivia,0.126,LC,0.565,EN,0.266,LC
+Tropical Lowland Humid Forest,Paraguay,0.618,DD,0.964,CR,0.855,EN
+Tropical Montane Humid Forest,Dominica,0.287,LC,0.137,LC,0.485,LC
+Tropical Montane Humid Forest,Trinidad and Tobago,1,CR,0,DD,1,CR
+Tropical Montane Humid Forest,Cuba,0.441,VU,0.589,EN,0.687,VU
+Tropical Montane Humid Forest,Saint Lucia,0,LC,0.615,EN,0.118,LC
+Tropical Montane Humid Forest,Dominican Republic,0.611,DD,0.366,VU,0.859,EN
+Tropical Montane Humid Forest,Grenada,0,LC,0.999,CR,0.891,EN
+Tropical Montane Humid Forest,"Bonaire, Saint Eustatius and Saba",0,DD,0,LC,0,DD
+Tropical Montane Humid Forest,Puerto Rico,0.234,LC,0.698,EN,0.635,VU
+Tropical Montane Humid Forest,Saint Vincent and the Grenadines,0,LC,0,LC,0.236,LC
+Tropical Montane Humid Forest,Haiti,0.656,DD,0.704,NT,0.899,EN
+Tropical Montane Humid Forest,Martinique,0.171,LC,0.682,EN,0.324,LC
+Tropical Montane Humid Forest,Guadeloupe,0.288,LC,0,LC,0.644,VU
+Tropical Montane Humid Forest,Saint Kitts and Nevis,1,CR,0.304,NT,1,CR
+Tropical Montane Humid Forest,Jamaica,0.535,EN,0.632,EN,0.869,EN
+Tropical Montane Humid Forest,Montserrat,1,CR,0.427,NT,1,CR
+Tropical Montane Humid Forest,Honduras,0.154,LC,0.581,EN,0.296,LC
+Tropical Montane Humid Forest,Belize,0.001,LC,0.223,LC,0.002,LC
+Tropical Montane Humid Forest,El Salvador,0.546,EN,0.425,VU,0.799,EN
+Tropical Montane Humid Forest,Guatemala,0.491,VU,0.881,CR,0.75,EN
+Tropical Montane Humid Forest,Nicaragua,0.162,LC,0.898,CR,0.292,LC
+Tropical Montane Humid Forest,Mexico,0.378,VU,0.624,EN,0.618,VU
+Tropical Montane Humid Forest,Nicaragua,0.528,EN,0.908,CR,0.78,EN
+Tropical Montane Humid Forest,Guatemala,0.534,EN,0.776,EN,0.79,EN
+Tropical Montane Humid Forest,Mexico,0.38,VU,0.58,EN,0.625,VU
+Tropical Montane Humid Forest,Belize,0.014,LC,0.791,EN,0.026,LC
+Tropical Montane Humid Forest,El Salvador,0.614,EN,0.288,LC,0.883,EN
+Tropical Montane Humid Forest,Honduras,0.298,LC,0.646,EN,0.515,NT
+Tropical Montane Humid Forest,Panama,0.095,LC,0.225,LC,0.178,LC
+Tropical Montane Humid Forest,Nicaragua,0.169,LC,0.562,NT,0.304,LC
+Tropical Montane Humid Forest,Colombia,0.644,DD,0,LC,0.875,DD
+Tropical Montane Humid Forest,Costa Rica,0.255,LC,0.291,LC,0.455,LC
+Tropical Montane Humid Forest,Suriname,0.01,LC,0.005,LC,0.02,LC
+Tropical Montane Humid Forest,French Guiana,0,LC,0.013,LC,0,LC
+Tropical Montane Humid Forest,Guyana,0.072,LC,0,LC,0.135,LC
+Tropical Montane Humid Forest,Venezuela,0.055,LC,0.025,LC,0.105,LC
+Tropical Montane Humid Forest,Brazil,0.037,LC,0.055,LC,0.072,LC
+Tropical Montane Humid Forest,French Guiana,0,LC,0.056,LC,0,LC
+Tropical Montane Humid Forest,Venezuela,0.061,LC,0.025,LC,0.12,LC
+Tropical Montane Humid Forest,Brazil,0.004,LC,0.032,LC,0.009,LC
+Tropical Montane Humid Forest,Suriname,0.001,LC,0.041,LC,0.002,LC
+Tropical Montane Humid Forest,Guyana,0.008,LC,0.046,LC,0.016,LC
+Tropical Montane Humid Forest,Ecuador,0.557,EN,0,LC,0.806,EN
+Tropical Montane Humid Forest,Peru,0.524,EN,0.312,NT,0.773,EN
+Tropical Montane Humid Forest,Colombia,0.741,EN,0.159,LC,0.971,CR
+Tropical Montane Humid Forest,Venezuela,0.358,VU,0.265,LC,0.59,VU
+Tropical Montane Humid Forest,Venezuela,0.25,LC,0.552,EN,0.435,LC
+Tropical Montane Humid Forest,Ecuador,0.382,VU,0.429,VU,0.579,VU
+Tropical Montane Humid Forest,Peru,0.136,LC,0.162,LC,0.251,LC
+Tropical Montane Humid Forest,Colombia,0.587,EN,0.408,VU,0.893,EN
+Tropical Montane Humid Forest,Panama,0.514,EN,0.227,LC,0.763,EN
+Tropical Montane Humid Forest,Venezuela,0.282,LC,0.123,LC,0.497,LC
+Tropical Montane Humid Forest,Ecuador,0.112,LC,0.494,NT,0.206,LC
+Tropical Montane Humid Forest,Argentina,0,LC,0,LC,0,LC
+Tropical Montane Humid Forest,Peru,0.469,VU,0.088,LC,0.716,EN
+Tropical Montane Humid Forest,Bolivia,0.485,VU,0.11,LC,0.781,EN
+Tropical Montane Humid Forest,Chile,0,DD,0,DD,0,DD
+Tropical Montane Humid Forest,Peru,0.218,LC,0.332,VU,0.383,LC
+Tropical Montane Humid Forest,Bolivia,0.34,VU,0.257,LC,0.574,VU
+Tropical Montane Humid Forest,Argentina,0,LC,0,LC,0,LC
+Tropical Montane Humid Forest,Argentina,0.024,LC,0.178,LC,0.048,LC
+Tropical Montane Humid Forest,Bolivia,0.389,VU,0.295,LC,0.73,EN
+Tropical Montane Humid Forest,Peru,0.105,LC,0.13,LC,0.195,LC
+Tropical Montane Humid Forest,Argentina,0.039,LC,0.262,LC,0.079,LC
+Tropical Montane Humid Forest,Bolivia,0.211,LC,0.345,VU,0.41,LC
+Tropical Montane Humid Forest,Peru,0.153,LC,0.426,VU,0.277,LC
+Tropical Montane Humid Forest,Peru,0.529,EN,0.227,LC,0.779,EN
+Tropical Montane Humid Forest,Bolivia,0.282,LC,0.22,LC,0.596,VU
+Tropical Montane Humid Forest,Chile,0.265,LC,0,DD,0.453,LC
+Tropical Montane Humid Forest,Argentina,0.062,LC,0,LC,0.116,LC
+Tropical Montane Humid Forest,Peru,0.25,LC,0.065,LC,0.431,LC
+Tropical Montane Humid Forest,Colombia,0.747,EN,0.135,LC,0.972,CR
+Tropical Montane Humid Forest,Ecuador,0.457,VU,0.212,LC,0.702,EN
+Tropical Montane Humid Forest,Argentina,0.172,LC,0.798,EN,0.308,LC
+Tropical Montane Humid Forest,Paraguay,0.509,EN,0.878,CR,0.757,EN
+Tropical Montane Humid Forest,Brazil,0.519,EN,0.665,DD,0.775,EN
+Tropical Flooded & Swamp Forest,Virgin Islands,0,LC,0,DD,1,CR
+Tropical Flooded & Swamp Forest,Jamaica,0.662,EN,0,LC,0.981,CR
+Tropical Flooded & Swamp Forest,Cuba,0.574,EN,0,LC,0.821,EN
+Tropical Flooded & Swamp Forest,United States,0.504,EN,0,LC,0.755,EN
+Tropical Flooded & Swamp Forest,Turks and Caicas Islands,0.044,LC,0.976,CR,0.084,LC
+Tropical Flooded & Swamp Forest,British Virgin Islands,0,DD,0,DD,0,DD
+Tropical Flooded & Swamp Forest,Barbados,0,DD,0,LC,0,DD
+Tropical Flooded & Swamp Forest,Haiti,0.676,DD,0,LC,0.95,CR
+Tropical Flooded & Swamp Forest,Trinidad and Tobago,0.201,LC,0,LC,0.534,NT
+Tropical Flooded & Swamp Forest,Dominican Republic,0.635,DD,0,LC,0.883,EN
+Tropical Flooded & Swamp Forest,Guadeloupe,0,LC,0,LC,0.853,EN
+Tropical Flooded & Swamp Forest,Puerto Rico,0.903,DD,0,LC,0.998,CR
+Tropical Flooded & Swamp Forest,Antigua and Barbuda,1,CR,0,DD,1,CR
+Tropical Flooded & Swamp Forest,Martinique,0,LC,0.012,LC,0.301,LC
+Tropical Flooded & Swamp Forest,Bahamas,0,LC,0.392,NT,0,LC
+Tropical Flooded & Swamp Forest,Saint Lucia,0.578,EN,0.964,NT,0.903,CR
+Tropical Flooded & Swamp Forest,Saint Martin,0,DD,#VALUE!,NA,0,DD
+Tropical Flooded & Swamp Forest,Honduras,0.165,LC,0.741,EN,0.311,LC
+Tropical Flooded & Swamp Forest,Belize,0.009,LC,0.433,VU,0.018,LC
+Tropical Flooded & Swamp Forest,Costa Rica,0.297,LC,0.111,LC,0.501,NT
+Tropical Flooded & Swamp Forest,Haiti,0.64,DD,0.341,NT,0.927,CR
+Tropical Flooded & Swamp Forest,Barbados,0,DD,0,DD,0,DD
+Tropical Flooded & Swamp Forest,Bahamas,0,LC,0.567,NT,0.002,LC
+Tropical Flooded & Swamp Forest,Turks and Caicas Islands,0.166,LC,0,DD,0.3,LC
+Tropical Flooded & Swamp Forest,Nicaragua,0.256,LC,0.779,EN,0.445,LC
+Tropical Flooded & Swamp Forest,Antigua and Barbuda,0.835,DD,0,LC,0.994,DD
+Tropical Flooded & Swamp Forest,Dominican Republic,0.614,DD,0,LC,0.871,EN
+Tropical Flooded & Swamp Forest,Martinique,0,LC,0.15,LC,0.534,NT
+Tropical Flooded & Swamp Forest,Mexico,0.248,LC,0.245,LC,0.471,LC
+Tropical Flooded & Swamp Forest,Dominica,0.138,LC,0.419,NT,0.429,LC
+Tropical Flooded & Swamp Forest,Guatemala,0.265,LC,0.857,CR,0.462,LC
+Tropical Flooded & Swamp Forest,Panama,0.169,LC,0.643,EN,0.315,LC
+Tropical Flooded & Swamp Forest,Trinidad and Tobago,0.292,LC,0,LC,0.648,VU
+Tropical Flooded & Swamp Forest,Saint Vincent and the Grenadines,0,LC,0,LC,0.65,VU
+Tropical Flooded & Swamp Forest,Jamaica,0.422,VU,0.526,EN,0.808,EN
+Tropical Flooded & Swamp Forest,Virgin Islands,0,LC,0,DD,1,CR
+Tropical Flooded & Swamp Forest,United States,0,LC,0,DD,0,LC
+Tropical Flooded & Swamp Forest,Cuba,0.513,EN,0,LC,0.765,EN
+Tropical Flooded & Swamp Forest,Guadeloupe,0,LC,0,LC,0.471,LC
+Tropical Flooded & Swamp Forest,Saint Lucia,0.345,VU,0,LC,0.817,EN
+Tropical Flooded & Swamp Forest,Grenada,0,LC,1,CR,1,CR
+Tropical Flooded & Swamp Forest,Puerto Rico,0.548,EN,0,LC,0.907,CR
+Tropical Flooded & Swamp Forest,Ecuador,0.076,LC,0.966,CR,0.284,LC
+Tropical Flooded & Swamp Forest,Costa Rica,0.37,VU,0,LC,0.601,VU
+Tropical Flooded & Swamp Forest,Colombia,0.38,VU,0.191,LC,0.595,VU
+Tropical Flooded & Swamp Forest,Panama,0.344,VU,0.452,VU,0.571,VU
+Tropical Flooded & Swamp Forest,Jamaica,0.691,EN,0,DD,0.947,CR
+Tropical Flooded & Swamp Forest,Honduras,0.163,LC,0.039,LC,0.318,LC
+Tropical Flooded & Swamp Forest,Mexico,0.442,VU,0,LC,0.723,EN
+Tropical Flooded & Swamp Forest,Belize,0.01,LC,0.427,VU,0.021,LC
+Tropical Flooded & Swamp Forest,Nicaragua,0.223,LC,0.021,LC,0.392,LC
+Tropical Flooded & Swamp Forest,El Salvador,0.696,EN,0,LC,0.944,CR
+Tropical Flooded & Swamp Forest,United States,0.644,DD,0.42,NT,0.875,DD
+Tropical Flooded & Swamp Forest,Trinidad and Tobago,0.292,LC,0,LC,0.569,VU
+Tropical Flooded & Swamp Forest,Guatemala,0.323,NT,0.385,VU,0.555,VU
+Tropical Flooded & Swamp Forest,Honduras,0.09,LC,0.342,NT,0.187,LC
+Tropical Flooded & Swamp Forest,Costa Rica,0.342,VU,0.011,LC,0.568,VU
+Tropical Flooded & Swamp Forest,Panama,0.263,LC,0.26,LC,0.457,LC
+Tropical Flooded & Swamp Forest,Mexico,0.142,LC,0.13,LC,0.291,LC
+Tropical Flooded & Swamp Forest,Belize,0.002,LC,0.382,VU,0.007,LC
+Tropical Flooded & Swamp Forest,Guatemala,0.25,LC,0.767,EN,0.46,LC
+Tropical Flooded & Swamp Forest,Colombia,0.573,EN,0,LC,0.877,EN
+Tropical Flooded & Swamp Forest,Nicaragua,0.317,NT,0.33,NT,0.536,NT
+Tropical Flooded & Swamp Forest,El Salvador,0.604,DD,0,LC,0.856,EN
+Tropical Flooded & Swamp Forest,Colombia,0.745,EN,0,LC,0.976,CR
+Tropical Flooded & Swamp Forest,Guyana,0.246,LC,0.15,LC,0.425,LC
+Tropical Flooded & Swamp Forest,Venezuela,0.421,VU,0,LC,0.663,VU
+Tropical Flooded & Swamp Forest,Panama,0.229,LC,0.109,LC,0.4,LC
+Tropical Flooded & Swamp Forest,Peru,0,DD,0,DD,0,DD
+Tropical Flooded & Swamp Forest,Colombia,0.422,VU,0.243,LC,0.722,EN
+Tropical Flooded & Swamp Forest,Ecuador,0.205,LC,0.466,VU,0.362,LC
+Tropical Flooded & Swamp Forest,Colombia,0.811,CR,0.256,LC,0.989,CR
+Tropical Flooded & Swamp Forest,Venezuela,0.534,EN,0.324,NT,0.784,EN
+Tropical Flooded & Swamp Forest,Peru,0,DD,0,LC,0,DD
+Tropical Flooded & Swamp Forest,Ecuador,0.8,EN,0.834,NT,0.917,CR
+Tropical Flooded & Swamp Forest,Colombia,0.784,EN,0,LC,0.984,CR
+Tropical Flooded & Swamp Forest,Venezuela,0.024,LC,0.091,LC,0.047,LC
+Tropical Flooded & Swamp Forest,Suriname,0,LC,0.012,LC,0,LC
+Tropical Flooded & Swamp Forest,Guyana,0.014,LC,0,LC,0.027,LC
+Tropical Flooded & Swamp Forest,French Guiana,0,LC,0.067,LC,0,LC
+Tropical Flooded & Swamp Forest,Brazil,0.049,LC,0,LC,0.093,LC
+Tropical Flooded & Swamp Forest,French Guiana,0.001,LC,0.074,LC,0.001,LC
+Tropical Flooded & Swamp Forest,Colombia,0.043,LC,0,LC,0.092,LC
+Tropical Flooded & Swamp Forest,Venezuela,0.036,LC,0.051,LC,0.071,LC
+Tropical Flooded & Swamp Forest,Guyana,0.193,LC,0,LC,0.341,LC
+Tropical Flooded & Swamp Forest,Suriname,0.027,LC,0,LC,0.057,LC
+Tropical Flooded & Swamp Forest,Brazil,0.2,LC,0,LC,0.355,LC
+Tropical Flooded & Swamp Forest,Guyana,0.1,LC,0,LC,0.16,LC
+Tropical Flooded & Swamp Forest,French Guiana,0.011,LC,0,LC,0.024,LC
+Tropical Flooded & Swamp Forest,Suriname,0.006,LC,0,LC,0.017,LC
+Tropical Flooded & Swamp Forest,Venezuela,0.051,LC,0,LC,0.099,LC
+Tropical Flooded & Swamp Forest,Brazil,0,LC,0,LC,0,LC
+Tropical Flooded & Swamp Forest,Trinidad and Tobago,0.002,LC,0,LC,0.005,LC
+Tropical Flooded & Swamp Forest,Venezuela,0.316,NT,0.289,LC,0.534,NT
+Tropical Flooded & Swamp Forest,Peru,0.485,VU,0.53,EN,0.733,EN
+Tropical Flooded & Swamp Forest,Ecuador,0.407,VU,0.457,VU,0.625,VU
+Tropical Flooded & Swamp Forest,Colombia,0.673,EN,0.185,LC,0.944,CR
+Tropical Flooded & Swamp Forest,Argentina,0.22,LC,0,LC,0.385,LC
+Tropical Flooded & Swamp Forest,Peru,0.204,LC,0.472,VU,0.361,LC
+Tropical Flooded & Swamp Forest,Bolivia,0.543,EN,0.316,NT,0.899,EN
+Tropical Flooded & Swamp Forest,Chile,0,DD,0,DD,0,DD
+Tropical Flooded & Swamp Forest,Bolivia,0.296,LC,0.484,VU,0.592,VU
+Tropical Flooded & Swamp Forest,Peru,0.205,LC,0.334,VU,0.362,LC
+Tropical Flooded & Swamp Forest,Argentina,0.07,LC,0.509,EN,0.144,LC
+Tropical Flooded & Swamp Forest,Peru,0.108,LC,0.637,EN,0.201,LC
+Tropical Flooded & Swamp Forest,Bolivia,0.084,LC,0.977,CR,0.156,LC
+Tropical Flooded & Swamp Forest,Ecuador,0.014,LC,0.181,LC,0.033,LC
+Tropical Flooded & Swamp Forest,Peru,0.005,LC,0.102,LC,0.014,LC
+Tropical Flooded & Swamp Forest,Brazil,0.01,LC,0.145,LC,0.019,LC
+Tropical Flooded & Swamp Forest,Colombia,0.05,LC,0.062,LC,0.099,LC
+Tropical Flooded & Swamp Forest,Ecuador,0.009,LC,0.096,LC,0.018,LC
+Tropical Flooded & Swamp Forest,Bolivia,0.34,VU,1,CR,0.56,VU
+Tropical Flooded & Swamp Forest,Colombia,0.029,LC,0,LC,0.059,LC
+Tropical Flooded & Swamp Forest,Brazil,0.001,LC,0.067,LC,0.003,LC
+Tropical Flooded & Swamp Forest,Peru,0.011,LC,0.028,LC,0.024,LC
+Tropical Flooded & Swamp Forest,Colombia,1,CR,0,DD,1,CR
+Tropical Flooded & Swamp Forest,Peru,0.006,LC,0.133,LC,0.01,LC
+Tropical Flooded & Swamp Forest,Bolivia,0.104,LC,0.416,VU,0.217,LC
+Tropical Flooded & Swamp Forest,Brazil,0.007,LC,0.101,LC,0.013,LC
+Tropical Flooded & Swamp Forest,Colombia,0,LC,0,LC,0,LC
+Tropical Flooded & Swamp Forest,Bolivia,0.065,LC,0.276,LC,0.14,LC
+Tropical Flooded & Swamp Forest,Peru,0.005,LC,0.101,LC,0.01,LC
+Tropical Flooded & Swamp Forest,Brazil,0.062,LC,0.458,VU,0.117,LC
+Tropical Flooded & Swamp Forest,Colombia,0.025,LC,0.041,LC,0.057,LC
+Tropical Flooded & Swamp Forest,Peru,0,LC,0.005,LC,0.002,LC
+Tropical Flooded & Swamp Forest,Brazil,0.003,LC,0.05,LC,0.006,LC
+Tropical Flooded & Swamp Forest,Venezuela,0.013,LC,0.028,LC,0.025,LC
+Tropical Flooded & Swamp Forest,Brazil,0.065,LC,0.231,LC,0.124,LC
+Tropical Flooded & Swamp Forest,Bolivia,0.217,LC,0,LC,0.407,LC
+Tropical Flooded & Swamp Forest,Peru,0,LC,0,LC,0,LC
+Tropical Flooded & Swamp Forest,Colombia,0.003,LC,0.002,LC,0.006,LC
+Tropical Flooded & Swamp Forest,Bolivia,0.04,LC,0.275,LC,0.09,LC
+Tropical Flooded & Swamp Forest,Brazil,0.046,LC,0.338,VU,0.088,LC
+Tropical Flooded & Swamp Forest,Colombia,0,LC,0,LC,0,LC
+Tropical Flooded & Swamp Forest,French Guiana,0,LC,0,LC,0,LC
+Tropical Flooded & Swamp Forest,Brazil,0.074,LC,0,LC,0.141,LC
+Tropical Flooded & Swamp Forest,Brazil,0.525,EN,0.211,LC,0.785,EN
+Tropical Flooded & Swamp Forest,Paraguay,0.507,EN,0.988,CR,0.756,EN
+Tropical Flooded & Swamp Forest,Argentina,0.638,DD,0.987,CR,0.88,EN
+Tropical Flooded & Swamp Forest,Brazil,0.632,DD,0,LC,0.873,EN
+Tropical Flooded & Swamp Forest,Bolivia,0.268,LC,0.761,EN,0.558,VU
+Tropical Flooded & Swamp Forest,Brazil,0.422,VU,0.66,EN,0.662,VU
+Tropical Flooded & Swamp Forest,Paraguay,0.541,EN,0.988,CR,0.789,EN
+Tropical Flooded & Swamp Forest,Bolivia,0.297,LC,0.188,LC,0.592,VU
+Tropical Flooded & Swamp Forest,Brazil,0.246,LC,0.269,LC,0.425,LC
+Tropical Flooded & Swamp Forest,Bolivia,0.353,VU,0,LC,0.691,VU
+Tropical Flooded & Swamp Forest,Brazil,0.644,DD,0,LC,0.875,DD
+Tropical Flooded & Swamp Forest,Paraguay,0.645,DD,0,LC,0.877,DD
+Tropical Flooded & Swamp Forest,Brazil,0.531,EN,0.523,EN,0.779,EN
+Tropical Flooded & Swamp Forest,Bolivia,0.665,EN,0.812,CR,0.938,CR
+Tropical Flooded & Swamp Forest,Paraguay,0.613,DD,0.797,EN,0.852,EN
+Tropical Flooded & Swamp Forest,Brazil,0.448,VU,0.674,EN,0.692,VU
+Tropical Flooded & Swamp Forest,Argentina,0.281,LC,0.653,EN,0.477,LC
+Tropical Flooded & Swamp Forest,Bolivia,0.855,CR,0,LC,0.994,CR
+Tropical Flooded & Swamp Forest,Brazil,0.644,DD,0,LC,0.875,DD
+Tropical Flooded & Swamp Forest,Argentina,0.294,LC,0.583,EN,0.497,LC
+Tropical Flooded & Swamp Forest,Bolivia,0.784,EN,0,LC,0.983,CR
+Tropical Flooded & Swamp Forest,Paraguay,0.642,DD,0.64,EN,0.873,DD
+Tropical Flooded & Swamp Forest,Paraguay,0.629,DD,0.608,NT,0.864,DD
+Tropical Flooded & Swamp Forest,Brazil,0.536,EN,0,LC,0.783,EN
+Tropical Flooded & Swamp Forest,Argentina,0.323,NT,0.767,NT,0.543,NT
+Tropical Flooded & Swamp Forest,Bolivia,0.785,EN,0,LC,0.981,CR
+Tropical Flooded & Swamp Forest,Paraguay,0.644,DD,0.995,NT,0.875,DD
+Tropical Flooded & Swamp Forest,Argentina,0.644,DD,0.999,CR,0.875,DD
+Warm Temperate Forest,Chile,0.59,EN,0,LC,0.884,EN
+Warm Temperate Forest,Chile,0.527,EN,0,LC,0.775,EN
+Warm Temperate Forest,Argentina,0.591,DD,0,LC,0.833,EN
+Warm Temperate Forest,Argentina,0.571,EN,0,LC,0.819,EN
+Warm Temperate Forest,Uruguay,0.699,DD,0.882,NT,0.972,CR
+Warm Temperate Forest,Brazil,0.883,CR,0,LC,0.997,CR
+Cool Temperate Forest,Chile,0.183,LC,0,LC,0.346,LC
+Cool Temperate Forest,Argentina,0.199,LC,0.131,LC,0.375,LC
+Cool Temperate Forest,Argentina,0.485,VU,0,LC,0.76,EN
+Cool Temperate Forest,Chile,0.256,LC,0.376,VU,0.48,LC
+Cool Temperate Forest,Chile,0.104,LC,0,LC,0.193,LC
+Cool Temperate Forest,Argentina,0.292,LC,0,LC,0.498,LC
+Cool Temperate Forest,Argentina,0.279,LC,0,LC,0.503,NT
+Cool Temperate Forest,Chile,0.105,LC,0.24,LC,0.215,LC
+Cool Temperate Forest,Chile,0.093,LC,0,LC,0.174,LC
+Cool Temperate Forest,Argentina,0.622,DD,0,LC,0.866,EN
+Temperate Flooded & Swamp Forest,Mexico,0.557,EN,0,LC,0.825,EN
+Temperate Flooded & Swamp Forest,Brazil,0.695,EN,0.362,NT,0.963,CR
+Temperate Flooded & Swamp Forest,Paraguay,0.644,DD,0.803,NT,0.875,DD
+Temperate Flooded & Swamp Forest,Uruguay,0.34,VU,0.987,DD,0.784,EN
+Temperate Flooded & Swamp Forest,Argentina,0.634,DD,0.496,NT,0.872,EN
+Temperate Flooded & Swamp Forest,Chile,0.617,EN,0.459,NT,0.894,EN
+Temperate Flooded & Swamp Forest,Argentina,0.112,LC,0,DD,0.207,LC
+Temperate Flooded & Swamp Forest,Chile,0.097,LC,0,LC,0.184,LC
+Temperate Flooded & Swamp Forest,Argentina,0.552,EN,0.429,VU,0.81,EN
+Temperate Flooded & Swamp Forest,Chile,0.034,LC,0,DD,0.064,LC
+Temperate Flooded & Swamp Forest,Argentina,0.236,LC,0.663,NT,0.415,LC
+Tropical Dry Forest & Woodland,Bolivia,0.525,EN,0.807,NT,0.85,EN
+Tropical Dry Forest & Woodland,Brazil,0.531,EN,0.509,NT,0.78,EN
+Tropical Dry Forest & Woodland,Paraguay,0.63,DD,0.937,CR,0.865,DD
+Tropical Lowland Humid Forest,Honduras,0.229,LC,0.691,EN,0.411,LC
+Tropical Lowland Humid Forest,El Salvador,0.595,EN,0.348,NT,0.857,EN
+Tropical Lowland Humid Forest,Colombia,0.432,VU,0.195,LC,0.674,VU
+Tropical Lowland Humid Forest,Panama,0.273,LC,0.43,VU,0.475,LC
+Tropical Lowland Humid Forest,Mexico,0.13,LC,0.457,VU,0.255,LC
+Tropical Lowland Humid Forest,Costa Rica,0.456,VU,0.408,VU,0.711,EN
+Tropical Lowland Humid Forest,Nicaragua,0.315,NT,0.856,CR,0.537,NT
+Tropical Lowland Humid Forest,Guatemala,0.492,VU,0.901,CR,0.754,EN
+Tropical Lowland Humid Forest,Belize,0.002,LC,0.199,LC,0.004,LC

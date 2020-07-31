@@ -6,50 +6,78 @@ output: html_document
 
 ## Index overview
 
-The Ecosystem Health Index (EHI) measures temporal changes in environmental conditions and biotic processes/interactions (hereafter collectively, ecological processes). The EHI uses relative severity of change in ecosystem-specific ecological variables and extent of the ecosystem affected to quantify transitions towards or away from ecosystem collapse. The index represents the geometric mean of the relative value of decline. It uses data defined in IUCN Red List of Ecosystems risk assessments.  
+The Ecosystem Health Index (EHI) measures temporal changes in environmental conditions and biotic processes/interactions (hereafter collectively, ecological processes). The EHI uses relative severity of change in ecosystem-specific ecological variables and extent of the ecosystem affected to quantify transitions towards or away from ecosystem collapse. The index represents the geometric mean of the relative severity of decline. It uses data defined in IUCN Red List of Ecosystems risk assessments.  
 
 This information sheet provides the code used to calculate the the index and an example of each step.  
 
 **Reference:**  
-Rowland, J. A., Bland, L. M., Keith, D. A., Bignoli, D. J., Burgman, M., Etter, A., Ferrer-Paris, J. R., Miller, R. M. and Nicholson, E. (2019) Ecosystem indices to support global biodiversity conservation. Conservation Letters. e12680  
+Rowland, J. A., Bland, L. M., Keith, D. A., Bignoli, D. J., Burgman, M., Etter, A., Ferrer-Paris, J. R., Miller, R. M. and Nicholson, E. (2020) Ecosystem indices to support global biodiversity conservation. Conservation Letters. e12680  
 
 ## Set up functions
 
 ### Calculate the index
 
-The function *calcEHI* selects the column in a dataframe listing the relative severity of degradation and the proportion of the ecosystem area affected by degradation for criteria C (environmental degradation) and D (biotic disruption), combines these into a single value, selected the variable with the highest decline out of criteria C and D, and this value is used to calcalte the index, along with percentiles capturing the middle 95% of the data. 
+The function *calcEHI* selects the column in a dataframe listing the relative severity of degradation and the proportion of the ecosystem area affected by degradation for criteria C (environmental degradation) and criterion D (biotic disruption). Next, it combines the relative severity and extent values into a single value, selects the ecological variable between criteria C and D with the highest decline. The value of decline for the selected ecological variable is used to calculate the index, along with percentiles capturing the middle 95% of the data. 
 
 Parameters are:  
 
-- eco_data = dataframe  
-- RLE_criteria = name of the column with the Red List of Ecosystems criterion of interest  
-- severity = severity of degradation of an ecological variable over a given timeframe towards ecosystem collapse
-- extent = proportion of the ecosystem area affected by degradation
-- group1 = the factor (optional) you want to group the index by. Where not specified, an EAI will be calculated based on all ecosystems (output = single score)  
-- group2 = the second factor (optional) you want to group the index by  
+- eco_data = dataframe.  
+- RLE_criteria = name of the column with the Red List of Ecosystems criterion of interest.  
+- severity = relative severity of degradation of an ecological variable towards collapse over a given timeframe towards.  
+- extent = proportion of the ecosystem area affected by degradation.  
+- group_1 = the factor (optional) you want to group the index by. Where not specified, an EAI will be calculated based on all ecosystems (output = single score).  
+- group_2 = the second factor (optional) you want to group the index by.    
 
 ```{r calcEHI}
-calcEHI <- function(eco_data, severity_C, extent_C, severity_D, extent_D, group){
+calcEHI <- function(eco_data, severity_C, extent_C, severity_D, extent_D, severity, extent, group_1, group_2, one_criteria){
   
-  # Calculate proportion remaining for criteria C and D
-  funcPct <- mutate(eco_data, 
+  # Calculate the proportion remaining where only one criteria was assessed
+  if (one_criteria == TRUE) {
+    funcPct <- mutate(eco_data, 
+                    est_intact = 1 - (eco_data[[severity]] * eco_data[[extent]])) 
+  
+    # Drop NA values
+    no_na_values <- drop_na(funcPct, est_intact)
+  
+    # Calculate overall index score if missing group, or scores based on a classification if specified
+    if (missing(group_1)) {
+        values <- group_by(no_na_values)
+    
+      } else if (missing(group_2)) {
+        values <- group_by(no_na_values, group_1 = no_na_values[[group_1]])
+     
+        } else {
+          values <- group_by(no_na_values, group_1 = no_na_values[[group_1]],
+                                           group_2 = no_na_values[[group_2]])
+      }
+    
+    # Calculate the proportion remaining where both criterion C and D were available
+    } else if(one_criteria == FALSE) {
+
+      # Calculate proportion remaining for criteria C and D
+      funcPct <- mutate(eco_data, 
                     est_intact_C = 1 - (eco_data[[severity_C]] * eco_data[[extent_C]]),
                     est_intact_D = 1 - (eco_data[[severity_D]] * eco_data[[extent_D]])) 
   
-  # Select lowest value for C or D
-  final <- mutate(funcPct, est_intact = ifelse(is.na(est_intact_C), est_intact_D, 
+      # Select lowest value for criteria C or D
+      final <- mutate(funcPct, est_intact = ifelse(is.na(est_intact_C), est_intact_D, 
                                         ifelse(is.na(est_intact_D), est_intact_C,
                                         ifelse(est_intact_C <= est_intact_D, est_intact_C, est_intact_D))))
-  # Drop NA values
-  no_na_values <- drop_na(final, est_intact)
+      # Drop NA values
+      no_na_values <- drop_na(final, est_intact)
   
-  # Calculate overall index score if missing group, or scores based on a classification if specified
-  if (missing(group)) {
-    values <- group_by(no_na_values)
+      # Calculate overall index score if missing group, or scores based on a classification if specified
+      if (missing(group_1)) {
+        values <- group_by(no_na_values)
     
-    } else {
-      values <- group_by(no_na_values, group = no_na_values[[group]])
-  }
+      } else if (missing(group_2)) {
+        values <- group_by(no_na_values, group_1 = no_na_values[[group_1]])
+     
+        } else {
+          values <- group_by(no_na_values, group_1 = no_na_values[[group_1]],
+                                           group_2 = no_na_values[[group_2]])
+    }
+    }
   
   # Calculate index scores (accounting for zeros) and quantiles
   index_scores <- summarise(values, total_count = n(),
@@ -60,9 +88,24 @@ calcEHI <- function(eco_data, severity_C, extent_C, severity_D, extent_D, group)
 }
 ```
 
-#### Example
+#### Forests of the Americas example 
 
-This test data set are available from github.
+An example dataset of the Red list of Ecosystem assessments of the forests across the Americas is available from github.The assessments are from the continental-scale RLE assessments of 136 temperate and tropical forests across 51 countries/territories in the Caribbean and Americas (Ferrer-Paris et al., 2018). 
+
+**Reference:**  
+Ferrer-Paris, J. R., Zager, I., Keith, D. A., Oliveira-Miranda, M. A., Rodríguez, J. P., Josse, C., … Barrow, E. (2018). An ecosystem risk assessment of temperate and tropical forests of the Americas with an outlook on future conservation strategies. Conservation Letters, 12. https://doi.org/10.1111/conl.12623
+
+The columns in the dataframe are:  
+- ecosystem = type of ecosystem.  
+- country = country containing part of the ecosystem distribution.   
+- mean_severity_C2a = average relative severity of abiotic change across the ecosystem (as a proportion) predicted over the next 50 years.  
+- extent_C2a = extent of abiotic change across the ecosystem (as a proportion) predicted over the next 50 years. Because the relative severity is calculated as the mean, the extent is 1 (100% of the ecosystem area).  
+- mean_severity_D1 = average relative severity of biotic change across the ecosystem (as a proportion) over the past 50 years.  
+- extent_D1 = extent of biotic change across the ecosystem (as a proportion) over the past 50 years. Because the relative severity is calculated as the mean, the extent is 1 (100% of the ecosystem area).  
+- mean_severity_D2b = average relative severity of biotic change across the ecosystem (as a proportion) predicted over a 50-year period containing the past, present and future.    
+- extent_D2b = extent of biotic change across the ecosystem (as a proportion) predicted over a 50-year period containing the past, present and future. Because the relative severity is calculated as the mean, the extent is 1 (100% of the ecosystem area).  
+- mean_severity_D3 = average relative severity of biotic change across the ecosystem (as a proportion) since ~ 1750.  
+- extent_D3 = extent of biotic change across the ecosystem (as a proportion) since ~ 1750. Because the relative severity is calculated as the mean, the extent is 1 (100% of the ecosystem area).  
 
 ```{r example, message = FALSE}
 # Load packages
@@ -70,39 +113,73 @@ library(dplyr)
 library(tidyr)
 
 # Load data
-data <- read.csv("~/Documents/*Career/*PhD/*Projects/2 - RLE indicators/Github script/Github_example_data_EHI.csv")
+data <- read.csv("~/Desktop/Github_example_AmericanForests_EHI.csv") #fill in path to file
 
 # View data
 head(data)
 ```
 
-Calculate the index using no groupings:
+To calculate the index using no groupings where only one criteria (either criteria C or D) is available, include the parameter:  
+- one_criteria = TRUE  
 
-```{r RLIE overall}
+The output above shows:  
+- total_count = the total number of ecosystems included in the index.   
+- count_non_zeros = the total number of ecosystems where the relative severity is greater than zero.  
+- EHI = the Ecosystem Health Index.  
+- lower and upper = the intervals are based on the quantiles aiming to capture the middle 95% of the data calcualted using the 2.5th and 97.5th percentiles.  
+```{r EHI one criteria}
 # Calculate the index values
-output <- calcEHI(data,
-                  severity_C = "C1_severity",
-                  extent_C = "C1_extent",
-                  severity_D = "D1_severity",
-                  extent_D = "D1_extent")
+output_one <- calcEHI(data,
+                  one_criteria = TRUE,
+                  extent = "extent_C2a",
+                  severity = "mean_severity_C2a")
 
 # View output
-head(output)
+head(output_one)
+```
+
+To calculate the index using no groupings where both criteria C and D are available, use the following code:  
+
+```{r EHI two criteria}
+# Calculate the index values
+output_two <- calcEHI(data,
+                  one_criteria = FALSE,
+                  severity_C = "mean_severity_C2b",
+                  extent_C = "extent_C2b",
+                  severity_D = "mean_severity_D2b",
+                  extent_D = "extent_D2b")
+
+# View output
+head(output_two)
 ```
 
 Calculate the index using one grouping:
 
-```{r RLIE one group}
+```{r EHI one group}
 # Calculate the index values
 output_one_grouping <- calcEHI(data,
-                               severity_C = "C1_severity",
-                               extent_C = "C1_extent",
-                               severity_D = "D1_severity",
-                               extent_D = "D1_extent",
-                               group = "region")
+                               one_criteria = TRUE,
+                               severity = "mean_severity_D1",
+                               extent = "extent_D1",
+                               group_1 = "ecosystem")
 
 # View output
 head(output_one_grouping)
+```
+
+Calculate the index using one grouping:
+
+```{r EHI two groups}
+# Calculate the index values
+output_two_groupings <- calcEHI(data,
+                               one_criteria = TRUE,
+                               severity = "mean_severity_D1",
+                               extent = "extent_D1",
+                               group_1 = "ecosystem", 
+                               group_2 = "country")
+
+# View output
+head(output_two_groupings)
 ```
 
 ## Author information

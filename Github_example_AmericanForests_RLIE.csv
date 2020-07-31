@@ -1,0 +1,584 @@
+ecosystem,country,criterion_A1,criterion_A2b,criterion_A3,criterion_B1,criterion_B2,criterion_B3,criterion_C2a,criterion_C2b,criterion_D1,criterion_D2b,criterion_D3
+Mangrove,Peru,DD,NT,DD,LC,NT,LC,DD,NT,DD,VU,DD
+Mangrove,Ecuador,VU,EN,NT,LC,LC,LC,DD,LC,VU,NT,LC
+Mangrove,Colombia,VU,LC,VU,LC,LC,LC,DD,VU,LC,LC,LC
+Mangrove,Panama,VU,VU,EN,LC,LC,LC,DD,DD,VU,NT,LC
+Mangrove,Nicaragua,DD,NT,DD,LC,LC,LC,DD,LC,LC,NT,LC
+Mangrove,Mexico,EN,NT,EN,LC,LC,LC,DD,LC,VU,VU,LC
+Mangrove,Honduras,VU,CR,EN,EN,EN,LC,DD,LC,LC,LC,EN
+Mangrove,Guatemala,DD,NT,CR,LC,LC,LC,DD,VU,DD,VU,DD
+Mangrove,El Salvador,EN,NT,EN,LC,LC,LC,DD,NT,LC,VU,LC
+Mangrove,Costa Rica,DD,EN,EN,VU,VU,LC,DD,LC,EN,VU,EN
+Mangrove,Curaçao,LC,LC,NT,LC,LC,LC,LC,NT,LC,DD,LC
+Mangrove,Aruba,DD,DD,DD,DD,DD,DD,LC,VU,DD,NE,DD
+Mangrove,Suriname,LC,LC,LC,LC,LC,LC,LC,EN,LC,LC,LC
+Mangrove,Guyana,LC,NT,LC,LC,LC,LC,LC,LC,LC,EN,VU
+Mangrove,French Guiana,LC,LC,LC,LC,NT,LC,VU,LC,VU,VU,VU
+Mangrove,Brazil,LC,LC,LC,LC,LC,LC,LC,NT,VU,NT,VU
+Mangrove,Venezuela,LC,LC,LC,LC,LC,LC,LC,VU,VU,LC,LC
+Mangrove,Colombia,EN,LC,EN,LC,LC,LC,NT,VU,VU,VU,LC
+Mangrove,Panama,NT,LC,NT,LC,LC,LC,LC,DD,LC,LC,LC
+Mangrove,Nicaragua,EN,LC,EN,LC,LC,LC,LC,VU,VU,LC,VU
+Mangrove,Mexico,VU,LC,VU,LC,LC,LC,LC,NT,LC,NT,LC
+Mangrove,Honduras,LC,EN,LC,VU,VU,LC,LC,NT,VU,VU,VU
+Mangrove,Guatemala,LC,CR,LC,EN,EN,LC,LC,LC,VU,LC,LC
+Mangrove,Costa Rica,DD,LC,DD,LC,NT,VU,VU,DD,DD,LC,DD
+Mangrove,Belize,LC,LC,LC,EN,VU,LC,LC,NT,LC,VU,LC
+Mangrove,Virgin Islands,LC,DD,LC,LC,NT,VU,LC,LC,DD,NE,LC
+Mangrove,United States,VU,NT,VU,LC,LC,LC,VU,VU,LC,NE,LC
+Mangrove,Turks and Caicas Islands,LC,NT,LC,LC,LC,LC,LC,LC,EN,NE,VU
+Mangrove,Trinidad and Tobago,LC,CR,VU,EN,EN,LC,LC,VU,LC,DD,CR
+Mangrove,Sint Maarten,DD,DD,DD,DD,DD,DD,DD,LC,DD,NE,DD
+Mangrove,Saint Vincent and the Grenadines,LC,NT,EN,LC,NT,VU,LC,NT,DD,NE,LC
+Mangrove,Saint Martin,DD,DD,DD,DD,DD,DD,LC,LC,DD,NE,DD
+Mangrove,Saint Lucia,LC,NT,LC,LC,NT,VU,LC,LC,LC,NE,LC
+Mangrove,Saint Kitts and Nevis,CR,LC,CR,LC,NT,VU,LC,LC,DD,NE,DD
+Mangrove,Saint Barthélemy,DD,DD,DD,DD,DD,DD,DD,LC,DD,NE,DD
+Mangrove,Puerto Rico,DD,LC,CR,LC,LC,LC,LC,LC,VU,NE,VU
+Mangrove,Montserrat,CR,DD,CR,DD,DD,DD,LC,NT,DD,NE,DD
+Mangrove,Martinique,LC,NT,NT,LC,LC,LC,LC,LC,LC,NE,LC
+Mangrove,Jamaica,EN,NT,CR,LC,LC,LC,LC,LC,LC,NE,LC
+Mangrove,Haiti,LC,LC,EN,LC,LC,LC,LC,LC,LC,NE,VU
+Mangrove,Guadeloupe,LC,LC,VU,LC,LC,LC,LC,NT,LC,NE,LC
+Mangrove,Grenada,LC,CR,LC,CR,CO,VU,LC,LC,LC,NE,LC
+Mangrove,Dominican Republic,VU,LC,EN,LC,LC,LC,LC,LC,LC,NE,VU
+Mangrove,Dominica,DD,LC,DD,LC,NT,VU,LC,LC,DD,NE,DD
+Mangrove,Cuba,VU,LC,VU,LC,LC,LC,LC,LC,LC,NE,LC
+Mangrove,Cayman Islands,DD,NT,DD,LC,LC,LC,LC,VU,DD,NE,DD
+Mangrove,British Virgin Islands,DD,NT,DD,LC,NT,VU,LC,LC,DD,NE,DD
+Mangrove,"Bonaire, Saint Eustatius and Saba",LC,LC,LC,LC,NT,VU,LC,LC,LC,DD,VU
+Mangrove,Barbados,DD,LC,DD,DD,DD,DD,LC,DD,DD,NE,DD
+Mangrove,Bahamas,LC,EN,LC,LC,LC,LC,LC,LC,LC,NE,LC
+Mangrove,Antigua and Barbuda,LC,LC,VU,LC,LC,LC,LC,LC,VU,NE,EN
+Warm Temperate Forest,United States,LC,NT,NT,LC,LC,LC,VU,NE,LC,NE,VU
+Warm Temperate Forest,United States,LC,NT,VU,LC,LC,LC,DD,NE,LC,NE,VU
+Warm Temperate Forest,Mexico,VU,DD,NT,DD,DD,DD,DD,NE,EN,NE,VU
+Warm Temperate Forest,United States,VU,VU,VU,LC,LC,LC,DD,NE,LC,NE,LC
+Warm Temperate Forest,Canada,LC,EN,LC,LC,CR,LC,DD,DD,LC,NE,LC
+Warm Temperate Forest,United States,LC,CR,LC,LC,VU,LC,DD,NE,LC,NE,LC
+Warm Temperate Forest,Mexico,NT,LC,VU,LC,LC,LC,DD,NE,LC,NE,LC
+Cool Temperate Forest,United States,CR,LC,CR,LC,LC,LC,DD,NE,LC,NE,EN
+Cool Temperate Forest,Canada,EN,LC,CR,LC,LC,LC,DD,DD,LC,NE,LC
+Cool Temperate Forest,United States,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Cool Temperate Forest,Mexico,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Cool Temperate Forest,Canada,LC,VU,LC,LC,LC,LC,LC,DD,LC,NE,LC
+Cool Temperate Forest,United States,LC,VU,LC,LC,LC,LC,VU,NE,LC,NE,LC
+Warm Temperate Forest,United States,DD,NT,CR,LC,LC,LC,EN,NE,DD,NE,VU
+Cool Temperate Forest,United States,LC,EN,EN,LC,LC,LC,LC,NE,LC,NE,VU
+Cool Temperate Forest,United States,LC,LC,LC,LC,LC,LC,VU,NE,LC,NE,LC
+Cool Temperate Forest,Canada,LC,VU,LC,LC,LC,LC,VU,DD,LC,NE,LC
+Cool Temperate Forest,Mexico,NT,VU,NT,LC,LC,LC,DD,NE,LC,NE,LC
+Cool Temperate Forest,United States,LC,LC,LC,LC,LC,LC,DD,NE,LC,NE,LC
+Cool Temperate Forest,United States,LC,EN,LC,LC,LC,LC,DD,NE,LC,NE,LC
+Cool Temperate Forest,United States,LC,EN,LC,LC,LC,LC,NT,NE,LC,NE,LC
+Cool Temperate Forest,Canada,LC,VU,LC,LC,LC,LC,LC,DD,LC,NE,LC
+Cool Temperate Forest,Canada,LC,EN,LC,LC,LC,LC,DD,DD,LC,NE,LC
+Cool Temperate Forest,United States,LC,LC,LC,LC,LC,LC,DD,NE,LC,NE,LC
+Cool Temperate Forest,United States,NT,LC,VU,LC,LC,LC,DD,NE,LC,NE,LC
+Cool Temperate Forest,United States,VU,CR,VU,LC,EN,LC,DD,NE,LC,NE,LC
+Temperate Flooded & Swamp Forest,Canada,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Temperate Flooded & Swamp Forest,United States,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Temperate Flooded & Swamp Forest,Canada,LC,LC,VU,LC,LC,LC,DD,DD,LC,NE,LC
+Temperate Flooded & Swamp Forest,United States,LC,VU,EN,LC,LC,LC,DD,LC,LC,NE,VU
+Temperate Flooded & Swamp Forest,United States,NT,NT,VU,LC,LC,LC,LC,LC,LC,NE,VU
+Temperate Flooded & Swamp Forest,United States,LC,NT,LC,LC,LC,LC,DD,NT,LC,NE,EN
+Temperate Flooded & Swamp Forest,United States,LC,LC,VU,LC,LC,LC,DD,LC,LC,NE,VU
+Temperate Flooded & Swamp Forest,Canada,LC,VU,LC,LC,LC,LC,DD,DD,LC,NE,LC
+Temperate Flooded & Swamp Forest,United States,LC,LC,LC,LC,LC,LC,DD,NT,LC,NE,LC
+Temperate Flooded & Swamp Forest,Canada,LC,VU,LC,LC,LC,LC,DD,DD,LC,NE,LC
+Temperate Flooded & Swamp Forest,United States,LC,VU,LC,LC,LC,LC,DD,DD,LC,NE,LC
+Temperate Flooded & Swamp Forest,United States,VU,LC,EN,LC,LC,LC,DD,LC,LC,NE,LC
+Temperate Flooded & Swamp Forest,Mexico,VU,LC,EN,LC,LC,LC,DD,LC,LC,NE,LC
+Tropical Dry Forest & Woodland,Virgin Islands,LC,LC,VU,LC,LC,LC,DD,NE,DD,NE,LC
+Tropical Dry Forest & Woodland,United States,EN,NT,CR,LC,LC,LC,DD,NE,LC,NE,LC
+Tropical Dry Forest & Woodland,Turks and Caicas Islands,LC,EN,LC,CR,EN,LC,DD,NE,EN,NE,VU
+Tropical Dry Forest & Woodland,Trinidad and Tobago,VU,LC,EN,LC,LC,LC,DD,NE,LC,DD,CR
+Tropical Dry Forest & Woodland,Sint Maarten,DD,LC,DD,LC,NT,VU,DD,NE,DD,NE,DD
+Tropical Dry Forest & Woodland,Saint Vincent and the Grenadines,LC,NT,VU,LC,LC,LC,DD,NE,DD,NE,LC
+Tropical Dry Forest & Woodland,Saint Martin,DD,LC,DD,LC,LC,VU,DD,NE,DD,NE,DD
+Tropical Dry Forest & Woodland,Saint Lucia,LC,LC,EN,LC,LC,LC,DD,NE,LC,NE,LC
+Tropical Dry Forest & Woodland,Saint Kitts and Nevis,DD,LC,DD,LC,LC,LC,DD,NE,LC,NE,LC
+Tropical Dry Forest & Woodland,Saint Barthélemy,DD,NT,DD,LC,NT,VU,DD,NE,DD,NE,DD
+Tropical Dry Forest & Woodland,Puerto Rico,DD,LC,CR,LC,LC,LC,DD,NE,LC,NE,VU
+Tropical Dry Forest & Woodland,Montserrat,CR,NT,CR,LC,NT,VU,DD,NE,DD,NE,DD
+Tropical Dry Forest & Woodland,Martinique,LC,LC,NT,LC,LC,LC,DD,NE,LC,NE,LC
+Tropical Dry Forest & Woodland,Jamaica,EN,EN,EN,EN,LC,LC,DD,NE,LC,NE,LC
+Tropical Dry Forest & Woodland,Haiti,EN,LC,CR,LC,LC,LC,DD,NE,LC,NE,VU
+Tropical Dry Forest & Woodland,Guadeloupe,LC,LC,LC,LC,LC,LC,DD,NE,LC,NE,LC
+Tropical Dry Forest & Woodland,Grenada,LC,NT,VU,LC,LC,LC,DD,NE,LC,NE,LC
+Tropical Dry Forest & Woodland,Dominican Republic,DD,LC,EN,LC,LC,LC,DD,NE,VU,NE,LC
+Tropical Dry Forest & Woodland,Dominica,LC,VU,LC,CR,EN,LC,DD,NE,LC,NE,LC
+Tropical Dry Forest & Woodland,Cuba,DD,LC,EN,LC,LC,LC,DD,NE,LC,NE,LC
+Tropical Dry Forest & Woodland,Cayman Islands,DD,CR,DD,CR,CR,VU,DD,NE,DD,DD,DD
+Tropical Dry Forest & Woodland,British Virgin Islands,DD,LC,DD,LC,LC,LC,DD,NE,DD,NE,DD
+Tropical Dry Forest & Woodland,"Bonaire, Saint Eustatius and Saba",DD,LC,DD,LC,NT,VU,DD,NE,DD,DD,DD
+Tropical Dry Forest & Woodland,Barbados,DD,LC,DD,LC,LC,LC,DD,DD,DD,NE,DD
+Tropical Dry Forest & Woodland,Bahamas,LC,NT,LC,LC,LC,LC,DD,NE,LC,NE,LC
+Tropical Dry Forest & Woodland,Antigua and Barbuda,LC,LC,VU,LC,LC,LC,DD,NE,VU,NE,EN
+Tropical Dry Forest & Woodland,Anguilla,DD,LC,DD,LC,NT,VU,DD,NE,DD,NE,DD
+Cool Temperate Forest,United States,EN,LC,CR,LC,LC,LC,DD,NE,LC,NE,LC
+Cool Temperate Forest,Canada,EN,LC,CR,LC,LC,LC,DD,DD,LC,NE,LC
+Temperate Flooded & Swamp Forest,United States,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Cool Temperate Forest,Canada,LC,VU,LC,LC,LC,LC,DD,DD,LC,NE,LC
+Cool Temperate Forest,United States,LC,VU,LC,LC,LC,LC,DD,DD,LC,NE,EN
+Temperate Flooded & Swamp Forest,United States,NT,NT,NT,LC,LC,LC,DD,NT,LC,NE,LC
+Tropical Lowland Humid Forest,Sint Maarten,DD,NT,DD,LC,NT,VU,DD,DD,DD,NE,DD
+Tropical Lowland Humid Forest,Saint Vincent and the Grenadines,LC,VU,LC,CR,EN,LC,DD,NE,DD,NE,LC
+Tropical Lowland Humid Forest,Dominica,LC,VU,LC,CR,EN,LC,DD,NE,LC,NE,LC
+Tropical Lowland Humid Forest,Grenada,LC,CR,EN,CR,EN,LC,DD,NE,DD,NE,LC
+Tropical Lowland Humid Forest,Dominican Republic,DD,NT,EN,LC,LC,LC,DD,NE,LC,NE,LC
+Tropical Lowland Humid Forest,"Bonaire, Saint Eustatius and Saba",DD,LC,DD,LC,NT,VU,DD,DD,DD,DD,DD
+Tropical Lowland Humid Forest,Cuba,EN,LC,EN,LC,LC,LC,DD,NE,LC,NE,LC
+Tropical Lowland Humid Forest,Saint Barthélemy,DD,LC,DD,LC,NT,VU,DD,NE,DD,NE,DD
+Tropical Lowland Humid Forest,Turks and Caicas Islands,LC,NT,LC,LC,NT,VU,DD,NE,VU,DD,LC
+Tropical Lowland Humid Forest,Trinidad and Tobago,LC,VU,LC,EN,LC,LC,DD,NE,LC,DD,EN
+Tropical Lowland Humid Forest,Saint Kitts and Nevis,CR,LC,CR,LC,LC,LC,DD,NE,DD,NE,DD
+Tropical Lowland Humid Forest,Virgin Islands,LC,NT,CR,LC,LC,LC,DD,NE,DD,NE,LC
+Tropical Lowland Humid Forest,Saint Martin,DD,LC,DD,LC,NT,VU,DD,NE,DD,NE,DD
+Tropical Lowland Humid Forest,British Virgin Islands,DD,LC,DD,LC,LC,VU,DD,NE,DD,NE,DD
+Tropical Lowland Humid Forest,Cayman Islands,DD,NT,DD,LC,NT,VU,DD,DD,DD,DD,DD
+Tropical Lowland Humid Forest,Saint Lucia,LC,LC,VU,LC,LC,LC,DD,NE,LC,NE,LC
+Tropical Lowland Humid Forest,Puerto Rico,VU,LC,EN,LC,LC,LC,DD,NE,LC,NE,VU
+Tropical Lowland Humid Forest,Guadeloupe,LC,LC,LC,LC,LC,LC,DD,NE,LC,NE,LC
+Tropical Lowland Humid Forest,Montserrat,CR,NT,CR,LC,LC,VU,DD,NE,DD,NE,DD
+Tropical Lowland Humid Forest,Martinique,LC,NT,LC,LC,LC,LC,DD,NE,LC,NE,LC
+Tropical Lowland Humid Forest,Jamaica,VU,EN,VU,EN,LC,LC,DD,NE,LC,NE,LC
+Tropical Lowland Humid Forest,Barbados,DD,LC,DD,LC,NT,VU,DD,DD,DD,NE,DD
+Tropical Lowland Humid Forest,Haiti,DD,CR,CR,VU,LC,LC,DD,NE,LC,NE,VU
+Tropical Lowland Humid Forest,Bahamas,LC,LC,LC,LC,LC,LC,DD,NE,LC,NE,LC
+Tropical Lowland Humid Forest,United States,DD,DD,DD,DD,DD,DD,DD,DD,DD,NE,DD
+Tropical Lowland Humid Forest,Antigua and Barbuda,VU,LC,EN,LC,LC,VU,DD,DD,VU,NE,EN
+Tropical Dry Forest & Woodland,Trinidad and Tobago,LC,LC,LC,LC,LC,VU,DD,DD,LC,DD,CR
+Tropical Dry Forest & Woodland,Saint Vincent and the Grenadines,LC,LC,LC,LC,NT,VU,DD,DD,DD,NE,LC
+Tropical Dry Forest & Woodland,Saint Lucia,DD,LC,DD,LC,NT,VU,DD,NE,DD,NE,DD
+Tropical Dry Forest & Woodland,Puerto Rico,VU,LC,EN,LC,LC,LC,DD,NE,LC,NE,VU
+Tropical Dry Forest & Woodland,Martinique,LC,LC,NT,LC,LC,VU,DD,NE,LC,NE,LC
+Tropical Dry Forest & Woodland,Jamaica,LC,EN,VU,EN,NT,LC,DD,NE,LC,NE,VU
+Tropical Dry Forest & Woodland,Haiti,DD,CR,CR,VU,EN,LC,DD,NE,LC,NE,VU
+Tropical Dry Forest & Woodland,Guadeloupe,LC,LC,LC,LC,LC,LC,DD,NE,LC,NE,LC
+Tropical Dry Forest & Woodland,Dominican Republic,EN,EN,EN,NT,EN,LC,DD,NE,VU,NE,VU
+Tropical Dry Forest & Woodland,Dominica,NT,LC,NT,LC,LC,LC,DD,DD,LC,NE,LC
+Tropical Dry Forest & Woodland,Cuba,VU,LC,EN,LC,LC,LC,DD,NE,LC,NE,LC
+Tropical Dry Forest & Woodland,Bahamas,DD,CR,DD,CR,CO,VU,DD,DD,DD,DD,DD
+Tropical Dry Forest & Woodland,Antigua and Barbuda,CR,LC,CR,LC,NT,VU,DD,DD,DD,NE,DD
+Tropical Dry Forest & Woodland,Panama,LC,EN,LC,LC,VU,LC,DD,DD,VU,LC,LC
+Tropical Dry Forest & Woodland,Jamaica,VU,DD,VU,EN,CR,LC,DD,DD,LC,NE,VU
+Tropical Dry Forest & Woodland,Haiti,DD,LC,CR,LC,LC,LC,DD,NE,DD,NE,DD
+Tropical Dry Forest & Woodland,Dominican Republic,DD,LC,EN,LC,NT,VU,DD,DD,DD,NE,DD
+Tropical Dry Forest & Woodland,Nicaragua,VU,CR,VU,LC,LC,LC,DD,NE,VU,VU,VU
+Tropical Dry Forest & Woodland,Mexico,NT,LC,VU,LC,LC,LC,DD,NE,LC,NT,LC
+Tropical Dry Forest & Woodland,Cuba,EN,LC,EN,LC,LC,LC,DD,NE,LC,NE,LC
+Tropical Dry Forest & Woodland,Honduras,LC,EN,LC,LC,LC,LC,DD,NE,LC,VU,LC
+Tropical Dry Forest & Woodland,Guatemala,NT,CR,NT,LC,LC,LC,DD,NE,VU,NT,LC
+Tropical Dry Forest & Woodland,El Salvador,DD,LC,EN,LC,LC,LC,DD,NE,LC,EN,LC
+Tropical Dry Forest & Woodland,Puerto Rico,VU,LC,EN,LC,NT,VU,DD,NE,VU,NE,EN
+Tropical Dry Forest & Woodland,Turks and Caicas Islands,DD,LC,DD,DD,DD,DD,DD,DD,DD,DD,DD
+Tropical Dry Forest & Woodland,Bahamas,LC,LC,LC,LC,LC,LC,DD,NE,LC,NE,LC
+Tropical Dry Forest & Woodland,Belize,LC,EN,LC,EN,LC,LC,DD,NE,VU,LC,LC
+Tropical Dry Forest & Woodland,United States,DD,LC,EN,LC,LC,LC,DD,NE,DD,NE,DD
+Tropical Dry Forest & Woodland,Costa Rica,VU,LC,EN,LC,LC,LC,DD,NE,VU,VU,VU
+Cool Temperate Forest,Canada,LC,EN,LC,LC,LC,LC,DD,DD,LC,NE,LC
+Cool Temperate Forest,United States,LC,EN,LC,LC,LC,LC,DD,DD,LC,NE,LC
+Cool Temperate Forest,Canada,LC,EN,LC,LC,LC,LC,DD,DD,LC,NE,LC
+Cool Temperate Forest,United States,LC,VU,LC,LC,LC,LC,DD,NE,LC,NE,LC
+Cool Temperate Forest,United States,LC,VU,NT,LC,LC,LC,EN,NE,LC,NE,VU
+Cool Temperate Forest,Canada,LC,LC,LC,LC,NT,LC,LC,DD,VU,NE,EN
+Temperate Flooded & Swamp Forest,Canada,EN,LC,CR,LC,LC,LC,DD,DD,LC,NE,LC
+Temperate Flooded & Swamp Forest,United States,VU,LC,CR,LC,LC,LC,DD,LC,LC,NE,VU
+Temperate Flooded & Swamp Forest,United States,LC,LC,VU,LC,LC,LC,DD,LC,LC,NE,LC
+Temperate Flooded & Swamp Forest,Canada,LC,LC,VU,LC,LC,LC,DD,DD,LC,NE,LC
+Tropical Dry Forest & Woodland,Honduras,VU,LC,EN,LC,LC,LC,DD,NE,VU,EN,VU
+Tropical Dry Forest & Woodland,Nicaragua,DD,NT,EN,LC,NT,VU,DD,DD,EN,EN,EN
+Tropical Dry Forest & Woodland,Mexico,LC,LC,NT,LC,LC,LC,DD,NE,LC,VU,LC
+Tropical Dry Forest & Woodland,Guatemala,DD,NT,DD,LC,NT,LC,DD,NE,DD,EN,DD
+Tropical Dry Forest & Woodland,Mexico,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Dry Forest & Woodland,Nicaragua,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Dry Forest & Woodland,Honduras,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Dry Forest & Woodland,Guatemala,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Dry Forest & Woodland,El Salvador,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Dry Forest & Woodland,Panama,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Dry Forest & Woodland,United States,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Dry Forest & Woodland,Colombia,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Dry Forest & Woodland,Costa Rica,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Dry Forest & Woodland,Venezuela,VU,LC,VU,LC,LC,LC,LC,NE,LC,VU,LC
+Tropical Dry Forest & Woodland,Colombia,EN,LC,CR,LC,LC,LC,VU,NE,VU,EN,LC
+Tropical Dry Forest & Woodland,Trinidad and Tobago,LC,LC,NT,LC,LC,LC,LC,NE,LC,DD,CR
+Tropical Dry Forest & Woodland,Venezuela,EN,NT,EN,LC,LC,LC,DD,NE,LC,NT,LC
+Tropical Dry Forest & Woodland,Colombia,EN,EN,CR,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Dry Forest & Woodland,Peru,EN,NT,EN,LC,LC,LC,DD,NE,LC,VU,LC
+Tropical Dry Forest & Woodland,Ecuador,DD,CR,EN,LC,LC,LC,DD,NE,VU,VU,VU
+Tropical Dry Forest & Woodland,Colombia,EN,EN,CR,EN,CR,LC,DD,NE,VU,EN,EN
+Tropical Dry Forest & Woodland,Guyana,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Dry Forest & Woodland,Suriname,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Dry Forest & Woodland,French Guiana,LC,LC,LC,LC,EN,LC,DD,NE,LC,LC,LC
+Tropical Dry Forest & Woodland,Brazil,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Dry Forest & Woodland,Venezuela,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Dry Forest & Woodland,Brazil,DD,LC,EN,LC,LC,LC,NT,NE,LC,VU,VU
+Tropical Dry Forest & Woodland,Brazil,VU,EN,VU,LC,LC,LC,LC,NE,LC,NT,LC
+Tropical Dry Forest & Woodland,Paraguay,EN,CR,EN,LC,LC,LC,LC,NE,VU,VU,LC
+Tropical Dry Forest & Woodland,Bolivia,VU,NT,VU,LC,LC,LC,VU,NE,LC,LC,LC
+Tropical Dry Forest & Woodland,Paraguay,VU,CR,EN,LC,LC,LC,DD,NE,VU,NT,VU
+Tropical Dry Forest & Woodland,Argentina,LC,NT,LC,LC,LC,LC,DD,NE,LC,NT,LC
+Tropical Dry Forest & Woodland,Brazil,DD,LC,DD,LC,LC,LC,DD,NE,VU,VU,VU
+Tropical Dry Forest & Woodland,Bolivia,CR,LC,CR,LC,NT,LC,DD,NE,DD,LC,DD
+Tropical Dry Forest & Woodland,Brazil,NT,CR,NT,LC,LC,LC,LC,NE,VU,VU,VU
+Tropical Dry Forest & Woodland,Ecuador,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Dry Forest & Woodland,Peru,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Dry Forest & Woodland,Colombia,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Dry Forest & Woodland,Venezuela,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Dry Forest & Woodland,Peru,LC,EN,LC,LC,LC,LC,DD,NE,NT,NT,LC
+Tropical Dry Forest & Woodland,Argentina,DD,DD,DD,DD,DD,DD,DD,DD,DD,LC,DD
+Tropical Dry Forest & Woodland,Bolivia,LC,VU,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Dry Forest & Woodland,Ecuador,EN,DD,EN,EN,CR,LC,DD,DD,VU,LC,LC
+Tropical Dry Forest & Woodland,Bolivia,NT,VU,VU,LC,LC,LC,DD,NE,LC,NT,LC
+Tropical Dry Forest & Woodland,Argentina,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Honduras,LC,EN,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Guatemala,LC,CR,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Mexico,VU,EN,VU,LC,LC,LC,DD,NE,LC,NT,LC
+Tropical Lowland Humid Forest,Belize,LC,VU,LC,VU,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,El Salvador,DD,LC,EN,LC,LC,LC,DD,NE,LC,EN,LC
+Tropical Lowland Humid Forest,Panama,LC,VU,LC,LC,LC,LC,DD,DD,LC,NT,LC
+Tropical Lowland Humid Forest,Nicaragua,LC,CR,LC,LC,LC,LC,DD,NE,VU,NT,VU
+Tropical Lowland Humid Forest,Costa Rica,VU,LC,VU,LC,LC,LC,DD,NE,VU,VU,VU
+Tropical Lowland Humid Forest,Colombia,VU,LC,VU,EN,VU,LC,DD,DD,VU,LC,VU
+Tropical Lowland Humid Forest,Venezuela,NT,LC,NT,LC,LC,LC,DD,NE,LC,NT,LC
+Tropical Lowland Humid Forest,Colombia,EN,LC,CR,LC,LC,LC,DD,NE,LC,VU,LC
+Tropical Lowland Humid Forest,Colombia,EN,VU,EN,LC,LC,LC,DD,NE,VU,VU,LC
+Tropical Lowland Humid Forest,Venezuela,VU,LC,EN,LC,LC,LC,DD,NE,LC,NT,LC
+Tropical Lowland Humid Forest,Ecuador,VU,EN,VU,VU,LC,LC,LC,NE,VU,LC,LC
+Tropical Lowland Humid Forest,Panama,LC,LC,LC,LC,LC,LC,NT,NE,VU,LC,LC
+Tropical Lowland Humid Forest,Colombia,VU,LC,EN,LC,LC,LC,NT,NE,VU,LC,LC
+Tropical Lowland Humid Forest,Peru,DD,NT,DD,LC,NT,LC,DD,NE,DD,EN,DD
+Tropical Lowland Humid Forest,Colombia,DD,EN,CR,EN,VU,LC,DD,NE,DD,LC,DD
+Tropical Lowland Humid Forest,Ecuador,EN,CR,EN,LC,LC,LC,DD,NE,VU,LC,LC
+Tropical Lowland Humid Forest,Colombia,EN,EN,CR,LC,LC,LC,DD,NE,LC,NT,LC
+Tropical Lowland Humid Forest,Venezuela,VU,CR,EN,LC,LC,LC,DD,NE,VU,VU,LC
+Tropical Lowland Humid Forest,Brazil,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Colombia,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Venezuela,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Guyana,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Venezuela,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Colombia,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Brazil,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Brazil,LC,LC,LC,LC,LC,LC,NT,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Guyana,LC,LC,LC,LC,LC,LC,EN,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Venezuela,LC,LC,LC,LC,LC,LC,EN,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Suriname,LC,LC,LC,LC,LC,LC,EN,NE,LC,LC,LC
+Tropical Lowland Humid Forest,French Guiana,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Trinidad and Tobago,LC,LC,LC,LC,LC,LC,DD,DD,LC,DD,EN
+Tropical Lowland Humid Forest,Guyana,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Suriname,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Colombia,CR,LC,CR,LC,LC,LC,DD,NE,DD,NT,DD
+Tropical Lowland Humid Forest,French Guiana,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Brazil,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Venezuela,NT,LC,NT,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Bolivia,LC,CR,LC,EN,CR,LC,NT,NE,LC,VU,LC
+Tropical Lowland Humid Forest,Peru,LC,LC,LC,LC,LC,LC,VU,NE,VU,LC,VU
+Tropical Lowland Humid Forest,Ecuador,LC,LC,LC,LC,LC,LC,EN,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Colombia,LC,LC,LC,LC,LC,LC,VU,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Brazil,LC,LC,LC,LC,LC,LC,LC,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Ecuador,LC,NT,LC,LC,LC,LC,DD,NE,VU,NT,LC
+Tropical Lowland Humid Forest,Colombia,NT,VU,NT,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Peru,LC,VU,LC,LC,LC,LC,DD,NE,VU,LC,LC
+Tropical Lowland Humid Forest,Peru,LC,LC,LC,LC,LC,LC,VU,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Brazil,LC,NT,LC,LC,LC,LC,VU,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Bolivia,LC,LC,LC,LC,LC,LC,VU,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Colombia,LC,LC,LC,LC,LC,LC,DD,NE,VU,LC,VU
+Tropical Lowland Humid Forest,Peru,LC,VU,LC,LC,LC,LC,EN,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Bolivia,LC,VU,LC,LC,LC,LC,EN,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Peru,LC,LC,LC,LC,VU,LC,LC,NE,VU,LC,VU
+Tropical Lowland Humid Forest,Venezuela,LC,LC,LC,LC,LC,LC,LC,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Colombia,LC,LC,LC,LC,LC,LC,LC,NE,LC,LC,LC
+Tropical Lowland Humid Forest,French Guiana,LC,LC,LC,LC,LC,LC,LC,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Brazil,LC,LC,LC,LC,LC,LC,NT,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Suriname,LC,LC,LC,LC,LC,LC,LC,DD,LC,LC,LC
+Tropical Lowland Humid Forest,Guyana,LC,LC,LC,LC,LC,LC,LC,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Brazil,LC,VU,LC,LC,LC,LC,NT,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Bolivia,LC,LC,LC,LC,VU,LC,LC,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Peru,LC,LC,LC,LC,LC,LC,LC,NE,VU,LC,VU
+Tropical Lowland Humid Forest,Colombia,LC,LC,LC,LC,LC,LC,VU,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Brazil,VU,LC,EN,LC,LC,LC,LC,NE,LC,VU,VU
+Tropical Lowland Humid Forest,Paraguay,VU,CR,EN,LC,LC,LC,DD,NE,VU,NT,LC
+Tropical Lowland Humid Forest,Argentina,LC,EN,LC,VU,LC,LC,DD,NE,VU,NT,EN
+Tropical Lowland Humid Forest,Brazil,EN,CR,EN,LC,LC,LC,DD,NE,VU,VU,VU
+Tropical Lowland Humid Forest,Paraguay,DD,CR,EN,VU,EN,LC,VU,NE,VU,VU,LC
+Tropical Lowland Humid Forest,Brazil,VU,EN,VU,LC,LC,LC,NT,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Bolivia,LC,EN,LC,LC,LC,LC,NT,NE,LC,LC,LC
+Tropical Montane Humid Forest,Trinidad and Tobago,CR,DD,CR,DD,DD,DD,DD,DD,DD,DD,DD
+Tropical Montane Humid Forest,Saint Vincent and the Grenadines,LC,LC,LC,LC,LC,VU,DD,DD,DD,NE,LC
+Tropical Montane Humid Forest,Dominican Republic,DD,VU,EN,VU,LC,LC,DD,NE,LC,NE,LC
+Tropical Montane Humid Forest,Dominica,LC,LC,LC,LC,LC,LC,DD,DD,LC,NE,LC
+Tropical Montane Humid Forest,Cuba,VU,EN,VU,LC,LC,LC,DD,NE,VU,NE,LC
+Tropical Montane Humid Forest,Puerto Rico,LC,EN,VU,EN,VU,LC,DD,NE,LC,NE,VU
+Tropical Montane Humid Forest,Guadeloupe,LC,LC,VU,LC,LC,LC,DD,DD,LC,NE,LC
+Tropical Montane Humid Forest,Grenada,LC,CR,EN,CR,CR,LC,DD,DD,DD,NE,LC
+Tropical Montane Humid Forest,Saint Kitts and Nevis,CR,NT,CR,LC,LC,VU,DD,DD,DD,NE,DD
+Tropical Montane Humid Forest,Jamaica,EN,EN,EN,EN,EN,LC,DD,NE,LC,NE,VU
+Tropical Montane Humid Forest,"Bonaire, Saint Eustatius and Saba",DD,LC,DD,LC,NT,VU,DD,DD,DD,DD,DD
+Tropical Montane Humid Forest,Saint Lucia,LC,EN,LC,CR,CR,VU,DD,DD,LC,NE,LC
+Tropical Montane Humid Forest,Montserrat,CR,NT,CR,LC,LC,VU,DD,DD,DD,NE,DD
+Tropical Montane Humid Forest,Martinique,LC,EN,LC,CR,EN,VU,DD,DD,LC,NE,LC
+Tropical Montane Humid Forest,Haiti,DD,NT,EN,LC,LC,LC,DD,NE,LC,NE,VU
+Tropical Montane Humid Forest,Guatemala,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Montane Humid Forest,El Salvador,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Montane Humid Forest,Nicaragua,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Montane Humid Forest,Belize,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Montane Humid Forest,Mexico,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Montane Humid Forest,Honduras,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Montane Humid Forest,Honduras,LC,EN,NT,LC,LC,LC,DD,NE,LC,VU,LC
+Tropical Montane Humid Forest,El Salvador,EN,LC,EN,LC,LC,LC,DD,NE,LC,EN,LC
+Tropical Montane Humid Forest,Belize,LC,EN,LC,EN,EN,LC,DD,NE,VU,LC,VU
+Tropical Montane Humid Forest,Nicaragua,EN,CR,EN,VU,LC,LC,DD,NE,VU,EN,VU
+Tropical Montane Humid Forest,Mexico,VU,EN,VU,LC,LC,LC,DD,NE,LC,VU,LC
+Tropical Montane Humid Forest,Guatemala,EN,EN,EN,LC,LC,LC,DD,NE,LC,VU,LC
+Tropical Montane Humid Forest,Colombia,DD,LC,DD,LC,NT,VU,DD,DD,DD,LC,DD
+Tropical Montane Humid Forest,Nicaragua,LC,NT,LC,LC,LC,LC,DD,DD,LC,EN,LC
+Tropical Montane Humid Forest,Costa Rica,LC,LC,LC,VU,LC,LC,DD,NE,VU,LC,VU
+Tropical Montane Humid Forest,Panama,LC,LC,LC,LC,LC,LC,DD,DD,VU,LC,VU
+Tropical Montane Humid Forest,Brazil,LC,LC,LC,LC,LC,LC,EN,NE,LC,LC,LC
+Tropical Montane Humid Forest,Suriname,LC,LC,LC,LC,LC,LC,DD,DD,LC,LC,LC
+Tropical Montane Humid Forest,French Guiana,LC,LC,LC,LC,LC,LC,DD,DD,LC,LC,LC
+Tropical Montane Humid Forest,Venezuela,LC,LC,LC,LC,LC,LC,VU,NE,LC,LC,LC
+Tropical Montane Humid Forest,Guyana,LC,LC,LC,LC,LC,LC,EN,NE,LC,LC,LC
+Tropical Montane Humid Forest,French Guiana,LC,LC,LC,LC,VU,LC,DD,DD,LC,LC,LC
+Tropical Montane Humid Forest,Brazil,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Montane Humid Forest,Venezuela,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Montane Humid Forest,Suriname,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Montane Humid Forest,Guyana,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Montane Humid Forest,Venezuela,VU,LC,VU,LC,LC,LC,VU,NE,LC,LC,LC
+Tropical Montane Humid Forest,Colombia,EN,LC,CR,LC,LC,LC,NT,NE,VU,NT,LC
+Tropical Montane Humid Forest,Peru,EN,NT,EN,LC,LC,LC,VU,NE,LC,LC,LC
+Tropical Montane Humid Forest,Ecuador,EN,LC,EN,LC,LC,LC,NT,NE,LC,NT,LC
+Tropical Montane Humid Forest,Ecuador,VU,VU,VU,LC,LC,LC,VU,NE,VU,LC,LC
+Tropical Montane Humid Forest,Colombia,EN,VU,EN,LC,LC,LC,NT,NE,VU,NT,LC
+Tropical Montane Humid Forest,Panama,EN,LC,EN,EN,CR,LC,EN,DD,VU,LC,VU
+Tropical Montane Humid Forest,Peru,LC,LC,LC,LC,LC,LC,VU,NE,VU,LC,VU
+Tropical Montane Humid Forest,Venezuela,LC,EN,LC,LC,LC,LC,EN,NE,LC,LC,LC
+Tropical Montane Humid Forest,Venezuela,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Montane Humid Forest,Chile,DD,DD,DD,DD,DD,DD,DD,DD,DD,NT,DD
+Tropical Montane Humid Forest,Ecuador,LC,NT,LC,LC,LC,LC,DD,DD,LC,LC,LC
+Tropical Montane Humid Forest,Argentina,LC,LC,LC,LC,NT,LC,DD,NE,VU,LC,VU
+Tropical Montane Humid Forest,Bolivia,VU,LC,EN,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Montane Humid Forest,Peru,VU,LC,EN,LC,LC,LC,DD,NE,LC,NT,LC
+Tropical Montane Humid Forest,Argentina,LC,LC,LC,LC,NT,VU,DD,NE,LC,LC,VU
+Tropical Montane Humid Forest,Bolivia,VU,LC,VU,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Montane Humid Forest,Peru,LC,VU,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Montane Humid Forest,Argentina,LC,LC,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Montane Humid Forest,Bolivia,VU,LC,EN,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Montane Humid Forest,Peru,LC,LC,LC,VU,VU,LC,DD,DD,LC,NT,LC
+Tropical Montane Humid Forest,Peru,LC,VU,LC,EN,VU,LC,DD,NE,LC,LC,LC
+Tropical Montane Humid Forest,Bolivia,LC,VU,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Montane Humid Forest,Argentina,LC,LC,LC,LC,LC,LC,DD,NE,LC,NT,LC
+Tropical Montane Humid Forest,Chile,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Montane Humid Forest,Peru,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Montane Humid Forest,Bolivia,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Montane Humid Forest,Argentina,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Montane Humid Forest,Peru,LC,LC,LC,LC,LC,LC,DD,NE,VU,LC,VU
+Tropical Montane Humid Forest,Ecuador,VU,LC,EN,LC,LC,LC,DD,NE,VU,LC,VU
+Tropical Montane Humid Forest,Colombia,EN,LC,CR,LC,LC,LC,DD,NE,VU,LC,LC
+Tropical Montane Humid Forest,Paraguay,EN,CR,EN,LC,EN,LC,VU,NE,VU,VU,VU
+Tropical Montane Humid Forest,Brazil,EN,DD,EN,LC,LC,LC,VU,NE,VU,VU,VU
+Tropical Montane Humid Forest,Argentina,LC,EN,LC,VU,LC,LC,NT,NE,VU,NT,EN
+Tropical Flooded & Swamp Forest,Turks and Caicas Islands,LC,CR,LC,CR,CO,VU,DD,LC,EN,DD,EN
+Tropical Flooded & Swamp Forest,Trinidad and Tobago,LC,LC,NT,LC,LC,LC,DD,EN,LC,DD,CR
+Tropical Flooded & Swamp Forest,Barbados,DD,LC,DD,DD,DD,DD,DD,DD,DD,NE,DD
+Tropical Flooded & Swamp Forest,Bahamas,LC,NT,LC,LC,LC,LC,DD,LC,LC,DD,LC
+Tropical Flooded & Swamp Forest,Antigua and Barbuda,CR,DD,CR,DD,DD,DD,DD,LC,DD,NE,DD
+Tropical Flooded & Swamp Forest,Saint Martin,DD,DD,DD,LC,NT,VU,DD,DD,DD,NE,DD
+Tropical Flooded & Swamp Forest,Saint Lucia,EN,NT,CR,LC,NT,VU,DD,LC,DD,NE,DD
+Tropical Flooded & Swamp Forest,Puerto Rico,DD,LC,CR,LC,LC,LC,DD,LC,LC,NE,VU
+Tropical Flooded & Swamp Forest,Martinique,LC,LC,LC,LC,LC,VU,DD,LC,LC,NE,LC
+Tropical Flooded & Swamp Forest,Jamaica,EN,LC,CR,LC,LC,LC,DD,VU,LC,NE,VU
+Tropical Flooded & Swamp Forest,Haiti,DD,LC,CR,LC,NT,LC,DD,LC,LC,NE,VU
+Tropical Flooded & Swamp Forest,Virgin Islands,LC,DD,CR,DD,DD,DD,DD,DD,DD,NE,DD
+Tropical Flooded & Swamp Forest,United States,EN,LC,EN,LC,LC,LC,DD,VU,VU,NE,VU
+Tropical Flooded & Swamp Forest,Dominican Republic,DD,LC,EN,LC,LC,LC,DD,LC,LC,NE,LC
+Tropical Flooded & Swamp Forest,Cuba,EN,LC,EN,LC,LC,LC,DD,LC,LC,NE,LC
+Tropical Flooded & Swamp Forest,British Virgin Islands,DD,DD,DD,DD,DD,DD,DD,LC,DD,DD,DD
+Tropical Flooded & Swamp Forest,Guadeloupe,LC,LC,EN,LC,LC,LC,DD,VU,LC,NE,LC
+Tropical Flooded & Swamp Forest,Nicaragua,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Panama,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Puerto Rico,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Saint Lucia,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Antigua and Barbuda,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Bahamas,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Barbados,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Cuba,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Dominica,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Jamaica,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Martinique,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Turks and Caicas Islands,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,United States,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Saint Vincent and the Grenadines,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Trinidad and Tobago,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Grenada,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Guadeloupe,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Virgin Islands,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Dominican Republic,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Honduras,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Belize,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Haiti,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Mexico,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Costa Rica,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Guatemala,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Ecuador,LC,CR,LC,VU,CO,LC,DD,LC,VU,LC,EN
+Tropical Flooded & Swamp Forest,El Salvador,EN,LC,CR,LC,LC,LC,DD,NT,DD,EN,VU
+Tropical Flooded & Swamp Forest,Costa Rica,VU,LC,VU,LC,LC,LC,DD,VU,VU,NT,VU
+Tropical Flooded & Swamp Forest,Belize,LC,VU,LC,VU,LC,LC,DD,VU,LC,NT,LC
+Tropical Flooded & Swamp Forest,Honduras,LC,LC,LC,LC,LC,LC,DD,EN,LC,LC,LC
+Tropical Flooded & Swamp Forest,Colombia,VU,LC,VU,LC,LC,LC,DD,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Trinidad and Tobago,LC,LC,VU,LC,LC,LC,DD,LC,LC,DD,CR
+Tropical Flooded & Swamp Forest,Panama,VU,VU,VU,LC,LC,LC,DD,DD,VU,NT,VU
+Tropical Flooded & Swamp Forest,Jamaica,EN,DD,CR,LC,NT,VU,DD,LC,LC,NE,VU
+Tropical Flooded & Swamp Forest,United States,DD,NT,DD,LC,NT,VU,DD,VU,DD,NE,DD
+Tropical Flooded & Swamp Forest,Guatemala,NT,VU,VU,LC,LC,LC,DD,NT,VU,VU,LC
+Tropical Flooded & Swamp Forest,Nicaragua,LC,LC,LC,LC,LC,LC,DD,VU,VU,LC,VU
+Tropical Flooded & Swamp Forest,Mexico,VU,LC,EN,LC,LC,LC,DD,NT,LC,VU,LC
+Tropical Flooded & Swamp Forest,Belize,LC,VU,LC,VU,LC,LC,DD,VU,LC,LC,LC
+Tropical Flooded & Swamp Forest,El Salvador,DD,LC,EN,LC,LC,LC,DD,LC,LC,EN,LC
+Tropical Flooded & Swamp Forest,Guatemala,LC,EN,LC,LC,LC,LC,DD,NT,VU,VU,LC
+Tropical Flooded & Swamp Forest,Costa Rica,VU,LC,VU,LC,LC,LC,DD,VU,VU,VU,EN
+Tropical Flooded & Swamp Forest,Colombia,EN,LC,EN,LC,LC,LC,DD,LC,VU,VU,LC
+Tropical Flooded & Swamp Forest,Panama,LC,LC,LC,LC,LC,LC,DD,DD,VU,NT,LC
+Tropical Flooded & Swamp Forest,Nicaragua,NT,NT,NT,LC,LC,LC,DD,VU,VU,LC,VU
+Tropical Flooded & Swamp Forest,Mexico,LC,LC,LC,LC,LC,LC,DD,NT,LC,LC,LC
+Tropical Flooded & Swamp Forest,Honduras,LC,NT,LC,LC,LC,LC,DD,VU,LC,LC,LC
+Tropical Flooded & Swamp Forest,Guyana,LC,LC,LC,LC,LC,LC,DD,DD,LC,LC,LC
+Tropical Flooded & Swamp Forest,Venezuela,VU,LC,VU,LC,LC,LC,DD,NT,LC,VU,LC
+Tropical Flooded & Swamp Forest,Colombia,EN,LC,CR,LC,LC,LC,DD,LC,LC,EN,LC
+Tropical Flooded & Swamp Forest,Peru,DD,DD,DD,DD,DD,DD,DD,DD,DD,CR,DD
+Tropical Flooded & Swamp Forest,Ecuador,LC,VU,LC,EN,EN,LC,DD,LC,VU,LC,VU
+Tropical Flooded & Swamp Forest,Panama,LC,LC,LC,LC,LC,LC,DD,CR,VU,LC,LC
+Tropical Flooded & Swamp Forest,Colombia,VU,LC,EN,LC,LC,LC,DD,VU,VU,LC,LC
+Tropical Flooded & Swamp Forest,Colombia,CR,LC,CR,LC,LC,LC,DD,VU,LC,LC,LC
+Tropical Flooded & Swamp Forest,Venezuela,EN,NT,EN,LC,LC,LC,DD,VU,LC,NT,LC
+Tropical Flooded & Swamp Forest,Peru,DD,LC,DD,LC,NT,LC,DD,VU,DD,VU,DD
+Tropical Flooded & Swamp Forest,Ecuador,EN,NT,CR,LC,LC,LC,DD,NT,VU,VU,LC
+Tropical Flooded & Swamp Forest,Suriname,LC,LC,LC,LC,LC,LC,DD,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Guyana,LC,LC,LC,LC,LC,LC,DD,VU,LC,LC,LC
+Tropical Flooded & Swamp Forest,Venezuela,LC,LC,LC,LC,LC,LC,DD,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Brazil,LC,LC,LC,LC,LC,LC,DD,VU,LC,LC,LC
+Tropical Flooded & Swamp Forest,Colombia,EN,LC,CR,LC,LC,LC,DD,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,French Guiana,LC,LC,LC,LC,LC,LC,DD,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Guyana,LC,LC,LC,LC,LC,LC,DD,NT,LC,LC,LC
+Tropical Flooded & Swamp Forest,Venezuela,LC,LC,LC,LC,LC,LC,DD,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Colombia,LC,LC,LC,LC,LC,LC,DD,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,French Guiana,LC,LC,LC,LC,LC,LC,DD,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Brazil,LC,LC,LC,LC,LC,LC,DD,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Suriname,LC,LC,LC,LC,LC,LC,DD,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Suriname,LC,LC,LC,LC,LC,LC,DD,VU,LC,LC,LC
+Tropical Flooded & Swamp Forest,Brazil,LC,LC,LC,LC,LC,LC,CR,LC,VU,LC,LC
+Tropical Flooded & Swamp Forest,Guyana,LC,LC,LC,LC,LC,LC,LC,VU,LC,LC,LC
+Tropical Flooded & Swamp Forest,Trinidad and Tobago,LC,LC,LC,LC,LC,LC,LC,LC,LC,DD,CR
+Tropical Flooded & Swamp Forest,French Guiana,LC,LC,LC,LC,LC,LC,DD,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Venezuela,LC,LC,LC,LC,LC,LC,NT,VU,VU,LC,LC
+Tropical Flooded & Swamp Forest,Venezuela,NT,LC,NT,LC,LC,LC,DD,VU,LC,NT,LC
+Tropical Flooded & Swamp Forest,Ecuador,VU,VU,VU,LC,LC,LC,DD,LC,VU,NT,VU
+Tropical Flooded & Swamp Forest,Colombia,EN,LC,CR,LC,LC,LC,DD,LC,VU,VU,LC
+Tropical Flooded & Swamp Forest,Peru,VU,EN,EN,LC,LC,LC,DD,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Bolivia,EN,NT,EN,LC,CO,LC,DD,NT,LC,VU,LC
+Tropical Flooded & Swamp Forest,Argentina,LC,LC,LC,LC,NT,VU,DD,NT,VU,NT,VU
+Tropical Flooded & Swamp Forest,Chile,DD,DD,DD,DD,DD,DD,DD,VU,DD,VU,DD
+Tropical Flooded & Swamp Forest,Peru,LC,VU,LC,LC,LC,LC,DD,LC,VU,NT,LC
+Tropical Flooded & Swamp Forest,Argentina,LC,EN,LC,LC,LC,LC,DD,VU,VU,VU,VU
+Tropical Flooded & Swamp Forest,Peru,LC,VU,LC,EN,EN,LC,DD,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Bolivia,LC,VU,VU,LC,LC,LC,DD,NT,LC,LC,LC
+Tropical Flooded & Swamp Forest,Peru,LC,EN,LC,LC,LC,LC,DD,NT,VU,LC,LC
+Tropical Flooded & Swamp Forest,Peru,LC,LC,LC,LC,LC,LC,DD,NT,VU,LC,VU
+Tropical Flooded & Swamp Forest,Brazil,LC,LC,LC,LC,LC,LC,DD,NT,LC,LC,LC
+Tropical Flooded & Swamp Forest,Ecuador,LC,LC,LC,LC,LC,LC,DD,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Bolivia,LC,CR,LC,CR,CO,VU,DD,DD,VU,NT,VU
+Tropical Flooded & Swamp Forest,Colombia,LC,LC,LC,LC,LC,LC,DD,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Bolivia,VU,CR,VU,DD,DD,DD,LC,DD,VU,EN,VU
+Tropical Flooded & Swamp Forest,Ecuador,LC,LC,LC,LC,LC,LC,LC,NT,LC,LC,LC
+Tropical Flooded & Swamp Forest,Colombia,LC,LC,LC,LC,LC,LC,NT,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Peru,LC,LC,LC,LC,LC,LC,NT,NT,VU,LC,LC
+Tropical Flooded & Swamp Forest,Brazil,LC,LC,LC,LC,LC,LC,NT,NT,VU,LC,LC
+Tropical Flooded & Swamp Forest,Colombia,CR,DD,CR,DD,DD,DD,VU,EN,DD,LC,DD
+Tropical Flooded & Swamp Forest,Bolivia,LC,VU,LC,LC,LC,LC,VU,NT,LC,LC,LC
+Tropical Flooded & Swamp Forest,Brazil,LC,LC,LC,LC,LC,LC,VU,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Peru,LC,LC,LC,LC,LC,LC,NT,NT,LC,LC,LC
+Tropical Flooded & Swamp Forest,Brazil,LC,VU,LC,LC,LC,LC,DD,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Peru,LC,LC,LC,LC,LC,LC,DD,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Colombia,LC,LC,LC,LC,NT,LC,DD,DD,VU,LC,VU
+Tropical Flooded & Swamp Forest,Bolivia,LC,LC,LC,LC,LC,LC,DD,VU,LC,LC,LC
+Tropical Flooded & Swamp Forest,Peru,LC,LC,LC,LC,LC,LC,LC,LC,VU,LC,VU
+Tropical Flooded & Swamp Forest,Colombia,LC,LC,LC,LC,LC,LC,LC,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Venezuela,LC,LC,LC,LC,LC,LC,VU,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Brazil,LC,LC,LC,LC,LC,LC,VU,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Colombia,LC,LC,LC,LC,LC,LC,LC,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Bolivia,LC,LC,LC,LC,LC,LC,LC,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Peru,LC,LC,LC,LC,LC,LC,LC,LC,VU,LC,VU
+Tropical Flooded & Swamp Forest,Brazil,LC,LC,LC,LC,LC,LC,NT,LC,VU,LC,LC
+Tropical Flooded & Swamp Forest,Colombia,LC,LC,LC,LC,LC,LC,DD,DD,VU,LC,VU
+Tropical Flooded & Swamp Forest,Brazil,LC,VU,LC,LC,LC,LC,DD,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Bolivia,LC,LC,LC,LC,LC,LC,DD,NT,LC,LC,LC
+Tropical Flooded & Swamp Forest,Brazil,LC,LC,LC,LC,LC,LC,DD,LC,VU,LC,VU
+Tropical Flooded & Swamp Forest,French Guiana,LC,LC,LC,LC,LC,LC,DD,DD,VU,LC,LC
+Tropical Flooded & Swamp Forest,Brazil,EN,LC,EN,LC,LC,LC,LC,LC,LC,VU,VU
+Tropical Flooded & Swamp Forest,Brazil,DD,LC,EN,LC,LC,LC,DD,LC,VU,NT,VU
+Tropical Flooded & Swamp Forest,Paraguay,EN,CR,EN,LC,VU,LC,DD,LC,VU,NT,LC
+Tropical Flooded & Swamp Forest,Argentina,DD,CR,EN,LC,LC,LC,DD,VU,VU,LC,LC
+Tropical Flooded & Swamp Forest,Paraguay,EN,CR,EN,VU,VU,LC,DD,NT,VU,VU,LC
+Tropical Flooded & Swamp Forest,Brazil,VU,EN,VU,LC,LC,LC,DD,NT,LC,LC,LC
+Tropical Flooded & Swamp Forest,Bolivia,LC,EN,VU,LC,LC,LC,DD,NT,LC,LC,LC
+Tropical Flooded & Swamp Forest,Bolivia,LC,LC,VU,LC,LC,LC,DD,VU,LC,LC,LC
+Tropical Flooded & Swamp Forest,Brazil,LC,LC,LC,LC,VU,LC,DD,NT,LC,LC,LC
+Tropical Flooded & Swamp Forest,Brazil,DD,LC,DD,LC,NT,VU,DD,VU,DD,LC,DD
+Tropical Flooded & Swamp Forest,Bolivia,VU,LC,VU,LC,LC,LC,DD,NT,LC,LC,LC
+Tropical Flooded & Swamp Forest,Bolivia,EN,CR,CR,LC,LC,LC,DD,EN,LC,LC,LC
+Tropical Flooded & Swamp Forest,Brazil,EN,EN,EN,LC,LC,LC,DD,EN,LC,LC,LC
+Tropical Flooded & Swamp Forest,Paraguay,DD,LC,DD,LC,LC,LC,DD,CR,DD,VU,DD
+Tropical Flooded & Swamp Forest,Bolivia,CR,LC,CR,LC,LC,LC,LC,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Brazil,VU,EN,VU,LC,EN,LC,LC,EN,LC,VU,LC
+Tropical Flooded & Swamp Forest,Argentina,LC,EN,LC,LC,LC,LC,LC,EN,LC,VU,LC
+Tropical Flooded & Swamp Forest,Paraguay,DD,EN,EN,LC,LC,LC,LC,VU,LC,NT,LC
+Tropical Flooded & Swamp Forest,Paraguay,DD,EN,DD,LC,LC,LC,NT,VU,LC,NT,LC
+Tropical Flooded & Swamp Forest,Argentina,LC,EN,LC,LC,LC,LC,LC,VU,LC,VU,LC
+Tropical Flooded & Swamp Forest,Brazil,DD,LC,DD,LC,NT,LC,LC,VU,DD,LC,DD
+Tropical Flooded & Swamp Forest,Bolivia,EN,LC,CR,LC,LC,LC,LC,LC,LC,LC,LC
+Tropical Flooded & Swamp Forest,Paraguay,DD,NT,DD,LC,LC,LC,DD,VU,LC,NT,LC
+Tropical Flooded & Swamp Forest,Brazil,EN,LC,EN,LC,NT,LC,DD,CR,LC,LC,LC
+Tropical Flooded & Swamp Forest,Bolivia,EN,LC,CR,LC,LC,LC,DD,CR,DD,LC,DD
+Tropical Flooded & Swamp Forest,Argentina,NT,NT,NT,LC,LC,LC,DD,EN,VU,VU,VU
+Tropical Flooded & Swamp Forest,Argentina,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Flooded & Swamp Forest,Paraguay,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Warm Temperate Forest,Chile,EN,LC,EN,LC,LC,LC,DD,NE,LC,NE,VU
+Warm Temperate Forest,Argentina,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Warm Temperate Forest,Chile,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Warm Temperate Forest,Argentina,EN,LC,EN,LC,LC,LC,DD,NE,LC,NE,LC
+Warm Temperate Forest,Brazil,CR,LC,CR,LC,LC,LC,DD,NE,VU,NE,EN
+Warm Temperate Forest,Uruguay,DD,NT,CR,LC,LC,LC,DD,NE,LC,NE,LC
+Cool Temperate Forest,Chile,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Cool Temperate Forest,Argentina,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Cool Temperate Forest,Chile,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Cool Temperate Forest,Argentina,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Cool Temperate Forest,Argentina,LC,LC,LC,LC,LC,LC,DD,NE,LC,NE,LC
+Cool Temperate Forest,Chile,LC,LC,LC,LC,LC,LC,DD,NE,LC,NE,LC
+Cool Temperate Forest,Chile,LC,LC,LC,LC,LC,LC,DD,NE,LC,NE,LC
+Cool Temperate Forest,Argentina,LC,LC,NT,LC,LC,LC,DD,NE,LC,NE,LC
+Cool Temperate Forest,Chile,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Cool Temperate Forest,Argentina,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Temperate Flooded & Swamp Forest,Mexico,EN,LC,EN,LC,LC,LC,DD,NT,LC,NE,LC
+Temperate Flooded & Swamp Forest,Brazil,EN,NT,CR,LC,LC,LC,DD,LC,VU,NE,VU
+Temperate Flooded & Swamp Forest,Paraguay,DD,NT,DD,LC,NT,VU,DD,DD,DD,NE,DD
+Temperate Flooded & Swamp Forest,Uruguay,VU,DD,EN,LC,LC,LC,DD,LC,LC,NE,LC
+Temperate Flooded & Swamp Forest,Argentina,DD,NT,EN,LC,LC,LC,DD,VU,VU,NE,VU
+Temperate Flooded & Swamp Forest,Argentina,LC,DD,LC,EN,DD,DD,DD,LC,LC,NE,LC
+Temperate Flooded & Swamp Forest,Chile,EN,NT,EN,LC,LC,LC,DD,LC,LC,NE,VU
+Temperate Flooded & Swamp Forest,Chile,LC,LC,LC,LC,LC,LC,DD,LC,LC,NE,LC
+Temperate Flooded & Swamp Forest,Argentina,EN,VU,EN,LC,LC,LC,DD,VU,LC,NE,LC
+Temperate Flooded & Swamp Forest,Argentina,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Temperate Flooded & Swamp Forest,Chile,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE,NE
+Tropical Dry Forest & Woodland,Bolivia,EN,NT,EN,LC,LC,LC,DD,NE,LC,NT,LC
+Tropical Dry Forest & Woodland,Paraguay,DD,CR,DD,VU,EN,LC,DD,NE,VU,VU,LC
+Tropical Dry Forest & Woodland,Brazil,EN,NT,EN,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Belize,LC,LC,LC,EN,LC,LC,DD,NE,VU,LC,LC
+Tropical Lowland Humid Forest,Nicaragua,NT,CR,NT,LC,LC,LC,DD,NE,VU,VU,VU
+Tropical Lowland Humid Forest,Guatemala,VU,CR,EN,LC,LC,LC,DD,NE,VU,VU,LC
+Tropical Lowland Humid Forest,El Salvador,EN,NT,EN,LC,LC,LC,DD,NE,LC,EN,LC
+Tropical Lowland Humid Forest,Costa Rica,VU,VU,EN,LC,LC,LC,DD,NE,VU,VU,VU
+Tropical Lowland Humid Forest,Mexico,LC,VU,LC,LC,LC,LC,DD,NE,LC,LC,LC
+Tropical Lowland Humid Forest,Colombia,VU,LC,VU,EN,VU,LC,DD,DD,VU,LC,VU
+Tropical Lowland Humid Forest,Panama,LC,VU,LC,LC,LC,LC,DD,DD,VU,NT,LC
+Tropical Lowland Humid Forest,Honduras,LC,EN,LC,LC,LC,LC,DD,NE,LC,VU,LC

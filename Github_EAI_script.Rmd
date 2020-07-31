@@ -2,18 +2,18 @@
 title: "Ecosystem Area Index"
 author: "Jessica A. Rowland"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ## Index overview
 
-The Ecosystem Area Index (EAI) measures trends measures trends in changes in ecosystem area towards ecosystem collapse. The EAI is the geometric mean of the proportion of ecosystem area remaining over a given timeframe relative to the initial area and an ecosystem-specific collapse threshold. It uses data on ecosystem area and area-based collapse threshold as defined based on IUCN Red List of Ecosystems risk assessments.  
+The Ecosystem Area Index (EAI) measures trends in changes in ecosystem area towards ecosystem collapse. The EAI is the geometric mean of the proportion of ecosystem area remaining over a given timeframe relative to the initial area and an ecosystem-specific collapse threshold. It uses data on ecosystem area and an area-based collapse threshold as defined based on IUCN Red List of Ecosystems risk assessments.  
 
-This information sheet provides the code used to calculate the the index and an example of each step. 
+This information sheet provides the code used to calculate the index and an example of each step. 
 
 **Reference:**  
-Rowland, J. A., Bland, L. M., Keith, D. A., Bignoli, D. J., Burgman, M., Etter, A., Ferrer-Paris, J. R., Miller, R. M. and Nicholson, E. (2019) Ecosystem indices to support global biodiversity conservation. Conservation Letters. e12680  
+Rowland, J. A., Bland, L. M., Keith, D. A., Bignoli, D. J., Burgman, M., Etter, A., Ferrer-Paris, J. R., Miller, R. M. and Nicholson, E. (2020) Ecosystem indices to support global biodiversity conservation. Conservation Letters. 116, e12680  
 
 ## Set up functions
 
@@ -23,10 +23,10 @@ The function *calcEAI* selects the column in a dataframe listing the proportion 
 
 Parameters are:  
 - eco_data = dataframe  
-- RLE_criteria = name of the column with the Red List of Ecosystems criterion of interest  
-- pct_change = proportion of the ecosystem area lost over a given timeframe towards ecosytsem collapse
-- group1 = the factor (optional) you want to group the index by. Where not specified, an EAI will be calculated based on all ecosystems (output = single score)  
-- group2 = the second factor (optional) you want to group the index by  
+- RLE_criteria = name of the column with the Red List of Ecosystems criterion of interest.   
+- pct_change = proportion of the ecosystem area lost over a given timeframe towards ecosystem collapse.  
+- group1 = the factor (optional) you want to group the index by. Where not specified, an EAI will be calculated based on all ecosystems (output = single score).  
+- group2 = the second factor (optional) you want to group the index by.  
 
 ```{r calcEAI}
 calcEAI <- function(eco_data, RLE_criteria, pct_change, group1, group2){
@@ -45,7 +45,7 @@ calcEAI <- function(eco_data, RLE_criteria, pct_change, group1, group2){
       values <- group_by(area_Pct, group1 = area_Pct[[group1]])
     } else {
       values <- group_by(area_Pct, group1 = area_Pct[[group1]],
-                                  group2 = area_Pct[[group2]])
+                                   group2 = area_Pct[[group2]])
     }
   }
 
@@ -60,55 +60,72 @@ calcEAI <- function(eco_data, RLE_criteria, pct_change, group1, group2){
 }
 ```
 
-#### Example
+#### Forests of the Americas example 
 
-This test data set are available from github.
+An example dataset of the Red list of Ecosystem assessments of the forests across the Americas is available from github.The assessments are from the continental-scale RLE assessments of 136 temperate and tropical forests across 51 countries/territories in the Caribbean and Americas (Ferrer-Paris et al., 2018). 
+
+**Reference:**  
+Ferrer-Paris, J. R., Zager, I., Keith, D. A., Oliveira-Miranda, M. A., Rodríguez, J. P., Josse, C., … Barrow, E. (2018). An ecosystem risk assessment of temperate and tropical forests of the Americas with an outlook on future conservation strategies. Conservation Letters, 12. https://doi.org/10.1111/conl.12623
+
+The columns in the dataframe are:  
+- ecosystem = type of ecosystem.  
+- country = country containing part of the ecosystem distribution.   
+- recent_area_lost = proportion of the ecosystem area lost over the past 50 years.  
+- future_area_lost = proportion of the ecosystem area lost over the next 50 years (or any 50-year timeframe across the past, present and future).  
+- historical_area_lost = proportion of the ecosystem area lost  since ~1750.  
+- criterion_A1 = risk category assigned based on the recent_area_lost.  
+- criterion_A2b = risk category assigned based on the future_area_lost.  
+- criterion_A3 = risk category assigned based on the historical_area_lost.  
 
 ```{r example, message = FALSE}
 # Load packages
 library(dplyr)
 
 # Load data
-data <- read.csv("~/Documents/*Career/*PhD/*Projects/2 - RLE indicators/Github script/Github_example_data_EAI.csv")
+data <- read.csv("~/Desktop/Github_example_AmericanForests_EAI.csv") #fill in path to file
 
 # View data
 head(data)
 ```
 
-Calculate the index using no groupings:
+Calculate the index for sub-criteria A1 (recent change over the past 50 years) using no groupings. The output above shows:  
+- total_count = the total number of ecosystems included in the index.   
+- count_non_zeros = the total number of ecosystems where the area remaining is greater than 0 km2.  
+- EAI = the Ecosystem Area Index.  
+- lower and upper = the intervals are based on the quantiles aiming to capture the middle 95% of the data calcualted using the 2.5th and 97.5th percentiles.  
 
-```{r RLIE overall}
+```{r EAI overall}
 # Calculate the index values
 output <- calcEAI(data,
-                  pct_change = "area_lost",
-                  RLE_criteria = "criterion")
+                  pct_change = "recent_area_lost",
+                  RLE_criteria = "criterion_A1")
 
 # View output
 head(output)
 ```
 
-Calculate the index using one grouping:
+Calculate the index using one grouping, in this case, by ecosystem type:
 
-```{r RLIE one group}
+```{r EAI one group}
 # Calculate the index values
 output_one_grouping <- calcEAI(data,
-                               pct_change = "area_lost",
-                               RLE_criteria = "criterion",
-                               group1 = "realm")
+                               pct_change = "recent_area_lost",
+                               RLE_criteria = "criterion_A1",
+                               group1 = "ecosystem")
 
 # View output
 head(output_one_grouping)
 ```
 
-Calculate the index using two groupings where ecosystems are grouped by realm and continent:
+Calculate the index using two groupings where ecosystems are grouped by ecosystem type and country. 
 
-```{r RLIE two groups}
+```{r EAI two groups}
 # Calculate the index values
 output_two_groupings <- calcEAI(data,
-                                pct_change = "area_lost",
-                                RLE_criteria = "criterion",
-                                group1 = "realm",
-                                group2 = "region")
+                                pct_change = "recent_area_lost",
+                                RLE_criteria = "criterion_A1",
+                                group1 = "ecosystem",
+                                group2 = "country")
 
 # View output
 head(output_two_groupings)
