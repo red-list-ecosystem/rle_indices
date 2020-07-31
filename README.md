@@ -2,7 +2,9 @@
 
 Example code for Rowland JA, Bland LM, Keith DA, Juffe‐Bignoli D, Burgman MA, Etter A, Ferrer‐Paris JR, Miller RM, Skowno AL, Nicholson E. 2020. Ecosystem indices to support global biodiversity conservation. Conservation Letters 13:311. DOI: http://dx.doi.org/10.1111/conl.12680
 
-The code here includes methods to calculate the three ecosystem indices presented in Rowland et al. (2020).
+The three scripts provided here include methods to calculate the three ecosystem indices presented in Rowland et al. (2020). Each script provides the code used to calculate each index and provides examples of the index output using the sample data as .csv files. The example data are from the continental assessment of the 136 temperate and tropical forests across 51 countries/territories in the Caribbean and Americas (Ferrer-Paris et al., 2018). The csv files are provided to demonstrate the structure of data required to calculate the indices. 
+
+Ferrer-Paris, J. R., Zager, I., Keith, D. A., Oliveira-Miranda, M. A., Rodríguez, J. P., Josse, C., … Barrow, E. (2018). An ecosystem risk assessment of temperate and tropical forests of the Americas with an outlook on future conservation strategies. Conservation Letters, 12. https://doi.org/10.1111/conl.12623
 
 ## Red List Index of Ecosystems
 #### Index overview
